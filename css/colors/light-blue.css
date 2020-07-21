@@ -1,0 +1,55 @@
+/*
+* Template Name : Linexon | Responsive Bootstrap Landing Template
+* Version : 1.0.0
+* Created by : Themesdesign
+* File : Template default color
+*/
+
+span.title-border,.features-desc a:hover,.service-box .service-icon,.company-sub-menu li a:hover,.text-custom,#topnav .has-submenu.active .submenu li.active > a,
+#navigation li.active a,#topnav .navigation-menu > li .submenu li a:hover,#topnav .navigation-menu .has-submenu .submenu > li:hover > a,
+#topnav .navigation-menu > li:hover > a {
+  color: #37b8df !important;
+}
+
+.btn-custom,.bg-custom,.play-icon-circle,.main-slider .flex-control-paging li a.flex-active,.features-border,.team-social li a:hover,.plan-price h6,
+.footer-icons li a:hover,#topnav .navbar-toggle.open span:hover {
+  background-color: #37b8df !important;
+}
+
+.btn-custom{
+  border: 1px solid #37b8df !important;
+}
+
+.team-box.active,.team-social li a:hover,.form-control:focus,.footer-icons li a:hover,#topnav .has-submenu.active .menu-arrow{
+    border-color: #37b8df !important;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    background-color:#30a0c1 !important;
+    border-color:#30a0c1 !important;
+}
+
+@media (min-width: 992px) {
+  #topnav .navigation-menu > li .submenu li a:hover,#topnav .navigation-menu .has-submenu .submenu > li:hover > a,#topnav .navigation-menu > li:hover > a,
+  #topnav .navigation-menu > li:hover > .menu-arrow{
+    color: #37b8df;
+  }
+}
+
+@media (max-width: 991px) {
+  #topnav .navigation-menu > li > a:hover,
+  #topnav .navigation-menu > li .submenu li a:hover,
+  #topnav .navigation-menu > li.has-submenu.open > a,
+  #topnav .menu-extras .menu-item .cart > a:hover,
+  #topnav .menu-extras .menu-item .search > a:hover,#topnav .navigation-menu .submenu.open .has-submenu.open > a,#topnav .has-submenu.active a{
+    color: #37b8df !important;
+  }
+}
