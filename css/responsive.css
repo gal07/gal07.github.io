@@ -1,0 +1,326 @@
+/**
+***************************************************************
+* AUTHOR : CKavArt
+* PROJECT : PINAK - Coming Soon Creative Template
+* Purchase : https://themeforest.net/user/c-kav
+*
+* Copyright 2015-2016 CKavArt
+* NOTE : This file licensed to CKavArt - https://themeforest.net/user/c-kav and it is strictly prohibited to copy or reuse it.
+***************************************************************
+*/
+/**
+*****************************************************************
+* This file is licensed to CKavArt.
+* It's not allowed to copy or reuse it Copyright CKavArt 2017-2018
+* CKavArt : https://themeforest.net/user/c-kav
+*****************************************************************
+*/
+/*===========================================*/
+/*	DESKTOP LAYOUT 
+/*===========================================*/
+@media (min-width: 992px) {
+  .boxed,
+  .boxed .nav-wrp {
+    min-width: 990px;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .tbl-gr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .tbl-gr > [class*="col-"] {
+    float: none;
+    display: table-cell;
+  }
+  .tbl-gr.align-m > [class*="col-"] {
+    vertical-align: middle;
+  }
+  .tbl-gr.align-t > [class*="col-"] {
+    vertical-align: top;
+  }
+  .tbl-gr.align-b > [class*="col-"] {
+    vertical-align: bottom;
+  }
+  .nav-transparent:not(.nav-sticky) {
+    background-color: transparent !important;
+    top: 0px;
+    opacity: 1;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+/*===========================================*/
+/*	MOBILE & TABLET COMMON
+/*===========================================*/
+@media (min-width: 200px) and (max-width: 991px) {
+  .container.small {
+    width: auto;
+  }
+  #page {
+    overflow: hidden;
+  }
+  .ctrl-2 .owl-nav > div {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  .ctrl-2 .owl-nav > .owl-next {
+    right: 0;
+  }
+  .ctrl-2 .owl-nav > .owl-prev {
+    left: 0;
+  }
+  .ctrl-2 .owl-dots,
+  .ctrl-1 .owl-dots {
+    margin: 0px;
+  }
+  [class*="gt"] {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  [class*="gt"] > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .rw > [class*="cl"] {
+    width: 100%;
+  }
+  .tbl-gr > [class*="cl"],
+  .tbl-gr > [class*="col-"] {
+    display: block;
+  }
+  .form-inline-tbl,
+  .form-inline-tbl > li {
+    display: block;
+    padding: 5px;
+  }
+  /* Tabs
+	=========================*/
+  .side-tab,
+  .tabs-auto .tb-list > li {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .side-tab .tb-list {
+    width: 100% !important;
+  }
+  .tab-style2.side-tab:not(.tb-r) .tb-content,
+  .tab-style2.tb-r .tb-content,
+  .tab-style3.side-tab:not(.tb-r) .tb-content,
+  .tab-style3.tb-r .tb-content,
+  .tab-style4.side-tab:not(.tb-r) .tb-content,
+  .tab-style4.tb-r .tb-content {
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  /* NAVIGATION
+	********************************************/
+  .main-head {
+    /* position: static; */
+  }
+  .main-head .header-logo img {
+    max-height: 30px;
+  }
+  .main-head[class*="px-h"],
+  .main-head[class*="min-px-h"],
+  .main-head > [class*="px-h"],
+  .main-head > [class*="min-px-h"] {
+    min-height: inherit;
+    height: auto;
+  }
+  .m-content {
+    display: none;
+  }
+  .nav-handle {
+    display: block;
+  }
+  .open.m-nav {
+    display: block !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  .open.m-nav .menu {
+    min-height: inherit !important;
+  }
+  .open.m-nav .sub-handler,
+  .open.m-nav .inline-grid,
+  .open.m-nav .menu,
+  .open.m-nav .menu-item {
+    display: block;
+  }
+  .open.m-nav .menu-item > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  .open.m-nav .has-dropdown > .sub,
+  .open.m-nav .has-dropdown .dropdown {
+    position: static;
+    padding: 0px;
+  }
+  .open.m-nav .has-dropdown .dropdown {
+    margin-left: 10px;
+    padding: 0px;
+  }
+  .open.m-nav .has-dropdown > a:after {
+    display: none;
+  }
+  .open.m-nav .has-dropdown > .mega-menu {
+    width: 100% !important;
+    min-width: 100% !important;
+    padding: 20px;
+    margin: 0px;
+  }
+  .btn {
+    white-space: normal;
+  }
+  [data-stellar] {
+    -webkit-transform: none !important;
+            transform: none !important;
+    display: block !important;
+    top: 0 !important;
+    margin: 0;
+  }
+  /*
+	====================================
+	Search popup
+	====================================
+	*/
+  .popup-search .mfp-close {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .popup-search .search-frm {
+    width: 95%;
+  }
+  .popup-search .search-frm .btn {
+    height: 100%;
+    font-size: 18px;
+    width: 50px;
+  }
+  .popup-search .search-frm input {
+    border-width: 2px;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  /* Filters
+	=========================*/
+  .filter-style1 .filter-list {
+    text-align: center;
+  }
+  /* Price - 1
+	=========================*/
+  .price-section-1 {
+    padding: 35px 0;
+  }
+  .price-section-1 .download-block {
+    text-align: center;
+  }
+  .price-table th {
+    text-align: center;
+  }
+  .price-table th > .hd > strong {
+    font-size: 28px;
+  }
+  .price-table th > .hd {
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  .price-table .feature-hd {
+    display: none;
+  }
+  .price-table .free,
+  .price-table .pro1,
+  .price-table td {
+    display: block;
+    width: 100%;
+  }
+  .price-table .td-free {
+    border-left: none;
+  }
+  .price-table td:last-child {
+    border-bottom-width: 2px;
+  }
+  .price-table .plan-lbl {
+    display: inline-block;
+  }
+  .price-table .info-box5 .img {
+    float: none;
+    margin: 0 auto 10px auto;
+  }
+  .price-table .info-box5 .info {
+    margin: 0;
+    text-align: center;
+  }
+  .price-table .td-feature {
+    padding: 15px;
+  }
+  .price-table-1 > div {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  /* Responsive table
+	=========================*/
+  .tbl-responsive td {
+    padding: 10px;
+    display: block;
+  }
+  .tbl-responsive.tbl-border td:nth-child(n+2) {
+    border-top: none;
+  }
+  .tbl-responsive tr td:last-child {
+    margin-bottom: 20px;
+  }
+  .tbl-responsive td:before {
+    display: inline-block;
+    content: attr(data-th);
+    font-size: 11px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+  }
+  .light.tbl-responsive td:before {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .tbl-responsive td:not([data-th]):before {
+    display: none;
+  }
+  /*----------  PINAK MAIN  ----------*/
+  .ckav-section {
+    height: auto !important;
+    min-height: 100vh;
+  }
+}
+/*===========================================*/
+/*	TABLET
+/*===========================================*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-links > li > a {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .vh50,
+  .vh55,
+  .vh60,
+  .vh65,
+  .vh70,
+  .vh75,
+  .vh80,
+  .vh85,
+  .vh90 {
+    height: 100vh;
+  }
+}
+/*===========================================*/
+/*	MOBILE
+/*===========================================*/
