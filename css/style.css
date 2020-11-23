@@ -1,11 +1,18 @@
 body{
-    background: rgb(148, 198, 197);
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-origin: border-box;
 }
 
 .map{
     width: 55%;
     margin: auto;
-    margin-right: 30%;
+    margin-right: 25%;
+    transform: scale(0.70);
+    z-index: 10;
+    margin-top: -6em;
 }
 
 .map path{
