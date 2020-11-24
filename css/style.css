@@ -18,6 +18,10 @@ body{
     margin-top: 2em;
 }
 
+.cards{
+    margin-left: -9em;margin-top: -45em;position: absolute;
+}
+
 .map path{
     fill:rgb(254, 252, 229);
     stroke:	rgb(254, 252, 229);
@@ -31,8 +35,120 @@ body{
 
 }
 .card-city{
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
 }
+
+@media (max-width: 1024px){
+    .map {
+        width: 55%;
+        margin: auto;
+        margin-right: 43%;
+        transform: scale(0.95);
+        z-index: 10;
+        margin-top: 2em;
+    }
+
+    .cards{
+        margin-left: 1em;
+        margin-top: -50em;
+        position: absolute;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .map {
+        width: 36%;
+        margin: auto;
+        margin-right: 66%;
+        transform: scale(0.95);
+        z-index: 10;
+        margin-top: 12em;
+    }
+}
+
+@media (max-width: 604px){
+    .map {
+        width: 27%;
+        margin: auto;
+        margin-right: 73%;
+        transform: scale(0.75);
+        z-index: 10;
+        margin-top: 6em;
+    }
+}
+
+@media (max-width: 533px){
+    .map {
+        width: 27%;
+        margin: auto;
+        margin-right: 73%;
+        transform: scale(0.60);
+        z-index: 10;
+        margin-top: -2em;
+    }
+}
+
+
+@media (max-width: 411px){
+    .cards {
+        margin-left: 28.5em;
+        margin-top: -22.5em;
+        position: absolute;
+    }
+
+    .map {
+        /* width: 71%; */
+        margin: auto;
+        margin-right: 80%;
+        transform: scale(0.65);
+        margin-left: -23%;
+        z-index: 10;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 375px){
+    .map {
+        margin: auto;
+        margin-right: 73%;
+        margin-left: -32%;
+        transform: scale(0.65);
+        margin-top: 5em;
+    }
+    .cards {
+        margin-left: 27em;
+        margin-top: -20em;
+        position: absolute;
+    }
+}
+
+@media (max-width: 360px){
+    .map {
+        margin: auto;
+        margin-right: 73%;
+        margin-left: -32%;
+        transform: scale(0.62);
+        margin-top: -2em;
+    }
+
+    .cards {
+        margin-left: 27.8em;
+        margin-top: -24em;
+        position: absolute;
+    }
+}
+
+@media (max-width: 320px){
+    .map {
+        margin: auto;
+        margin-right: 73%;
+        margin-left: -26%;
+        transform: scale(0.51);
+        margin-top: -5em;
+    }
+}
+
 
 /* font */
 
