@@ -92,11 +92,10 @@ body{
 
 @media (max-width: 411px){
     .cards {
-        margin-left: 28.5em;
-        margin-top: -22.5em;
+        margin-left: 8.5em;
+        margin-top: -54.5em;
         position: absolute;
     }
-
     .map {
         /* width: 71%; */
         margin: auto;
@@ -117,8 +116,8 @@ body{
         margin-top: 5em;
     }
     .cards {
-        margin-left: 27em;
-        margin-top: -20em;
+        margin-left: 11em;
+        margin-top: -54em;
         position: absolute;
     }
 }
@@ -133,8 +132,8 @@ body{
     }
 
     .cards {
-        margin-left: 27.8em;
-        margin-top: -24em;
+        margin-left: 10.8em;
+        margin-top: -55em;
         position: absolute;
     }
 }
