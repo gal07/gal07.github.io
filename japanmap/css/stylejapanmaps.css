@@ -1,0 +1,50 @@
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-origin: border-box;
+}
+
+.map{
+    width: 55%;
+    margin: auto;
+    margin-right: 25%;
+    transform: scale(0.70);
+    z-index: 10;
+    margin-top: -4em;
+}
+
+.map path{
+    fill:rgb(254, 252, 229);
+    stroke:	rgb(254, 252, 229);
+    stroke-width: 0.8px;
+    transition: fill 0.8s;
+}
+
+.map path:hover{
+    fill: rgb(255, 141, 132);;
+    animation-duration: 1s; /* don't forget to set a duration! */
+
+}
+.card-city{
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+/* font */
+
+.small { font: italic bold 13px sans-serif; }
+
+/* image */
+.plane{
+    background-image: url('../images/2-01.png');
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 200px;
+}
+.images-x{
+    position: relative;
+}

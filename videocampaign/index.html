@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <style>
+
+              .video-js .vjs-modal-dialog {
+                  /* background: rgba(0, 0, 0, 0.8); */
+                  background: linear-gradient(180deg, rgba(4, 4, 4, 0), rgba(255, 255, 255, 0));
+                  overflow: auto;
+              }
+
+              .vjs-icon-cancel, .video-js .vjs-control.vjs-close-button .vjs-icon-placeholder{
+                color: rgba(250, 62, 62, 0.823);
+                zoom: 2;
+              }
+
+              .text-dark{
+                color: black;
+              }
+
+              .videos{
+                text-align: -webkit-center;
+                margin-top: 4%;
+              }
+
+        </style>
+
+        <title>VideoJS</title>
+      </head>
+      
+      <body>
+
+        <h2 class="text-center">Sample Video</h2>
+        <div class="videos">
+              <video
+              autoplay="true"
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="760"
+              height="auto"
+              poster="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
+              autoplay="true"
+              data-setup=''
+            >
+              <source src="./video/sample.mp4" type="video/mp4" />
+              
+            </video>
+         </div>
+
+        
+      
+        <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+                
+
+
+
+                var myPlayer = videojs('my-video');
+                myPlayer.responsive(true);
+                myPlayer.muted(true); // mute the volume
+                myPlayer.volume(0.3); // Set volume to half+++
+
+
+
+                // set up modal
+                
+
+                  function getContent(params) {
+                    var cards = '<div class="row" style="margin:auto;">';
+
+                    cards +=  '<div class="col-md-4">';
+                    cards +='<div class="card animate__animated animate__fadeInDownBig" style="width: auto;">';
+                    cards +=  '<img src="'+params.image+'" class="card-img-top" alt="...">';
+                    cards +=  '<div class="card-body">';
+                    cards +=    '<h5 class="card-title text-dark">'+params.name+'</h5>';
+                    cards +=    '<p class="card-text text-dark">'+params.harga+'</p>';
+                    cards +=    '<a target="_blank" href="'+params.url+'" class="btn btn-primary">Beli Sekarang!</a>';
+                    cards +=  '</div>';
+                    cards += '</div>';
+                    cards +=  '</div>';
+
+                    cards += '</div>';
+
+                    return cards;
+                    
+                  }
+                 function modalsTrigger(params) {
+                  
+                  // get element
+                  var modal_content = getContent(params);
+                  // where the magic happens
+                  var contentEl = document.createElement('div');
+                  // probably better to just build the entire thing via DOM methods
+                  contentEl.innerHTML = modal_content;
+
+                  var ModalDialog = videojs.getComponent('ModalDialog');
+                  var modal = new ModalDialog(myPlayer, {
+                    content: contentEl,
+                    temporary: false
+                  });
+
+                  myPlayer.addChild(modal);
+
+                  modal.on('modalclose',function(){
+                    myPlayer.play();
+                  });
+                  modal.on('modalopen',function(){
+                    myPlayer.play();
+                  });
+                  modal.open();
+                  }
+                  
+                /* Triggered Event*/
+                  var productshow = [
+                        {"name":'Mini White Board Notebook',"harga":"Rp.224.0000","image":"https://www.jointex.co.id/image/produk-649/1606366588-Kamis2910nuboarminilightgrey.jpg","url":"https://www.jointex.co.id/produk/649/mini-white-board-notebook-pocket-edition","time":46},
+                        {"name":'A4 White Board Notebook',"harga":"Rp.422.0000","image":"https://www.jointex.co.id/image/produk-557/1606361791-nuboard-4.jpg","time":57},
+                        {"name":'A3 White Board Notebook',"harga":"Rp.616.0000","image":"https://www.jointex.co.id/image/produk-558/1606364266-NUBOARDCOVER.jpg","url":"https://www.jointex.co.id/produk/558/a3-white-board-notebook","time":60},
+                  ];
+                  
+                    
+                  myPlayer.on('timeupdate', function() {
+                    productshow.forEach(element => {
+                      if (myPlayer.currentTime().toFixed(1) == element.time || myPlayer.currentTime().toFixed(1) == element.time+0.8 ||
+                          myPlayer.currentTime().toFixed(1) == element.time+0.9) {
+                            setTimeout(() => {
+                              modalsTrigger(element)
+                            }, 1000);
+                      }
+                    });
+                    console.log(myPlayer.currentTime());
+                 });
+
+
+
+
+                
+
+
+
+        </script>
+      </body>
+</html>
