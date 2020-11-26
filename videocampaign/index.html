@@ -135,7 +135,7 @@
                     
                   myPlayer.on('timeupdate', function() {
                     productshow.forEach(element => {
-                      if (myPlayer.currentTime().toFixed(1) == element.time || myPlayer.currentTime().toFixed(1) == element.time+0.8 ||
+                      if (myPlayer.currentTime().toFixed(1) == element.time+0.8 ||
                           myPlayer.currentTime().toFixed(1) == element.time+0.9) {
                             setTimeout(() => {
                               modalsTrigger(element)
