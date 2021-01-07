@@ -1,0 +1,29 @@
+﻿/*!
+    ----------------------------------
+
+    * Mobel Furniture Template Theme - RTL Support
+    * Version - 2.2.0
+    * Copyright (c) 2017 ElaThemes.com
+
+    ----------------------------------
+
+    [Table of contents]
+
+    1. Default body styles
+    2. Buttons
+    3. Navigation
+    4. Checkbox
+    5. Login
+    6. Products
+    7. Product
+    8. Blog
+    9. Filters
+    10. History
+    11. Designer
+    12. Footer
+    13. Popup
+    14. Carousel
+
+    ----------------------------------
+ */
+body{direction:rtl;text-align:right !important;}.text-right{text-align:left;}.color-btn{float:right;margin-right:0;margin-left:10px;}.btn.btn-add{right:auto;left:0;}.btn.btn-add:before{left:-150%;}.btn.btn-add .icon{right:auto;left:17px;}nav .search-wrapper .btn-search{left:10px;right:auto;}nav .search-wrapper .search-results .search-result-items ul li a .id{padding-left:7.5px;padding-right:0;}nav .navigation-main .floating-menu>ul>li .navbar-dropdown{text-align:right;}@media(min-width:992px){nav .navigation-main .floating-menu>ul>li:first-child>a{padding-right:0;}nav .navigation-main .floating-menu>ul>li:last-child>a{padding-right:10px;padding-left:10px;}}@media(max-width:991px){nav .navigation-main .floating-menu>ul>li .open-dropdown{right:auto;left:0;margin-left:0;}nav .navigation-main .floating-menu>ul>li .open-dropdown .fa:before{-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg);}}@media(max-width:991px){nav .navigation{direction:ltr;}}nav .navigation-top>ul{direction:ltr;}nav .cart-wrapper .checkout .cart-block>div.price{padding-right:0;padding-left:10px;}nav .cart-wrapper .checkout .cart-block.cart-block-footer>div{float:right;}.checkbox label{padding-left:0;padding-right:35px;}.checkbox input[type="checkbox"],.checkbox input[type="radio"]{display:none;}.checkbox input[type="checkbox"]+label:before,.checkbox input[type="radio"]+label:before{left:auto;right:0;}.login-wrapper .login-block .btn.pull-right{float:left !important;}.products article .info{left:15px;right:auto;}.products article .text .title small{display:inline-block;}@media(min-width:767px){.products article .label{left:auto;right:10px;}}.products article .btn-add{-moz-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}.product .info-box>span{text-align:right;}.blog .pre-header .sort-bar.pull-right{float:left !important;}.blog article .entry .date-wrapper{width:65px;}.blog article .entry .date-wrapper .date{border-left:1px solid #ccc;border-right:0;}.blog aside .box ul li{margin-left:0;margin-right:20px;}.blog aside .box ul li:hover{-moz-transform:translateX(-10px);-ms-transform:translateX(-10px);-o-transform:translateX(-10px);-webkit-transform:translateX(-10px);transform:translateX(-10px);}.blog aside .box.box-posts ul li{margin-right:0;}.blog .blog-info.blog-info-top{text-align:right;}.blog .blog-info .entry .fa{margin-left:5px;}@media(min-width:992px){.filters.filters-top .filter-update{left:0;right:auto;}}.filters .filter-box .title:after{right:auto;left:0;}.filters .filter-box .title span{display:inline-block;}.history .history-title{left:-50px;right:auto;}.designer .name{text-align:inherit;}footer .footer-links .form-newsletter .btn{right:auto;left:0;}.popup-main{text-align:right;}.popup-main .popup-table .popup-cell:nth-child(1){padding-left:0;padding-right:18px;}.popup-main .popup-table .popup-cell:nth-child(2){text-align:left;}.popup-main .popup-table .popup-cell .price{text-align:right;}.owl-carousel{direction:ltr;}
