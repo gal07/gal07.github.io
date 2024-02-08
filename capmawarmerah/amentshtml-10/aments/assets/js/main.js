@@ -95,6 +95,39 @@
     /************************************************
      * Product Slider - Style: Default [4 Grid, 1 Row]
      ***********************************************/
+    $('.product-default-slider-5grids-1row').slick({
+        arrows: true,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        rows: 1,
+        easing: 'ease-out',
+        speed: 1000,
+        prevArrow: '<button type="button" class="default-slider-arrow default-slider-arrow--left prevArrow"><i class="fa fa-angle-left"></button>',
+        nextArrow: '<button type="button"  class="default-slider-arrow default-slider-arrow--right nextArrow"><i class="fa fa-angle-right"></button>',
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
     $('.product-default-slider-4grids-1row').slick({
         arrows: true,
         infinite: false,
@@ -324,7 +357,16 @@
     * Blog - Slider
     ************************************/
    $('.blog-image-slider').slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-left prevArrow"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button type="button"  class="gallery-nav gallery-nav-horizontal gallery-nav-horizontal-right nextArrow"><i class="fa fa-angle-right"></i></button>',
+    });
+
+    $('.banner-image-slider').slick({
+        slidesToShow: 3,
         slidesToScroll: 1,
         focusOnSelect: true,
         arrows: true,

@@ -16982,7 +16982,7 @@ Layout - Header
   width: 100%;
   top: 0;
   background: #333;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 40px 0 rgba(0,0,0,.2);
   animation-name: fadeInDown;
   animation-duration: 900ms;
   animation-timing-function: cubic-bezier(0.2, 1, 0.22, 1);
@@ -17022,7 +17022,7 @@ Layout - Header
 }
 .main-menu nav > ul > li > a:hover, .main-menu nav > ul > li > a.active {
   background: #ea1c26;
-  color: #FFF;
+  color: #FFF !important;
 }
 
 .sub-menu > li > a,
