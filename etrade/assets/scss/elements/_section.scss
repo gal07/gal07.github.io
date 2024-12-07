@@ -1,0 +1,79 @@
+
+/*-------------------------
+Section Heading  
+--------------------------*/
+.title-highlighter {
+    font-size: 14px;
+    font-weight: var(--s-bold);
+    line-height: 1;
+    display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+    i {
+      height: 24px;
+      width: 24px;
+      line-height: 24px;
+      border-radius: 50%;
+      font-size: 12px;
+      text-align: center;
+      margin-right: 10px;
+      
+    }
+	&.highlighter-primary {
+		color: var(--light-primary);
+		i {
+		background-color: var(--light-primary);
+		color: var(--color-white);
+		}
+	}
+	&.highlighter-primary2 {
+		color: var(--color-primary);
+		i {
+		background-color: var(--color-primary);
+		color: var(--color-white);
+		}
+	}
+	&.highlighter-secondary {
+		color: var(--color-secondary);
+		i {
+			background-color: var(--color-secondary);
+			color: var(--color-white);
+		}
+	}
+}
+
+.section-title-wrapper {
+   margin-bottom: 40px;
+   padding-right: 100px;
+   @media only screen and (max-width: 767px) {
+	   margin-bottom: 30px;
+	   
+   }
+   &.section-title-center {
+	   text-align: center;
+	   padding-right: 0;
+	   .title-highlighter {
+		   justify-content: center;
+	   }
+   }
+}
+
+.flash-sale-section {
+	margin-bottom: 60px;
+	@media #{$sm-layout} {
+		margin-bottom: 50px;
+	}
+	.section-title-wrapper {
+		margin-bottom: 0;
+		@media only screen and (max-width: 991px) {
+			padding-right: 80px;
+		}
+		@media #{$sm-layout} {
+			padding-right: 100px;
+			margin-bottom: 30px;
+		}
+		.title {
+			margin-bottom: 0;
+		}
+	}
+}

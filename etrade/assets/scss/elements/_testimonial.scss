@@ -1,0 +1,114 @@
+/*-------------------------
+Testimonial Style
+--------------------------*/
+.testimonial-style-one-wrapper {
+    .slide-arrow {
+        background-color: var(--color-white);
+    }
+    .slick-slide {
+        // transition: all .3s;
+    }
+    .slick-current.slick-active + .slick-active {
+        margin-top: 30px;
+    }
+}
+.testimonial-style-one {
+    .review-speech {
+        background-color: var(--color-white);
+        border-radius: 10px;
+        padding: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        box-shadow: 0 16px 32px 0 rgba(0,0,0,.04);
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 25px solid var(--color-white);
+            border-right: 50px solid transparent;
+            position: absolute;
+            bottom: -25px;
+            left: 100px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    .media {
+        display: flex;
+        align-items: center;
+        .thumbnail {
+            margin-right: 20px;
+            img {
+                border-radius: 6px;
+            }
+        }
+        .media-body {
+            flex: 1;
+            .designation {
+                font-size: 14px;
+            }
+            .title {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.testimonial-style-two-wrapper {
+    margin-bottom: 130px !important;
+    .thumbnail {
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid var(--color-tertiary);
+        padding: 8px;
+        margin-bottom: 25px;
+        transition: var(--transition);
+        position: relative;
+        z-index: 1;
+        margin: 6px;
+        &:before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: var(--color-white);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transform: scale(1);
+            transition: .3s;
+        }
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .thumb-content {
+        .item-title {
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 24px;
+            color: #292930;
+            @media #{$sm-layout} {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .slick-single-layout {
+        &:hover {
+            .thumbnail {
+                &:before {
+                    transform: scale(1.2);
+                }
+                background-color: var(--color-tertiary);
+            }
+        }
+    }
+}
