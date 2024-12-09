@@ -1,0 +1,293 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: booking-main CSS
+02: customer-info CSS
+03: order-info CSS
+  3.1: order-item
+  3.2: inputs
+  3.3: order-info room-type
+  3.4: price
+  3.5: promo price
+  3.6: payment-method
+04: book-hotel CSS
+05: order success modal CSS
+06: dark-mode CSS
+
+==================================================*/
+/*===========================================================
+01: booking-main CSS
+=============================================================*/
+/* section -title */
+.booking-main .title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.booking-main .sub-title h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+02: customer-info CSS
+=============================================================*/
+.customer-info ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.customer-info ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.customer-info ul li p:last-child {
+  color: var(--primary-text);
+}
+
+/*===========================================================
+03: order-info CSS
+=============================================================*/
+/* 3.1: order-item */
+.order-info .item .image {
+  width: 107px;
+  height: 82px;
+}
+
+.order-info .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.order-info .content .rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.order-info .content .rating span {
+  color: var(--secondary-text);
+}
+
+.order-info .content .location {
+  color: var(--gray-90);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* 3.2: inputs */
+.order-info h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.order-info .input-field {
+  border-radius: 24px;
+}
+
+.order-info .border-b {
+  border-bottom: 1px solid var(--additional2);
+}
+
+.order-info .border-t {
+  border-top: 1px solid var(--additional2);
+}
+
+/* 3.3: order-info room-type */
+.order-info .room-type p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.order-info .room-type p:last-child {
+  color: var(--primary-text);
+}
+
+/* 3.4: price */
+.order-info .price p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.order-info .price p span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+
+/* 3.5: promo price */
+.order-info .promo-price p span {
+  color: var(--alert);
+}
+
+.order-info .promo-code .input-area {
+  padding: 8px 10px;
+  border-radius: 100px;
+  background: var(--additional4);
+}
+
+.order-info .promo-code input {
+  background: transparent;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.order-info .promo-code input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-60);
+}
+
+.order-info .promo-code button {
+  line-height: 30px;
+  border-radius: 32px;
+  background: var(--primary);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 36px;
+}
+
+/* 3.6: payment-method */
+.payment-method .pay-card-container {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 50px;
+  cursor: pointer;
+  height: 67px;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  background: #FEFEFE;
+  color: var(--primary-text);
+  border: 1px solid var(--additional2);
+  border-radius: 10px;
+}
+
+.payment-method .pay-card-container:has(input:checked) {
+  border-color: var(--primary);
+}
+
+.payment-method .pay-card-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.payment-method .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--gray-30);
+}
+
+.payment-method .pay-card-container input:checked~.checkmark {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.payment-method .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background: url('../svg/check-white.svg') no-repeat center;
+  background-size: contain;
+}
+
+.payment-method .pay-card-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/*===========================================================
+04: book-hotel CSS
+=============================================================*/
+.checkout-hotel .details-body,
+.book-hotel .details-body {
+  padding: 0 24px 32px 24px;
+}
+
+/* search */
+.search .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.search p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+05: order success modal CSS
+=============================================================*/
+.orderSuccessModal .modal-body {
+  padding: 28px 26px;
+}
+
+.orderSuccessModal .modal-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.orderSuccessModal .modal-body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+}
+
+/*===========================================================
+06: dark-mode CSS
+=============================================================*/
+.dark-mode .booking-main .title h4,
+.dark-mode .customer-info ul li p:last-child,
+.dark-mode .order-info .content h4,
+.dark-mode .order-info .price p span,
+.dark-mode .booking-main .sub-title h4,
+.dark-mode .order-info .promo-code input,
+.dark-mode .orderSuccessModal .modal-body h3 {
+  color: white;
+}
+
+.dark-mode .order-info .content .location {
+  color: var(--secondary-text);
+}
+
+.dark-mode .payment-method .pay-card-container {
+  background: var(--gray-90);
+  color: white;
+}
+
+.dark-mode .order-info .promo-code .input-area {
+  background: var(--gray-80);
+}

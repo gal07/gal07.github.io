@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: rgb(2, 98, 219);
+  --heading-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --text-color-2: rgb(62, 62, 62);
+  --btn-bg: rgb(255, 153, 50);
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Hind";
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    240deg,
+    rgb(214, 214, 213) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  position: relative;
+  display: grid;
+  align-items: center;
+  padding: 50px 0;
+}
+.PopUp {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+.wrapper {
+  min-height: 750px;
+  width: 100%;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 75px 0 50px 0;
+
+  position: relative;
+}
+.popImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.popImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popInner {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.discountHeading {
+  font-size: 75px;
+  color: var(--heading-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.mainHeading {
+  font-size: 50px;
+  color: var(--heading-color);
+  font-weight: bold;
+  line-height: 1;
+}
+.warning {
+  font-size: 19px;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+.countDown {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px auto;
+  margin-top: 20px;
+  font-size: 40px;
+  color: var(--heading-color);
+  font-weight: bold;
+}
+.timeSingle {
+  text-align: center;
+  font-size: 19px;
+  color: var(--heading-color);
+  font-weight: bold;
+}
+.timeSingle .time {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--heading-color);
+  font-size: 25px;
+  color: var(--text-color);
+  line-height: 78px;
+  margin-bottom: 10px;
+}
+.countDown span {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--heading-color);
+  margin-bottom: 35px;
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+form input {
+  border-radius: 10px;
+  background-color: var(--heading-color);
+  border: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 13px;
+}
+form input:focus {
+  outline: none;
+  outline: solid 2px var(--btn-bg);
+}
+::placeholder {
+  font-size: 15px;
+  font-weight: normal;
+}
+form button {
+  background-color: var(--btn-bg);
+  border-radius: 10px;
+  height: 70px;
+  width: 100%;
+  border: 0;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+.cancel {
+  font-size: 19px;
+  color: var(--heading-color);
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 55px;
+  text-decoration: underline;
+}
+.close {
+  border-radius: 50%;
+  background-color: var(--heading-color);
+  width: 73px;
+  height: 73px;
+  border: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--text-color);
+  position: absolute;
+  top: -23px;
+  right: -23px;
+}

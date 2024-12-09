@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root
+{
+    --primary-color: rgb(225, 4, 25);
+    --secondary-color: rgb(224,243,251);
+    --heading-color: rgb(21, 21, 21);
+    --text-color: rgb(30, 30, 30);
+    --text-color-2: rgb(36, 47, 81);
+    --bg-color: rgb(255,255,255);
+    --btn-color: rgb(255,255,255);
+    --btn-bg-color: rgb(21, 21, 21);
+}
+body
+{
+    width: 100%;
+    height: auto;
+    font-family: 'Unbounded', cursive;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6, p
+{
+    margin-bottom: 0;
+}
+a
+{
+    text-decoration: none;
+    color: auto;
+}
+main 
+{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: relative;
+    display: grid;
+}
+.sideArea
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.avatarImg
+{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.avatarImg img
+{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.imgShape
+{
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 78%;
+    background-color: var(--secondary-color);
+    z-index: 1;
+    transform: skew(0turn, 355deg);
+}
+.sideArea .spring
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: 1000000;
+    bottom: 22%;
+    right: 63px;
+    filter: brightness(0) saturate(100%) invert(23%) sepia(59%) saturate(5663%) hue-rotate(343deg) brightness(82%) contrast(121%);
+}
+.Join
+{
+    background-color: var(--bg-color);
+    width: 48%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: 19%;
+    transform: translate(-50%,0);
+    height: 90px;
+    z-index: 100;
+    border-radius: 10px;
+    padding: 18px 30px;
+}
+.Join h4
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+
+
+}
+.Join h4 i
+{
+    color: var(--btn-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    min-width: 35px;
+    height: 35px;
+    font-size: 12px;
+    display: grid;
+    place-content: center;
+
+}
+.JoinBar
+{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 8px;
+}
+.fill
+{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(241,241,245);
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+.fill .filled
+{
+    width: 75%;
+    background-color: var(--primary-color);
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+
+
+
+#clients
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.carousel-item img
+{
+    width: calc(24% - 60px);
+    height: auto;
+    margin: 0 30px;
+}
+
+
+
+
+
+
+
+#stepForm
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    background-image: url(../images/form-bg.png);
+    background-size: contain;
+}
+.wrapper
+{
+    padding: 50px 0;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+}
+.tag
+{
+    background-color: rgb(236, 248, 253);
+    width: max-content;
+    padding: 0 10px;
+    height: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    line-height: 40px;
+    font-size: 15px;
+    color: var(--text-color-2);
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.main-heading
+{
+    font-size: 45px;
+    color: var(--heading-color);
+    font-weight: bold;  
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+
+.radioField
+{
+    width: 80%;
+    height: 90px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    padding: 0 60px;
+    margin-bottom: 25px;
+}
+.radioField label
+{
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+}
+.radioField input
+{
+    -webkit-appearance: none;
+
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform-style: preserve-3d
+}
+.radioField input::before
+{
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    width: 0;
+    height: calc(100% + 6px);
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--primary-color) 50%, var(--bg-color) 90%);
+    z-index: 1;
+    transform: translateZ(-1px);
+    transition: 0.5s;
+}
+.radioField input:checked::before
+{
+    width: calc(100% + 6px);
+}
+.radioField button
+{
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 63px;
+    height: 63px;
+    border: 0;
+
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(0,-50%) translateX(-100px);
+    opacity: 0;
+    font-size: 24px;
+    color: var(--btn-color);
+    z-index: 1000;
+    transition: 0.5s;
+}
+.radioField:hover button
+{
+    opacity: 1;
+    transform: translate(0,-50%) translateX(0);
+}
+.radioField input:checked~button
+{
+    opacity: 1;
+    transform: translate(0,-50%) translateX(0);
+}
+.voteNow
+{
+    background-color: var(--btn-bg-color);
+    border-radius: 50px;
+    margin-top: 25px;
+    padding: 0 50px;
+    height: 74px;  
+    font-size: 17px;
+    color: var(--btn-color);
+    font-weight: bold;  
+    border: 0;
+    overflow: hidden;
+    width: max-content;
+    position: relative;
+}
+
+.voteNow span
+{
+    position: relative;
+}
+.voteNow::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    clip-path: circle(0 at 50% 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+.voteNow:hover::before
+{
+    clip-path: circle(70.7% at 50% 50%);
+}
+
+
+.pollResult
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-image: url(../images/resultBg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+}
+.pollResult::before
+{
+    content: "";
+    background-image: url(../images/form-bg.png);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.resultTxt
+{
+    text-align: center;
+    position: relative;
+}
+.resultTxt > *
+{
+    margin-bottom: 10px;
+}
+.resultTxt span
+{
+    font-size: 15px;
+    color: var(--btn-bg-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    line-height: normal;
+}
+.resultTxt h3
+{
+    font-size: 45px;
+    color: var(--btn-bg-color);
+    font-weight: bold;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.resultSingle
+{
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.resultSingle .circle
+{
+    width: 275px;
+    height: 275px;
+}
+.circle .circle1
+{
+    stroke-width: 4px;
+    fill: var(--bg-color);
+    stroke: transparent;
+
+}
+.circle .circle2
+{
+    stroke-width: 4px;
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-dasharray: 829;
+    stroke-dashoffset: 829;
+    transition: 1s ease-in-out;
+}
+.resultSingle .percentage
+{
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 73px;
+    height: 73px; 
+    display: grid;
+    place-content: center;
+    font-size: 15px;
+    color: var(--bg-color);
+    font-weight: bold;  
+
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%,0);
+}
+
+.resultSingle .resultHeading
+{
+    font-size: 21px;
+    color: var(--heading-color);
+    font-weight: bold;
+    margin-top: 50px;
+}
+  
+
+
+.loading
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    opacity: 0.8;
+    z-index: 1000;
+    display: grid;
+    place-content: center;
+}
+
+
+#error
+{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100000000;
+}

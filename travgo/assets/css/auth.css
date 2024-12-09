@@ -1,0 +1,347 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: auth CSS
+02: login-success modal CSS
+03: language modal CSS
+04: dark-mode CSS
+
+==================================================*/
+
+/*===========================================================
+01: auth CSS
+=============================================================*/
+.auth-main {
+  margin-top: 55px;
+}
+
+.auth.signin {
+  background: var(--primary);
+}
+
+.auth .heading {
+  padding: 32px 16px 60px 16px;
+  text-align: center;
+}
+
+.auth.signin-email .heading {
+  padding: 0 16px 32px 16px;
+}
+
+.auth .heading h2 {
+  padding-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.auth.signin .heading h2 {
+  color: white;
+}
+
+.auth .heading p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-80);
+}
+
+.auth .heading p span {
+  color: var(--primary-text);
+}
+
+.auth.signin .heading p {
+  color: white;
+}
+
+.auth .page-title button {
+  height: 48px;
+  width: 48px;
+  background: var(--gray-20);
+}
+
+.auth .page-title h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-text);
+}
+
+.auth .form-area {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.auth .auth-form {
+  height: 100%;
+  padding: 45px 24px 90px 24px;
+  background: white;
+}
+
+.auth.signin-email .auth-form {
+  padding-top: 0;
+}
+
+.auth .auth-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-70);
+  text-align: left;
+}
+
+.auth .auth-form .eye-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+
+.auth .auth-form .checkbox-label {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.auth .auth-form .input-psswd {
+  padding-right: 48px;
+}
+
+.auth .auth-form .input-field-checkbox {
+  accent-color: var(--primary);
+}
+
+.auth .auth-form .forgot-pass {
+  color: var(--alert);
+}
+
+.auth .auth-form .btn-primary {
+  margin-top: 32px;
+}
+
+.auth .divider {
+  margin: 32px 0;
+}
+
+.auth .divider span {
+  width: 62px;
+  height: 1px;
+  background: var(--additional1);
+}
+
+.auth .divider small {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--additional1);
+}
+
+.auth .social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 24px;
+  padding: 15px;
+  border: 1px solid var(--primary-text);
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.auth h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--additional1);
+  text-align: center;
+  margin-top: 66px;
+}
+
+.auth h6 button,
+.auth h6 a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.auth .digit-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.auth .digit-group input {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--primary);
+  border-radius: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-text);
+  caret-color: var(--primary);
+}
+
+.auth.enter-otp .auth-form .btn-primary {
+  margin-top: 40px;
+}
+
+.select-lang .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+
+/*===========================================================
+02: login-success modal CSS
+=============================================================*/
+.loginSuccessModal .modal-content {
+  border-radius: 16px;
+  padding: 28px 10px;
+}
+
+.loginSuccessModal .modal-body {
+  padding: 0 16px;
+}
+
+.loginSuccessModal .modal-body img {
+  margin-bottom: 40px;
+}
+
+.loginSuccessModal .modal-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.loginSuccessModal .modal-body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+  padding-top: 8px;
+}
+
+.loginSuccessModal .modal-body button {
+  margin-top: 30px;
+}
+
+/*===========================================================
+03: language modal CSS
+=============================================================*/
+.languageModal ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.languageModal .lang-container {
+  display: block;
+  position: relative;
+  padding: 12px 16px 12px 56px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  background: var(--secondary);
+  color: var(--primary-text);
+  border: 1px solid var(--gray-30);
+  border-radius: 24px;
+}
+
+.languageModal .lang-container:has(input:checked) {
+  border-color: var(--primary);
+}
+
+.languageModal .lang-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.languageModal .checkmark {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--gray-30);
+}
+
+.languageModal .lang-container input:checked~.checkmark {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.languageModal .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background: url('../svg/check-white.svg') no-repeat center;
+  background-size: contain;
+}
+
+.languageModal .lang-container input:checked~.checkmark:after {
+  display: block;
+}
+
+.languageModal .modal-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 16px 24px 32px 24px;
+  border: 0;
+}
+
+.languageModal .modal-header .modal-close {
+  background: rgba(18, 18, 18, 0.08);
+  height: 48px;
+  width: 48px;
+}
+
+.languageModal .modal-header .modal-title {
+  grid-column: span 4;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.languageModal .modal-body {
+  padding: 0 24px 24px 24px;
+}
+
+/*===========================================================
+04: dark-mode CSS
+=============================================================*/
+.dark-mode .auth .page-title h3,
+.dark-mode .auth .heading h2,
+.dark-mode .loginSuccessModal .modal-body h3,
+.dark-mode .languageModal .modal-header .modal-title {
+  color: white;
+}
+
+.dark-mode .languageModal .modal-header .modal-close,
+.dark-mode .auth .page-title button {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .languageModal .modal-header .modal-close img,
+.dark-mode .auth .page-title button img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .languageModal .lang-container,
+.dark-mode .auth .digit-group input {
+  background: var(--gray-80);
+  color: white;
+  caret-color: white;
+}

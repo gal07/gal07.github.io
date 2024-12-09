@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travgo</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+
+  <!-- datepicker -->
+  <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css">
+
+  <!-- jquery ui -->
+  <link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+
+  <!-- date-time-picker -->
+  <link rel="stylesheet" href="../../assets/css/datetimepicker.css">
+
+  <!-- common -->
+  <link rel="stylesheet" href="../../assets/css/common.css">
+
+  <!-- animations -->
+  <link rel="stylesheet" href="../../assets/css/animations.css">
+
+  <!-- welcome -->
+  <link rel="stylesheet" href="../../assets/css/welcome.css">
+
+  <!-- profile -->
+  <link rel="stylesheet" href="../../assets/css/profile.css">
+</head>
+<body class="scrollbar-hidden">
+  <!-- splash-screen start -->
+  <section id="preloader" class="spalsh-screen">
+    <div class="circle text-center">
+      <div>
+        <h1>Travgo</h1>
+        <p>Discover Your Destinition</p>
+      </div>
+    </div>
+    <div class="loader-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  <!-- splash-screen end -->
+
+  <main>
+    <!-- page-title -->
+    <div class="page-title">
+      <button type="button" class="back-btn back-page-btn d-flex align-items-center justify-content-center rounded-full">
+        <img src="../../assets/svg/arrow-left-black.svg" alt="arrow">
+      </button>
+      <h3 class="main-title">Profile</h3>
+    </div>
+
+    <!-- profile-image start -->
+    <section class="profile-image py-16">
+      <div class="image">
+        <img src="../../assets/images/profile/avatar.png" alt="avatar" class="w-100 h-100 object-fit-cover img-fluid rounded-full">
+        <button type="button" class="d-flex align-items-center justify-content-center rounded-full" data-bs-toggle="modal" data-bs-target="#editImageModal">
+          <img src="../../assets/svg/edit-white.svg" alt="icon">
+        </button>
+      </div>
+    </section>
+    <!-- profile-image end -->
+
+    <!-- profile-info start -->
+    <section class="user-info px-24">
+      <div class="mb-16">
+        <label class="input-label">First Name</label>
+        <input type="text" placeholder="First Name" value="Andy" class="input">
+      </div>
+      <div class="mb-16">
+        <label class="input-label">Last Name</label>
+        <input type="text" placeholder="Last Name" value="Lexsian" class="input">
+      </div>
+      <div class="mb-16">
+        <label class="input-label">E-mail</label>
+        <input type="email" placeholder="E-mail" value="example@mail.com" class="input">
+      </div>
+      <div class="mb-16">
+        <label class="input-label">Date of Birth</label>
+        <div class="dob position-relative d-flex align-items-center">
+          <input type="text" placeholder="Date of Birth" class="input" id="dobdate" value="2000/11/11">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#dateOfBirthModal">
+            <img src="../../assets/svg/calendar-blue.svg" alt="icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="mb-16">
+        <label class="input-label">Gender</label>
+        <div class="grid">
+          <label for="male" class="custom-check-container gender-container">
+            <input type="radio" name="gender" id="male" checked>
+            Male
+            <span class="checkmark"></span>
+          </label>
+          <label for="female" class="custom-check-container gender-container">
+            <input type="radio" name="gender" id="female">
+            Female
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="input-label">Location</label>
+        <textarea id="myTextarea" placeholder="Location" class="input"></textarea>
+      </div>
+    </section>
+    <!-- profile-info end -->
+
+    <!-- save-btn start -->
+    <div class="save-btn mt-64 px-24 mb-32">
+      <a href="user-profile.html" class="btn-primary">Save Changes</a>
+    </div>
+  </main>
+
+  <!-- date of birth modal start -->
+  <div class="modal fade dateOfBirthModal dateModal modalBg" id="dateOfBirthModal" tabindex="-1" aria-labelledby="dateOfBirthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h1 class="modal-title" id="dateOfBirthModalLabel">Date Of Birth</h1>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="dateOfBirthDateInput"/>
+
+          <div class="btns d-flex align-items-center gap-16">
+            <button type="button" class="radius-20 w-50 cancel-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            <button type="button" class="radius-20 w-50 apply-btn" data-bs-dismiss="modal" aria-label="Close">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- date of birth modal end -->
+
+  <!-- edit-profile modal start -->
+  <div class="modal fade editImageModal modalBg" id="editImageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h1>Change your picture</h1>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <button type="button" class="d-flex align-items-center gap-16 radius-8 action-btn">
+                <img src="../../assets/svg/camera-fill-black.svg" alt="icon" class="shrink-0">
+                Take a photo
+              </button>
+            </li>
+            <li>
+              <label for="choose-file" class="d-block w-100">
+                <input type="file" id="choose-file">
+                <span class="d-flex align-items-center gap-16 radius-8 action-btn">
+                  <img src="../../assets/svg/file-fill-black.svg" alt="icon" class="shrink-0">
+                  Choose from your file
+                </span>
+              </label>
+            </li>
+            <li>
+              <button type="button" class="d-flex align-items-center gap-16 radius-8 action-btn delete">
+                <img src="../../assets/svg/trash-fill-red.svg" alt="icon" class="shrink-0">
+                Delete Photo
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- edit-profile modal end -->
+
+  <!-- jquery -->
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jquery ui -->
+  <script src="../../assets/js/jquery-ui.js"></script>
+
+  <!-- mixitup -->
+  <script src="../../assets/js/mixitup.min.js"></script>
+
+  <!-- gasp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+  <!-- draggable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
+
+  <!-- swiper -->
+  <script src="../../assets/js/swiper-bundle.min.js"></script>
+
+  <!-- datepicker -->
+  <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+
+  <!-- google-map api -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCodvr4TmsTJdYPjs_5PWLPTNLA9uA4iq8&callback=initMap" type="text/javascript"></script>
+
+  <!-- script -->
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

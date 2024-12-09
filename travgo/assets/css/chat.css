@@ -1,0 +1,431 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: message CSS
+02: chat CSS
+03: inbox CSS
+04: type-msg CSS
+05: video-call CSS
+06: action CSS
+07: audio-call CSS
+08: dark-mode CSS
+
+==================================================*/
+/*===========================================================
+01: message CSS
+=============================================================*/
+.message .single-chat .image {
+  width: 56px;
+  height: 56px;
+}
+
+.message-main .message-search .input-field{
+  padding: 0;
+}
+
+.message .single-chat .single-main {
+  padding: 16px 24px;
+  background: white;
+}
+
+.message .single-chat .single-main.active {
+  box-shadow: 0px 4px 32px 0px rgba(31, 44, 55, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+.message .single-chat .image .active-dot {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+  background: var(--success);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.message .single-chat h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.message .single-chat p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+  padding-top: 4px;
+}
+
+.message .single-chat h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--additional1);
+}
+
+.message .single-chat span {
+  height: 24px;
+  width: 24px;
+  background: var(--primary);
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.message .single-chat .trash {
+  width: 84px;
+  height: 88px;
+  background: #FFF5F5;
+  position: absolute;
+  top: 0;
+  right: 24px;
+  z-index: -1;
+}
+
+.add-chat {
+  height: 50px;
+  width: 50px;
+  background: var(--primary-text);
+  filter: drop-shadow(5px 5px 40px rgba(0, 0, 0, 0.25));
+  position: fixed;
+  right: 24px;
+  bottom: 80px;
+  z-index: 90;
+}
+
+/*===========================================================
+02: chat CSS
+=============================================================*/
+.chat .page-title .more-btn {
+  height: 48px;
+  width: 48px;
+}
+
+.chat .dropdown-menu {
+  border: 0;
+  padding: 16px;
+  filter: drop-shadow(0px 0px 64px rgba(23, 23, 37, 0.12));
+  background: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+.chat .dropdown-menu::after {
+  content: '';
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 4px;
+  position: absolute;
+  right: 16px;
+  top: -4px;
+  transform: rotate(45deg);
+}
+
+.chat .dropdown-menu li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.chat .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-text);
+  padding: 0;
+}
+
+.chat .dropdown-menu li:last-child .dropdown-item {
+  color: var(--primary);
+}
+
+/*===========================================================
+03: inbox CSS
+=============================================================*/
+.inbox {
+  height: calc(100vh - 214px);
+  overflow-y: auto;
+}
+
+.inbox ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inbox .avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.inbox .avatar .active-dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  background: var(--primary);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.inbox .text {
+  max-width: 203px;
+}
+
+.inbox .text .msg {
+  width: 100%;
+  padding: 12px;
+  background: #F6F6F6;
+  border-radius: 24px 24px 24px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+}
+
+.inbox .right .text .msg {
+  background: var(--primary);
+  border-radius: 24px 24px 0 24px;
+  color: white;
+  text-align: right;
+}
+
+.inbox .text .time {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--gray-60);
+}
+
+.inbox .right .text .time {
+  text-align: end;
+}
+
+/*===========================================================
+04: type-msg CSS
+=============================================================*/
+.type-msg {
+  padding: 24px 24px 36px 24px;
+}
+
+.type-msg .type-main {
+  background: var(--secondary);
+  border: 1px solid var(--additional2);
+  border-radius: 32px;
+  padding: 7px 10px 7px 16px;
+}
+
+.type-msg .input-file-label input {
+  opacity: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.type-msg .input-file-label span {
+  height: 32px;
+  width: 32px;
+  background: white;
+}
+
+.type-msg .input-msg {
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  color: var(--primary-text);
+  padding-left: 14px;
+  border-left: 1px solid var(--additional2);
+  background: transparent;
+}
+
+.type-msg .input-msg::placeholder {
+  font-size: 12px;
+  color: var(--gray-80);
+}
+
+.type-msg button {
+  height: 42px;
+  width: 42px;
+  background: var(--primary);
+}
+
+/*===========================================================
+05: video-call CSS
+=============================================================*/
+.video-call{
+  height: calc(100vh - 92px);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-call .img-main{
+  height: 50%;
+  width: 100%;
+}
+
+.call-info{
+  position: absolute;
+  bottom: 26px;
+  left: 24px;
+  right: 24px;
+  z-index: 20;
+}
+
+.call-info .call-info-main{
+  background: var(--primary-text);
+  border-radius: 50px;
+  padding: 12px 24px;
+}
+
+.call-info .image{
+  height: 45px;
+  width: 45px;
+}
+
+.call-info h5{
+  font-size: 14px;
+  font-weight: 700;
+  color: #FEFEFE;
+}
+
+.call-info p{
+  font-size: 12px;
+  color: var(--gray-40);
+}
+
+.call-info .dot{
+  height: 9px;
+  width: 9px;
+  background: var(--alert);
+}
+
+.call-info .time{
+  font-weight: 500;
+  color: var(--gray-30);
+}
+
+/*===========================================================
+06: action CSS
+=============================================================*/
+.action{
+  padding: 22px 46px;
+}
+
+.action ul a,
+.action ul button{
+  height: 48px;
+  width: 48px;
+  background: var(--gray-30);
+}
+
+.action ul a.call,
+.action ul button.call{
+  background: var(--alert);
+}
+
+/*===========================================================
+07: audio-call CSS
+=============================================================*/
+.audio-call{
+  height: 100vh;
+  width: 100%;
+}
+
+.audio-call .call-info{
+  bottom: 40px;
+}
+
+.audio-call .page-title{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: transparent;
+}
+
+.audio-call .page-title .back-btn{
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.audio-call .call-info a,
+.audio-call .call-info button{
+  height: 60px;
+  width: 60px;
+  background: white;
+  position: relative;
+  z-index: 20;
+}
+
+.audio-call .call-info a.call,
+.audio-call .call-info button.call{
+  height: 70px;
+  width: 70px;
+  background: var(--alert);
+  margin: auto;
+}
+
+.audio-call .call-info .btns{
+  margin-top: -12px;
+  margin-bottom: 32px;
+}
+
+/*===========================================================
+08: dark-mode CSS
+=============================================================*/
+.dark-mode .message .single-chat .single-main{
+  background: var(--gray-100);
+}
+
+.dark-mode .message .single-chat h4,
+.dark-mode .type-msg .input-msg ,
+.dark-mode .chat .dropdown-item{
+  color: white;
+}
+
+.dark-mode .message .single-chat p,
+.dark-mode .message .single-chat h5,
+.dark-mode .type-msg .input-msg::placeholder{
+  color: var(--gray-40);
+}
+
+.dark-mode .add-chat,
+.dark-mode .type-msg .type-main,
+.dark-mode .chat .dropdown-menu,
+.dark-mode .chat .dropdown-menu::after,
+.dark-mode .action ul a, 
+.dark-mode .action ul button{
+  background: var(--gray-80);
+}
+
+.dark-mode .inbox .text .msg{
+  background: var(--gray-90);
+  color: white;
+}
+
+.dark-mode .inbox .right .text .msg {
+  background: var(--primary);
+}
+
+.dark-mode .chat .page-title .more-btn img,
+.dark-mode .chat .dropdown-menu li:first-child .dropdown-item img,
+.dark-mode .action ul a img, 
+.dark-mode .action ul button img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .action ul a.call, 
+.dark-mode .action ul button.call {
+  background: var(--alert);
+}

@@ -1,0 +1,246 @@
+/*L-desktop*/
+
+@media (min-device-width: 1600px) {
+}
+
+/*L-laptops*/
+@media (max-width: 1440px) {
+  .bar-inner {
+    width: 35%;
+  }
+}
+
+/*laptops/tablets*/
+@media (max-width: 1024px) {
+  .start-text {
+    width: 75%;
+  }
+  .step-bar {
+    margin-right: 20px;
+  }
+  .bar-inner {
+    width: 30%;
+  }
+  .complete-rate {
+    margin-left: 30px;
+  }
+  .table-single {
+    border-radius: 10px;
+  }
+  #step2,
+  #step3 {
+    width: 80%;
+  }
+  .step-width {
+    width: 100%;
+  }
+  .table-single .table-heading h3 {
+    font-size: 20px;
+  }
+  .table-price {
+    font-size: 16px;
+  }
+  .table-single p {
+    font-size: 18px;
+  }
+  .next-prev button {
+    padding: 0 60px;
+  }
+  .step-width-2 {
+    width: 100%;
+  }
+  #step5 {
+    margin-left: 0;
+  }
+  .steps .label-head {
+    font-size: 30px;
+  }
+  .steps .label-head::before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+/*tablets*/
+@media (max-width: 768px) {
+  .tab-100 {
+    width: 100%;
+  }
+  .start.home,
+  .startForm {
+    width: 100%;
+  }
+  .tab-50 {
+    width: 50%;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  .start .start-img {
+    width: 100%;
+  }
+  .start .start-img img {
+    width: 50%;
+  }
+  .start-text h2 {
+    font-size: 30px;
+  }
+  .steps #step1 {
+    width: 100%;
+  }
+  .start-text p {
+    font-size: 20px;
+  }
+  .start-btn {
+    padding: 0px 35px;
+    height: 75px;
+    font-size: 20px;
+  }
+  footer {
+    left: 0;
+    bottom: 0;
+  }
+  .step-bar {
+    margin: 20px;
+  }
+  .step-bar .bar-inner {
+    width: 100%;
+  }
+  .step-bar .complete-rate {
+    display: none;
+  }
+  .next-prev {
+    width: 100%;
+    bottom: 68px;
+  }
+  .next-prev button {
+    margin-right: 0;
+  }
+  .form-inner {
+    padding: 50px;
+    padding-bottom: 100px;
+  }
+  #step2,
+  #step3 {
+    width: 100%;
+  }
+  .table-single {
+    margin-bottom: 20px;
+  }
+  #step5 {
+    margin-bottom: 30px;
+  }
+  .order-c {
+    order: 2;
+  }
+
+  .svgBGLast,
+  .svgBG {
+    display: none;
+  }
+  header {
+    padding: 30px;
+  }
+}
+
+/*Smart phone*/
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 25px;
+  }
+  .start .start-img {
+    width: 100%;
+  }
+  .start .start-img img {
+    width: 100%;
+  }
+  .start-text {
+    width: 100%;
+  }
+  .start-text h2 {
+    font-size: 20px;
+  }
+  .start-text p {
+    font-size: 12px;
+  }
+  .start-btn {
+    padding: 0px 20px;
+    height: 50px;
+    font-size: 15px;
+  }
+  footer {
+    left: 0;
+    bottom: 0;
+  }
+  .step-bar {
+    margin: 20px;
+  }
+  .step-bar .bar-inner {
+    width: 100%;
+  }
+  .step-bar .complete-rate {
+    display: none;
+  }
+  .next-prev {
+    width: 100%;
+    bottom: 68px;
+  }
+
+  .form-inner {
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .next-prev button {
+    width: 50%;
+    margin-right: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  .order-c {
+    order: 2;
+  }
+  .steps .label-head {
+    font-size: 18px;
+  }
+  .steps .label-head::before {
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+    line-height: 35px;
+  }
+  #step2,
+  #step3 {
+    width: 100%;
+  }
+  .field-wrap {
+    width: 100%;
+  }
+  .radio-field label {
+    font-size: 20px;
+  }
+  .radio-field label::before {
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+  }
+  .table-single {
+    margin-bottom: 20px;
+  }
+  #step5 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    width: 100%;
+  }
+  .sm-100 {
+    width: 100%;
+  }
+}

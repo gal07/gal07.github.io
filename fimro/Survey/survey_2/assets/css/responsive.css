@@ -1,0 +1,158 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+  .sideHeading {
+    font-size: 60px;
+  }
+  .sideDesc {
+    font-size: 25px;
+  }
+  .sideContent {
+    margin-right: 20px;
+    width: 90%;
+  }
+  .mainHeading {
+    font-size: 35px;
+  }
+  .wrapper {
+    width: 80%;
+  }
+
+  .thankyouInner {
+    width: 45%;
+  }
+}
+@media (max-width: 1200px) {
+  aside {
+    padding: 0 20px;
+  }
+  .sideHeading {
+    font-size: 40px;
+  }
+  .sideDesc {
+    width: 80%;
+    font-size: 21px;
+  }
+  .contact .contactIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .contact article p {
+    margin-bottom: 10px;
+  }
+  .contact article {
+    margin-left: 10px;
+  }
+  .contact .contactIcon i,
+  .contact article a {
+    font-size: 20px;
+  }
+  .mainHeading {
+    width: 100%;
+  }
+  .radioField1,
+  .radioField3,
+  .next {
+    width: 90%;
+  }
+  .radioField1 label {
+    font-size: 18px;
+  }
+  .radioField2 {
+    height: auto;
+  }
+  .radioField3 {
+    height: 120px;
+  }
+  .radioField3 label {
+    font-size: 18px;
+  }
+  .radioField3 label {
+    margin-left: 20px;
+    margin-right: calc(20px + 25px);
+  }
+  .radioField3 input:checked ~ label {
+    margin-right: 0;
+    margin-left: calc(20px + 20px + 25px);
+  }
+  .radioField3 input::after {
+    width: 25px;
+    height: 25px;
+  }
+  .radioField3 input:checked::after {
+    left: 20px;
+  }
+
+  .thankyouInner {
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+  .tab-50 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .thankyouInner {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 20px;
+  }
+  .radioField3 {
+    height: 90px;
+  }
+  .radioField1 label {
+    font-size: 15px;
+  }
+  .radioField3 label {
+    font-size: 12px;
+  }
+  .radioField3 label {
+    margin-left: 10px;
+    margin-right: calc(15px + 20px);
+  }
+  .radioField3 input::after {
+    width: 20px;
+    height: 20px;
+  }
+  .radioField3 input:checked:after {
+    left: 10px;
+  }
+  .radioField3 input:checked ~ label {
+    margin-right: 0;
+    margin-left: calc(10px + 15px + 20px);
+  }
+
+  .thankyouInner {
+    width: 90%;
+  }
+  .score {
+    font-size: 80px;
+  }
+
+  .thankyouInner p {
+    font-size: 35px;
+  }
+  .thankyouInner span {
+    font-size: 20px;
+  }
+  .thankyouInner button {
+    padding: 0 40px;
+  }
+  .thankyouInner {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --text-color: rgb(28, 27, 27);
+  --primary-color: rgb(224, 47, 47);
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Hind";
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgb(99, 163, 255) 0%,
+    rgb(182, 220, 255) 50%,
+    rgb(114, 190, 255) 100%
+  );
+  display: grid;
+  box-shadow: 12.313px 15.76px 66.24px 25.76px rgba(12, 13, 12, 0.5);
+
+  align-items: center;
+}
+.wrapper {
+  width: 100%;
+  min-height: 600px;
+  padding: 20px 90px;
+  display: grid;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: relative;
+  margin: 50px 0;
+}
+.popInner article {
+  margin-bottom: 30px;
+}
+.popInner article h1 {
+  font-size: 45px;
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.popInner article p {
+  font-size: 21px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+.textField {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+.textField input,
+.textField textarea {
+  width: 100%;
+  height: 69px;
+  border: solid 2px rgb(234, 234, 234);
+  border-radius: 10px;
+  padding-left: 22px;
+  padding-right: 100px;
+  transition: 0.5s;
+}
+.textField input:focus,
+.textField textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+.textField input:focus ~ i,
+.textField textarea:focus ~ i {
+  color: var(--primary-color);
+}
+.textField textarea {
+  padding-top: 20px;
+  height: 110px;
+  resize: none;
+}
+::placeholder {
+  font-size: 19px;
+  color: var(--text-color);
+}
+.textField i {
+  font-size: 21px;
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  transition: 0.5s;
+}
+.socialIcon {
+  margin-bottom: 10px;
+}
+.socialIcon img {
+  margin-right: 15px;
+}
+.apply {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 0 40px;
+  height: 60px;
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border: 0;
+  margin-bottom: 10px;
+}
+.apply i {
+  margin-left: 10px;
+}
+.close {
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  color: var(--text-color);
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 62px;
+  font-weight: bold;
+  height: 62px;
+}

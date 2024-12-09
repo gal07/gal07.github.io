@@ -1,0 +1,76 @@
+
+.animate::after, .animate::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    height: 100%;
+
+}
+.animate::before, .animate::after
+{
+    z-index: 2;
+}
+.animate::before
+{
+    background-color: var(--primary-color);
+}
+.animate::after
+{
+    right: 0;
+    left: auto;
+}
+
+.animate::after
+{
+    animation: revealAfter 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+@keyframes revealAfter {
+    from
+    {
+        width: 100%;
+    }
+    to
+    {
+        width: 0;
+    }
+}
+.animate::before
+{
+    animation: revealBefore 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+    animation-delay: 0.2s;
+}
+@keyframes revealBefore {
+    from
+    {
+        width: 100%;
+    }
+    to
+    {
+        width: 0;
+    }
+}
+
+
+.thankyou > *
+{
+    animation: fadeDown 0.8s forwards ease-in-out;
+    opacity: 0;
+}
+@keyframes fadeDown {
+    from
+    {   
+        transform: translateY(-100px);
+        opacity: 0;
+
+    }
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}

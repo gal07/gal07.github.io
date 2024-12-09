@@ -1,0 +1,236 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: date time CSS
+02: dark-mode CSS
+
+==================================================*/
+/*===========================================================
+01: date time CSS
+=============================================================*/
+.xdsoft_datetimepicker {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  z-index: 36;
+  border: 0;
+  padding: 0;
+}
+
+.xdsoft_datetimepicker.xdsoft_inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker,
+.xdsoft_datetimepicker .xdsoft_timepicker {
+  width: 100%;
+  /* min-height: 400px; */
+  margin-left: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker {
+  width: 100%;
+}
+
+.xdsoft_datetimepicker .xdsoft_today_button,
+.xdsoft_scrollbar,
+.xdsoft_datetimepicker .xdsoft_label i {
+  display: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.xdsoft_monthpicker {
+  display: flex;
+  align-items: center;
+}
+
+.xdsoft_datetimepicker .xdsoft_label,
+.xdsoft_datetimepicker .xdsoft_next,
+.xdsoft_datetimepicker .xdsoft_prev {
+  opacity: 1;
+}
+
+.xdsoft_datetimepicker .xdsoft_year,
+.xdsoft_datetimepicker .xdsoft_month {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.xdsoft_datetimepicker .xdsoft_month {
+  margin-left: auto;
+}
+
+.xdsoft_datetimepicker .xdsoft_year {
+  padding-left: 4px;
+  margin-right: auto;
+}
+
+.xdsoft_datetimepicker .xdsoft_prev,
+.xdsoft_datetimepicker .xdsoft_next {
+  background-position: center;
+  height: 32px;
+  width: 32px;
+  border: 1px solid var(--additional3) !important;
+  border-radius: 50%;
+  display: inline-flex;
+  background-size: contain;
+}
+
+.xdsoft_datetimepicker .xdsoft_prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 20L7.5 12.5L15 5' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.xdsoft_datetimepicker .xdsoft_next {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 5L16.5 12.5L9 20' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .available_time {
+  text-align: left;
+  font-size: 16px;
+  color: #0E1222;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker.active+.xdsoft_timepicker {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select.xdsoft_yearselect {
+  right: auto;
+  left: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar {
+  margin: 24px 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th {
+  background: #fff;
+  border: 0;
+  color: var(--primary-text);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  height: 30px;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar th {
+  font-weight: 500;
+  color: var(--primary-text);
+  cursor: default;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td>div {
+  padding-right: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current {
+  background: var(--primary);
+  box-shadow: none;
+  color: white;
+  font-weight: 400;
+  border-radius: 8px;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover {
+  color: white !important;
+  background: var(--primary) !important;
+  box-shadow: none !important;
+  border-radius: 8px;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  box-shadow: none;
+  background: rgba(4, 90, 181, 0.1);
+  font-weight: 400;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
+  color: var(--primary) !important;
+  background: rgba(4, 90, 181, 0.1) !important;
+  box-shadow: none !important;
+}
+
+.xdsoft_time_variant {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 21px;
+  column-gap: 12px;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+  height: auto;
+  overflow: visible;
+  border: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  border-top: 0;
+  color: var(--primary);
+  font-size: 14px;
+  border-collapse: collapse;
+  cursor: pointer;
+  border-bottom-width: 0;
+  height: 30px;
+  line-height: 30px;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
+  display: none;
+}
+
+/*===========================================================
+02: dark-mode CSS
+=============================================================*/
+.dark-mode .xdsoft_datetimepicker{
+  background: transparent;
+}
+
+.dark-mode .xdsoft_datetimepicker .xdsoft_prev {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_3901_39547)'%3E%3Cpath d='M13.8297 19.0003C13.6803 19.0008 13.5327 18.9678 13.3977 18.9038C13.2627 18.8398 13.1438 18.7463 13.0497 18.6303L8.21968 12.6303C8.07259 12.4513 7.99219 12.2269 7.99219 11.9953C7.99219 11.7637 8.07259 11.5392 8.21968 11.3603L13.2197 5.36028C13.3894 5.15606 13.6333 5.02763 13.8978 5.00325C14.1622 4.97888 14.4255 5.06054 14.6297 5.23028C14.8339 5.40001 14.9623 5.64393 14.9867 5.90835C15.0111 6.17278 14.9294 6.43606 14.7597 6.64028L10.2897 12.0003L14.6097 17.3603C14.732 17.5071 14.8096 17.6858 14.8335 17.8753C14.8574 18.0649 14.8265 18.2573 14.7444 18.4299C14.6624 18.6024 14.5326 18.7478 14.3705 18.8489C14.2084 18.95 14.0207 19.0025 13.8297 19.0003Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3901_39547'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.dark-mode .xdsoft_datetimepicker .xdsoft_next {
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_3901_39540)'%3E%3Cpath d='M9.99981 18.9999C9.76615 19.0004 9.53972 18.919 9.35981 18.7699C9.25855 18.686 9.17485 18.5829 9.11349 18.4665C9.05214 18.3502 9.01435 18.2229 9.00227 18.0919C8.99019 17.9609 9.00408 17.8289 9.04312 17.7033C9.08217 17.5777 9.1456 17.461 9.22981 17.3599L13.7098 11.9999L9.38981 6.62994C9.30674 6.52765 9.24471 6.40996 9.20728 6.28362C9.16985 6.15728 9.15775 6.02479 9.17169 5.89376C9.18563 5.76273 9.22533 5.63575 9.2885 5.52011C9.35168 5.40447 9.43708 5.30246 9.53981 5.21994C9.64327 5.1289 9.76444 5.06024 9.8957 5.01825C10.027 4.97626 10.1655 4.96185 10.3026 4.97594C10.4397 4.99002 10.5724 5.03229 10.6924 5.1001C10.8123 5.1679 10.917 5.25977 10.9998 5.36994L15.8298 11.3699C15.9769 11.5489 16.0573 11.7733 16.0573 12.0049C16.0573 12.2366 15.9769 12.461 15.8298 12.6399L10.8298 18.6399C10.7295 18.761 10.6021 18.8566 10.4578 18.9192C10.3136 18.9817 10.1567 19.0094 9.99981 18.9999Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3901_39540'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.dark-mode .xdsoft_datetimepicker .xdsoft_label{
+  color: white;
+  background: transparent;
+}
+
+.dark-mode .xdsoft_datetimepicker .xdsoft_calendar td, 
+.dark-mode .xdsoft_datetimepicker .xdsoft_calendar th {
+  background: transparent;
+  color: white;
+}
+
+.dark-mode .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, 
+.dark-mode .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current{
+  background: var(--primary);
+}

@@ -1,0 +1,351 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: ticket-booked CSS
+  1.1: ticket-card
+  1.2: review Modal
+02: ticket-detail CSS
+  2.1: section-title
+  2.2: invoice number
+  2.3: order-item
+  2.4: customer info
+  2.5: price
+03: dark-mode CSS
+
+==================================================*/
+/*===========================================================
+01: ticket-booked CSS
+=============================================================*/
+.ticket .page-title {
+  display: block;
+}
+
+.ticket-tab {
+  padding: 0 24px 70px 24px;
+}
+
+.ticket-tab .nav {
+  margin-bottom: 31px;
+}
+
+.ticket-tab .nav,
+.ticket-tab .nav-tabs {
+  border: 0;
+  padding: 0;
+  justify-content: center;
+  gap: 15px;
+}
+
+.ticket-tab .nav-tabs .nav-item {
+  width: calc(50% - 8px);
+}
+
+.ticket-tab .nav-tabs .nav-link {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--prmary-text);
+  border-radius: 32px;
+}
+
+.ticket-tab .nav-tabs .nav-link.active {
+  color: white;
+  background: var(--primary);
+}
+
+/* 1.1: ticket-card */
+.ticket-card {
+  background: white;
+  padding: 20px 16px;
+  box-shadow: 0px 10px 60px 0px rgba(117, 117, 117, 0.15);
+  margin-bottom: 24px;
+}
+
+.ticket-card .card-title p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.ticket-card .card-title span {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 50px;
+  background: #FFF2ED;
+  color: var(--additional5);
+}
+
+.ticket-card.history .card-title span {
+  color: var(--success);
+  background: #E6F9F0;
+}
+
+.ticket-card .card-item {
+  margin: 20px 0;
+}
+
+.ticket-card .card-item .image {
+  width: 91px;
+  height: 82px;
+}
+
+.ticket-card .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.ticket-card .content .rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.ticket-card .content .rating span {
+  color: var(--secondary-text);
+}
+
+.ticket-card .content .location {
+  color: var(--gray-90);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ticket-card .card-footer p {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.ticket-card .card-footer h3 {
+  font-size: 18px;
+  color: var(--primary-text);
+  font-weight: 700;
+}
+
+.ticket-card .card-footer a,
+.ticket-card .card-footer button {
+  display: inline-block;
+  padding: 8px 40px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+  text-align: center;
+}
+
+.ticket-card.history .card-footer a {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ticket-card.history .card-footer .rating {
+  color: white;
+  background: var(--primary);
+}
+
+/* 1.2: review Modal */
+.reviewModal .modal-body ul li.on .star-yellow {
+  display: block;
+}
+
+.reviewModal .modal-body ul li .star-yellow,
+.reviewModal .modal-body ul li.on .star-gray {
+  display: none;
+}
+
+.reviewModal .modal-body .msg {
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+
+.reviewModal .modal-body h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  margin-bottom: 8px;
+}
+
+.reviewModal .modal-body textarea {
+  display: block;
+  width: 100%;
+  height: 132px;
+  border-radius: 24px;
+  border: 1px solid var(--primary);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+  outline: none;
+}
+
+.reviewModal .modal-body textarea::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+02: ticket-detail CSS
+=============================================================*/
+.ticket-detail .details-body {
+  padding: 0 24px 32px 24px;
+}
+
+/* 2.1: section-title */
+.ticket-detail .title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.ticket-detail .sub-title h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.ticket-detail .border-b {
+  border-bottom: 1px solid var(--additional2);
+}
+
+.ticket-detail .border-t {
+  border-top: 1px solid var(--additional2);
+}
+
+/* 2.2: invoice number */
+.invoice-number p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.invoice-number span {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 50px;
+  background: #FFF2ED;
+  color: var(--additional5);
+}
+
+/* 2.3: order-item */
+.order-card .item .image {
+  width: 107px;
+  height: 82px;
+}
+
+.order-card .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.order-card .content .rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.order-card .content .rating span {
+  color: var(--secondary-text);
+}
+
+.order-card .content .location {
+  color: var(--gray-90);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 2.4: customer info */
+.customer-info ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.customer-info ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.customer-info ul li p:last-child {
+  color: var(--primary-text);
+}
+
+.customer-info ul li p.success {
+  color: var(--success);
+}
+
+/* 2.5: price */
+.price p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.price p span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.promo-price p span {
+  color: var(--alert);
+}
+
+/*===========================================================
+03: dark-mode CSS
+=============================================================*/
+.dark-mode .ticket-tab .nav-tabs .nav-link,
+.dark-mode .ticket-card .content h4,
+.dark-mode .ticket-card .card-footer h3,
+.dark-mode .ticket-card .card-footer a,
+.dark-mode .ticket-card .card-footer button,
+.dark-mode .invoice-number p,
+.dark-mode .order-card .content h4,
+.dark-mode .ticket-detail .title h4,
+.dark-mode .customer-info ul li p:last-child,
+.dark-mode .price p span {
+  color: white;
+}
+
+.dark-mode .ticket-card {
+  background: var(--gray-90);
+}
+
+.dark-mode .ticket-card .card-title p,
+.dark-mode .ticket-card .content .location,
+.dark-mode .ticket-card .content .rating span,
+.dark-mode .ticket-card .card-footer p,
+.dark-mode .reviewModal .modal-body textarea::placeholder {
+  color: var(--gray-40);
+}
+
+.dark-mode .ticket-card .content .location img {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(7%) saturate(191%) hue-rotate(162deg) brightness(91%) contrast(94%);
+}
+
+.dark-mode .order-card .content .location {
+  color: var(--secondary-text);
+}
+
+.dark-mode .promo-price p span {
+  color: var(--alert);
+}
+
+.dark-mode .reviewModal .modal-body textarea{
+  background: var(--gray-80);
+  color: white;
+}
+

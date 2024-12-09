@@ -1,0 +1,81 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .asideInner {
+    width: 80%;
+  }
+  .mainHeading {
+    font-size: 60px;
+  }
+  .discountOffer h2 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mainHeading {
+    font-size: 50px;
+  }
+  .discountOffer h2 {
+    font-size: 75px;
+  }
+  .discountOffer h2 span {
+    font-size: 15px;
+  }
+  .popContent {
+    padding: 20px 60px;
+  }
+  .popHeading {
+    font-size: 35px;
+  }
+  .emailInput input {
+    padding: 0 40px 0 20px;
+  }
+  .agree label {
+    font-size: 15px;
+  }
+  .popContent button {
+    height: 70px;
+    font-size: 20px;
+  }
+  .popContent a {
+    padding: 12px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order_s {
+    order: 2;
+  }
+  .popContent {
+    padding: 50px 60px;
+  }
+  .shape {
+    /* top: 100%;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    display: none;
+  }
+  .close {
+    top: 15px;
+    right: 15px;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .popContent {
+    padding: 50px 20px;
+  }
+  .popContent a {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css"/>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+        <!-- Recoleta Alt Font -->
+        <link rel="stylesheet" href="assets/css/fonts.css"/>
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <!-- animation -->
+        <link rel="stylesheet" href="assets/css/animation.css"/>
+
+        <!-- responsive -->
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+    </head>
+
+    <body>
+        <form id="Stepform">
+            <main class="overflow-hidden show-section">
+
+                <!-- Header -->
+                <header class="mainHead">
+    
+                    <!-- logo -->
+                    <div class="logo">Fimro.</div>
+                    <a class="webLink" href="#">www.yourweb.com</a>
+                </header>
+    
+                <!-- step 1 -->
+                <section class="trim-home">
+                    <div class="Title">
+                        <h1>
+                            Employee
+                        </h1>
+                        <span>of the month</span>
+                    </div>
+                    <div id="trim-slider" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active trim-employee">
+                                <img src="assets/images/avatar1.png" alt="Avatar">
+                                <article class="about-employee">
+                                    <h2>Alex Mehto Deo</h2>
+                                    <p>UI / UX Designer</p>
+                                </article>
+                            </div>
+                            <div class="carousel-item trim-employee">
+                                <img src="assets/images/avatar2.png" alt="Avatar">
+                                <article class="about-employee">
+                                    <h2>John Doe</h2>
+                                    <p>Web Developer</p>
+                                </article>
+                            </div>
+                            <div class="carousel-item trim-employee">
+                                <img src="assets/images/avatar3.png" alt="Avatar">
+                                <article class="about-employee">
+                                    <h2>John Williams</h2>
+                                    <p>Graphics Designer</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="trim-btn">
+                        <button type="button" class="viewMore nextStep"><span>Vote Now</span></button>
+                        <div class="sliderBtn">
+                            <button type="button" data-bs-target="#trim-slider" data-bs-slide="prev" class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+                            <button type="button" data-bs-target="#trim-slider" data-bs-slide="next" class="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- step 2 -->
+                <section>
+                    <div class="container">
+                        <div class="step-inner">
+                            <div class="row">
+                                <div class="col-md-5 tab-none">
+                                    <img class="step-img" src="assets/images/avatar1.png" alt="step-image">
+                                </div>
+                                <div class="col-md-7 tab-100">
+                                    <fieldset id="step1">
+                                        <div class="inputField">
+                                            <label class="inputLabel">Name</label>
+                                            <input type="text" class="textInput" name="name" required>
+                                        </div>
+                                        <div class="inputField">
+                                            <label class="inputLabel">Training / Course</label>
+                                            <input type="text" class="textInput" name="course">
+                                        </div>
+
+                                        <!-- break -->
+                                        <div class="bottomLine"></div>
+
+                                        <h3 class="formHeading mt-4">
+                                            Overall, How Satisfied Were you  With this Training?
+                                        </h3>
+                                        
+                                        <div class="radioSection">
+                                            <h4 class="radioHeading">
+                                                Overall Satisfaction
+                                            </h4>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="radiofield">
+                                                    <label>Very Unsatisfied</label>
+                                                    <input type="radio" value="Very Unsatisfied" name="feedback" required>
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Unsatisfied</label>
+                                                    <input type="radio" value="Unsatisfied" name="feedback">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Neutral</label>
+                                                    <input type="radio" value="Neutral" name="feedback">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Satisfied</label>
+                                                    <input type="radio" value="Satisfied" name="feedback">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Very Satisfied</label>
+                                                    <input type="radio" value="Very Satisfied" name="feedback">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="nextPrev">
+                                            <button type="button" class="nextStep" id="step1btn"><span>next step</span></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- step 3 -->
+                <section>
+                    <div class="container">
+                        <div class="step-inner">
+                            <div class="row">
+                                <div class="col-md-5 tab-none">
+                                    <img class="step-img" src="assets/images/avatar1.png" alt="step-image">
+                                </div>
+                                <div class="col-md-7 tab-100">
+                                    <fieldset id="step2">
+                                        <div class="inputField">
+                                            <label class="inputLabel">Main Area Of Work With the Company</label>
+                                            <select name="workType" class="textInput">
+                                                <option value="work">Worst</option>
+                                                <option value="work">Great</option>
+                                                <option value="work">Awesome</option>
+                                                <option value="work">Satisfied</option>
+                                            </select>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="bottomLine"></div>
+
+                                        <h3 class="formHeading mt-4">
+                                            The Company gives me a feeling of personal  accomplishment
+                                        </h3>
+                                        
+                                        <div class="radioSection">
+                                            <h4 class="radioHeading">
+                                                Overall Satisfaction
+                                            </h4>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="radiofield">
+                                                    <label>Very Unsatisfied</label>
+                                                    <input type="radio" value="Very Unsatisfied" name="feedback2">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Unsatisfied</label>
+                                                    <input type="radio" value="Unsatisfied" name="feedback2">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Neutral</label>
+                                                    <input type="radio" value="Neutral" name="feedback2">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Satisfied</label>
+                                                    <input type="radio" value="Satisfied" name="feedback2">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Very Satisfied</label>
+                                                    <input type="radio" value="Very Satisfied" name="feedback2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="formHeading mt-4">
+                                            I have all the necessary tools and resources  to do my job well.
+                                        </h3>
+                                        
+                                        <div class="radioSection">
+                                            <h4 class="radioHeading">
+                                                Overall Satisfaction
+                                            </h4>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="radiofield">
+                                                    <label>Very Unsatisfied</label>
+                                                    <input type="radio" value="Very Unsatisfied" name="feedback3">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Unsatisfied</label>
+                                                    <input type="radio" value="Unsatisfied" name="feedback3">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Neutral</label>
+                                                    <input type="radio" value="Neutral" name="feedback3">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Satisfied</label>
+                                                    <input type="radio" value="Satisfied" name="feedback3">
+                                                </div>
+                                                <div class="radiofield">
+                                                    <label>Very Satisfied</label>
+                                                    <input type="radio" value="Very Satisfied" name="feedback3">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="nextPrev">
+                                            <button type="button" class="prevStep"><span>previous step</span></button>
+                                            <button type="button" class="nextStep" id="step2btn"><span>next step</span></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- step 4 -->
+                <section>
+                    <div class="container">
+                        <div class="step-inner">
+                            <div class="row">
+                                <div class="col-md-5 tab-none">
+                                    <img class="step-img" src="assets/images/avatar2.png" alt="step-image">
+                                </div>
+                                <div class="col-md-7 tab-100">
+                                    <fieldset id="step3">
+                                        <div class="inputField">
+                                            <label class="inputLabel">How long do you work for ACME Company?</label>
+                                            <select name="Time" class="textInput">
+                                                <option value="2 year experience">2 Year Experience</option>
+                                                <option value="4 Year Experience">4 Year Experience</option>
+                                                <option value="5 Year Experience">5 Year Experience</option>
+                                                <option value="8 Year Experience">8 Year Experience</option>
+                                            </select>
+                                            <span></span>
+                                        </div>
+
+                                        <!-- break -->
+                                        <div class="bottomLine"></div>
+                                        
+                                        <div class="radioNumbers">
+                                            <label class="inputLabel">How long do you work for ACME Company?</label>
+                                            <div class="d-flex w-100 justify-content-between my-3 mb-1">
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">1</label>
+                                                    <input name="numberRating" type="radio" value="1">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">2</label>
+                                                    <input name="numberRating"  type="radio" value="2">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">3</label>
+                                                    <input name="numberRating"  type="radio" value="3">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">4</label>
+                                                    <input name="numberRating"  type="radio" value="4">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">5</label>
+                                                    <input name="numberRating"  type="radio" value="5">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">6</label>
+                                                    <input name="numberRating"  type="radio" value="6">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">7</label>
+                                                    <input name="numberRating"  type="radio" value="7">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">8</label>
+                                                    <input name="numberRating"  type="radio" value="8">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">9</label>
+                                                    <input name="numberRating"  type="radio" value="9">
+                                                </div>
+                                                <div class="numberSingle">
+                                                    <label class="inputLabel">10</label>
+                                                    <input name="numberRating"  type="radio" value="10">
+                                                </div>
+                                            </div>
+                                            <div class="ratingTxt">
+                                                <span>Worst</span>
+                                                <span>Best</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="bottomLine"></div>
+                                        <div class="inputField">
+                                            <label class="inputLabel">If there was anything you change what would it be</label>
+                                            <textarea name="message" class="textInput"></textarea>
+                                        </div>
+
+
+                                        <div class="nextPrev">
+                                            <button type="button" class="prevStep"><span>previous step</span></button>
+                                            <button type="button" class="apply" id="sub"><span>Submit</span></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </form>
+
+        <div id="error"></div>
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>

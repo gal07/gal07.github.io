@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --text-color: rgb(255, 255, 255);
+  --text-color-2: rgb(0, 0, 0);
+  --primary-color: rgb(241, 91, 38);
+  --bg-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Hind";
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  position: relative;
+  display: grid;
+  align-content: center;
+}
+main::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.wrapper {
+  width: 100%;
+  min-height: 660px;
+  display: flex;
+  margin: 40px 0;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.popInner {
+  padding: 30px 0 30px 60px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+.mainHeading {
+  font-size: 40px;
+  color: var(--text-color-2);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contact {
+  margin: 20px 0;
+}
+.textField {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  border: solid 2px rgb(238, 238, 238);
+  padding: 0 40px;
+  margin-bottom: 13px;
+  transition: 0.5s;
+}
+.textField:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+textarea.textField {
+  height: 150px;
+  resize: none;
+  padding-top: 25px;
+}
+::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(172, 172, 172);
+}
+.apply {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  height: 65px;
+  width: 100%;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+aside {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  padding: 25px 0px 25px 70px;
+  background-image: url(../images/aside.jpg);
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.asideHrading {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.contactSingle {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  width: 100%;
+}
+.contactSingle img {
+  margin-right: 22px;
+}
+.contactSingle article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.contactSingle article p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.close {
+  border-radius: 50%;
+  background-color: rgb(26, 26, 26);
+  width: 87px;
+  height: 87px;
+  font-size: 40px;
+  color: var(--text-color);
+  font-weight: bold;
+  border: 0;
+  position: absolute;
+  top: -27px;
+  right: -27px;
+}

@@ -1,0 +1,69 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .mainHeading,
+  .asideHrading {
+    font-size: 30px;
+  }
+  aside {
+    padding-left: 40px;
+  }
+  .contactSingle article h2 {
+    font-size: 20px;
+  }
+  .contactSingle article p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .popInner {
+    padding-left: 30px;
+  }
+  .ps-md-5 {
+    padding-left: 1rem !important;
+  }
+  .textField {
+    padding: 0 20px;
+  }
+  textarea.textField {
+    padding-top: 25px;
+  }
+  .mainHeading,
+  .asideHrading {
+    font-size: 20px;
+  }
+  aside {
+    padding-left: 30px;
+  }
+  .contactSingle img {
+    margin-right: 10px;
+  }
+  .contactSingle article h2 {
+    font-size: 18px;
+  }
+  .close {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    right: -15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popInner {
+    padding: 30px;
+  }
+  .tab-none {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+}

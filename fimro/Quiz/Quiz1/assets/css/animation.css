@@ -1,0 +1,105 @@
+
+.reveal
+{
+    animation: reveal 3s linear 1;
+}
+@keyframes reveal {
+    0%
+    {
+        opacity: 1;
+        display: block;
+    }
+    30%
+    {
+        opacity: 1;
+        display: block;
+    }
+    60%
+    {
+        opacity: 0.7;
+        display: block;
+    }
+    90%
+    {
+        opacity: 0.3;
+        display: block;
+    }
+    100%
+    {
+        opacity: 0;
+
+    }
+}
+.popreveal
+{
+    animation: pop-reveal 1s ease forwards;
+}
+@keyframes pop-reveal
+{
+    from
+    {
+       clip-path: circle(0% at 0 0);
+    }
+    to
+    {
+        clip-path: circle(142% at 0 0);
+    }  
+}
+.radio-field input::before, .radio-field-2 input::before
+{
+    animation: check-pop .5s forwards;
+}
+@keyframes check-pop
+{
+    from
+    {
+        clip-path: circle(0.0% at 50% 50%);
+    }
+    to
+    {
+        clip-path: circle(100% at 50% 50%);
+    }    
+}
+
+
+
+.revealfield
+{
+    animation: revealfield 0.5s linear forwards;
+}
+
+
+
+.delay-100ms
+{
+    animation-delay: 100ms;
+}
+.delay-200ms
+{
+    animation-delay: 200ms;
+}
+.delay-300ms
+{
+    animation-delay: 300ms;
+}
+.delay-400ms
+{
+    animation-delay: 400ms;
+}
+.delay-500ms
+{
+    animation-delay: 500ms;
+}
+
+
+@keyframes revealfield
+{
+    from
+    {
+        opacity: 0;
+    }    
+    to
+    {
+        opacity: 1;
+    }  
+}

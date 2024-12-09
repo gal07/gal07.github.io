@@ -1,0 +1,96 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .countDown {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .discountHeading {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .mainHeading {
+    font-size: 35px;
+  }
+  .warning {
+    font-size: 15px;
+  }
+  .timeSingle {
+    font-size: 15px;
+  }
+  .timeSingle .time {
+    height: 60px;
+    width: 60px;
+    line-height: 66px;
+    font-size: 20px;
+  }
+  .countDown span {
+    font-size: 25px;
+  }
+  form input,
+  form button {
+    height: 50px;
+  }
+  form button {
+    font-size: 18px;
+  }
+  .wrapper {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-none {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .close {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    top: -5px;
+    right: -5px;
+  }
+  .discountHeading {
+    font-size: 40px;
+  }
+  .mainHeading {
+    font-size: 25px;
+  }
+  .warning,
+  .timeSingle {
+    font-size: 12px;
+  }
+  .countDown {
+    width: 100%;
+  }
+  .timeSingle .time {
+    height: 50px;
+    width: 50px;
+    line-height: 56px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .countDown span {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  form {
+    width: 100%;
+  }
+  form button {
+    font-size: 15px;
+  }
+  .cancel {
+    font-size: 15px;
+  }
+}

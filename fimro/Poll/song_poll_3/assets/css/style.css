@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: rgb(1, 195, 138);
+  --text-color: rgb(31, 30, 30);
+  --bg-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Archivo";
+  width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+main::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 3px 101px 0px rgba(0, 0, 0, 0.15);
+  opacity: 0.87;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header {
+  text-align: center;
+  padding: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--bg-color);
+}
+.logo img {
+  margin-right: 5px;
+  width: auto;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  padding-top: 0;
+}
+
+.SideImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.formCol {
+  background-color: var(--bg-color);
+}
+.pollForm {
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.mainHeading,
+fieldset,
+footer {
+  padding: 0 75px;
+}
+.mainHeading {
+  font-size: 40px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 50px 0;
+  line-height: 1;
+}
+fieldset {
+  border-top: solid 3px rgb(206, 215, 221);
+  border-bottom: solid 2px rgb(206, 215, 221);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.radioField {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  height: auto;
+  margin-bottom: 40px;
+}
+.radioField input {
+  -webkit-appearance: none;
+  border: solid 2px rgb(234, 234, 234);
+  border-radius: 5px;
+  min-width: 39px;
+  height: 37px;
+  margin-right: 20px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+.radioField input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.radioField input::after {
+  content: "";
+  background-image: url(../images/checked.png);
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.radioField input:checked:after {
+  clip-path: polygon(0 0, 150% 0, 150% 150%, 0 150%);
+}
+.inputWrap {
+  width: 100%;
+  height: auto;
+}
+.inputWrap label {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputWrap .radioBar {
+  background-color: rgb(241, 245, 248);
+  width: 100%;
+  border-radius: 9px;
+  transition: 0.5s;
+}
+.radioBar .fill {
+  width: 0;
+  border-radius: inherit;
+  background-color: var(--primary-color);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+footer {
+  margin: 30px 0 40px 0;
+  text-align: center;
+}
+.footerHeading {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.shareBtn {
+  display: inline-block;
+  margin: 20px 7.5px;
+  text-align: center;
+}
+.shareBtn span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.shareBtn a {
+  border-radius: 6px;
+  height: 30px;
+  padding: 14px 25px;
+  color: var(--bg-color);
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.facebook {
+  background-color: rgb(63, 89, 153);
+}
+.twitter {
+  background-color: rgb(1, 172, 236);
+}
+.pinterest {
+  background-color: rgb(205, 39, 48);
+}
+.youtube {
+  background-color: rgb(218, 59, 43);
+}
+.totalVote,
+.radioBar {
+  visibility: hidden;
+}
+.radioBar {
+  height: 0;
+}
+.disabled {
+  pointer-events: none;
+}

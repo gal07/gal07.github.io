@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: rgb(83, 50, 253);
+  --heading-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "BroadwayRegular";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: grid;
+  align-content: center;
+}
+.wrapper {
+  padding: 20px 0;
+}
+aside {
+  width: 100%;
+  min-height: 680px;
+  display: grid;
+  align-content: center;
+  background-image: url(../images/aside.jpg);
+  background-size: cover;
+  position: relative;
+}
+.asideInner {
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+}
+.mainHeading {
+  font-size: 75px;
+  color: var(--heading-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.12;
+  letter-spacing: 4px;
+}
+.line {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 7px;
+  border-radius: 2.8px;
+  margin: 30px 0 40px 0;
+}
+.discountOffer {
+  width: 100%;
+  border: solid 15px var(--heading-color);
+  height: auto;
+  padding: 5px 0;
+  text-align: center;
+  position: relative;
+}
+.discountOffer .upto {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translate(-50%, -8px);
+  letter-spacing: 6px;
+  background-image: url(../images/aside.jpg);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  width: max-content;
+  line-height: 17px;
+  height: 17px;
+  padding: 0 10px;
+}
+.discountOffer h2 {
+  font-size: 113px;
+  color: var(--heading-color);
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
+.discountOffer h2 span {
+  position: absolute;
+  font-size: 20px;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.shape {
+  position: absolute;
+  right: -53.5px;
+  top: 30%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.popContent {
+  background-color: var(--heading-color);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  padding: 20px 75px;
+  position: relative;
+}
+.popHeading {
+  font-size: 50px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 33px;
+}
+.emailInput {
+  width: 100%;
+  height: 79px;
+  position: relative;
+  margin-bottom: 22px;
+}
+.emailInput input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--heading-color);
+  box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.15);
+  border: 0;
+  padding: 0 80px 0 40px;
+  transition: 0.5s;
+}
+.emailInput input:focus {
+  outline: none;
+  box-shadow: 0px 3px 60px 0px rgba(83, 50, 253, 0.15);
+}
+.emailInput i {
+  font-size: 20px;
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+::placeholder {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: normal;
+  color: var(--text-color);
+}
+.agree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.agree input {
+  -webkit-appearance: none;
+  border: solid 2px var(--text-color);
+  border-radius: 10px;
+  width: 29px;
+  height: 27px;
+  position: relative;
+  cursor: pointer;
+}
+.agree input::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.agree input:checked::before {
+  opacity: 1;
+}
+.agree label {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-left: 13px;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+.popContent button {
+  border-radius: 10px;
+  width: 100%;
+  height: 87px;
+  background-color: var(--primary-color);
+  color: var(--heading-color);
+  box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.15);
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+}
+.warning {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto";
+  color: var(--text-color);
+}
+.popContent a {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 80px;
+  color: var(--heading-color);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--text-color);
+  text-decoration: none;
+  font-family: "Roboto";
+  letter-spacing: 4px;
+}
+.close {
+  font-size: 30px;
+  position: absolute;
+  color: var(--text-color);
+  top: 30px;
+  right: 25px;
+  line-height: 1;
+  cursor: pointer;
+}

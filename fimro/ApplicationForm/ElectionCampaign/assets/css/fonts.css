@@ -1,0 +1,31 @@
+/* Kenyan Coffee Bold Italic */
+@font-face {
+  font-family: 'Kenyan Coffee';
+  src: url('../kenyanCoffeeFont/kenyan-coffee-bd-it.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Kenyan Coffee Bold */
+@font-face {
+  font-family: 'Kenyan Coffee';
+  src: url('../kenyanCoffeeFont/kenyan-coffee-bd.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Kenyan Coffee Regular Italic */
+@font-face {
+  font-family: 'Kenyan Coffee';
+  src: url('../kenyanCoffeeFont/kenyan-coffee-rg-it.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Kenyan Coffee Regular */
+@font-face {
+  font-family: 'Kenyan Coffee';
+  src: url('../kenyanCoffeeFont/kenyan-coffee-rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

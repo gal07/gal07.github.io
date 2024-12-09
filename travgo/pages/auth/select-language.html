@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travgo</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+
+  <!-- datepicker -->
+  <link rel="stylesheet" href="../../assets/css/jquery.datetimepicker.css">
+
+  <!-- jquery ui -->
+  <link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+
+  <!-- common -->
+  <link rel="stylesheet" href="../../assets/css/common.css">
+
+  <!-- animations -->
+  <link rel="stylesheet" href="../../assets/css/animations.css">
+
+  <!-- welcome -->
+  <link rel="stylesheet" href="../../assets/css/welcome.css">
+
+  <!-- auth -->
+  <link rel="stylesheet" href="../../assets/css/auth.css">
+</head>
+<body class="scrollbar-hidden">
+  <!-- splash-screen start -->
+  <section id="preloader" class="spalsh-screen">
+    <div class="circle text-center">
+      <div>
+        <h1>Travgo</h1>
+        <p>Discover Your Destinition</p>
+      </div>
+    </div>
+    <div class="loader-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  <!-- splash-screen end -->
+
+  <main>
+    <!-- select-lang start -->
+    <section class="auth signin-email select-lang">
+      <div class="page-title">
+        <button type="button" class="back-btn back-page-btn d-flex align-items-center justify-content-center rounded-full">
+          <img src="../../assets/svg/arrow-left-black.svg" alt="Icon">
+        </button>
+      </div>
+      
+      <div class="heading">
+        <h2>Select your Language</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+  
+      <div class="auth-form">
+        <form action="#">
+          <div>
+            <label for="languange">Languange</label>
+            <div class="position-relative">
+              <input type="text" id="languange" placeholder="Select languange" readonly class="input-field" data-bs-toggle="modal" data-bs-target="#languageModal">
+              <img src="../../assets/svg/arrow-ios-downward.svg" alt="Arrow" class="arrow">
+            </div>
+          </div>
+          <a href="../home.html" class="btn-primary">Continue</a>
+        </form>
+      </div>
+    </section>
+    <!-- select-lang end -->
+  </main>
+
+  <!-- modal start -->
+  <div class="modal fade languageModal" id="languageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="back-btn modal-close rounded-full" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../../assets/svg/close-black.svg" alt="Close">
+          </button>
+          <h1 class="modal-title">Select a Language</h1>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <label for="englishuk" class="lang-container">
+                <input type="radio" id="englishuk" name="language" checked="checked">
+                English (UK)
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="english" class="lang-container">
+                <input type="radio" name="language" id="english">
+                English
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="bahasa" class="lang-container">
+                <input type="radio" name="language" id="bahasa">
+                Bahasa Indonesia
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="chineses" class="lang-container">
+                <input type="radio" name="language" id="chineses">
+                Chineses
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="croatian" class="lang-container">
+                <input type="radio" name="language" id="croatian">
+                Croatian
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="czech" class="lang-container">
+                <input type="radio" name="language" id="czech">
+                Czech
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="danish" class="lang-container">
+                <input type="radio" name="language" id="danish">
+                Danish
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="filipino" class="lang-container">
+                <input type="radio" name="language" id="filipino">
+                Filipino
+                <span class="checkmark"></span>
+              </label>
+            </li>
+            <li>
+              <label for="finland" class="lang-container">
+                <input type="radio" name="language" id="finland">
+                Finland
+                <span class="checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal end -->
+  
+  <!-- jquery -->
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jquery ui -->
+  <script src="../../assets/js/jquery-ui.js"></script>
+
+  <!-- mixitup -->
+  <script src="../../assets/js/mixitup.min.js"></script>
+
+  <!-- gasp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+  <!-- draggable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
+
+  <!-- swiper -->
+  <script src="../../assets/js/swiper-bundle.min.js"></script>
+
+  <!-- datepicker -->
+  <script src="../../assets/js/jquery.datetimepicker.full.js"></script>
+
+  <!-- google-map api -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCodvr4TmsTJdYPjs_5PWLPTNLA9uA4iq8&callback=initMap" type="text/javascript"></script>
+
+  <!-- script -->
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

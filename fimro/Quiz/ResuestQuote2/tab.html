@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Recoleta Alt Font -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="assets/css/animation.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <main class="trim-form overflow-hidden animate">
+      <header>
+        <div class="logo">
+          <img src="assets/images/icon.png" alt="Icon" />Fimro.
+        </div>
+      </header>
+
+      <section class="tab">
+        <div class="row">
+          <div class="col-md-5 pe-md-5">
+            <div id="v-form" class="formTab-button" role="tablist">
+              <button
+                id="info-tab"
+                class="active"
+                data-bs-toggle="pill"
+                data-bs-target="#info"
+                type="button"
+                role="tab"
+                aria-controls="info"
+                aria-selected="true"
+              >
+                <span></span>Infor
+              </button>
+              <button
+                id="service-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#service"
+                type="button"
+                role="tab"
+                aria-controls="service"
+                aria-selected="false"
+              >
+                <span></span>Choose Services
+              </button>
+              <button
+                id="product-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#product"
+                type="button"
+                role="tab"
+                aria-controls="product"
+                aria-selected="false"
+              >
+                <span></span>Product Design
+              </button>
+              <button
+                id="pay-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pay"
+                type="button"
+                role="tab"
+                aria-controls="pay"
+                aria-selected="false"
+              >
+                <span></span>Detail pay
+              </button>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <form novalidate onsubmit="return false">
+              <div class="tab-content tab-wrap" id="tablist">
+                <div
+                  class="tab-pane fade show active"
+                  id="info"
+                  role="tabpanel"
+                  aria-labelledby="info-tab"
+                  tabindex="0"
+                >
+                  <fieldset id="step1">
+                    <label class="inputLabel">Project Type</label>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="inputField radioField">
+                          <input type="radio" name="pType" />
+                          <label class="radioLabel">Name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="inputField radioField">
+                          <input type="radio" name="pType" />
+                          <label class="radioLabel">Designs</label>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="inputLabel">Email</label>
+                        <input
+                          class="inputField"
+                          required
+                          type="email"
+                          name="email"
+                          placeholder="Vlockion@gmia.com"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <label class="inputLabel">Phone</label>
+                        <input
+                          class="inputField"
+                          type="tel"
+                          name="phone"
+                          placeholder="Type phone number"
+                        />
+                      </div>
+
+                      <div class="endLine"></div>
+                      <span class="lineText"
+                        >or select individual attributes to assign to your
+                        requested projects.</span
+                      >
+
+                      <div class="col-md-12">
+                        <label class="inputLabel">Project Request</label>
+                        <input
+                          class="inputField"
+                          type="search"
+                          name="search"
+                          placeholder="Type to Search"
+                        />
+                      </div>
+                    </div>
+                    <button class="nextStep">next step</button>
+                  </fieldset>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="service"
+                  role="tabpanel"
+                  aria-labelledby="service-tab"
+                  tabindex="0"
+                >
+                  <fieldset id="step2">
+                    <div class="row scroll">
+                      <div class="col-md-6">
+                        <div class="radioBox">
+                          <input type="radio" name="serviceType" />
+                          <img
+                            src="assets/images/services/s1.png"
+                            alt="Services"
+                          />
+                          <label>Sketch to HTML Conversion</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="radioBox">
+                          <input type="radio" name="serviceType" />
+                          <img
+                            src="assets/images/services/s1.png"
+                            alt="Services"
+                          />
+                          <label>Figma To WordPress</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="radioBox">
+                          <input type="radio" name="serviceType" />
+                          <img
+                            src="assets/images/services/s1.png"
+                            alt="Services"
+                          />
+                          <label>The Print Flyer Template</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="radioBox">
+                          <input type="radio" name="serviceType" />
+                          <img
+                            src="assets/images/services/s1.png"
+                            alt="Services"
+                          />
+                          <label>FDigital Marketing Product</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="radioBox">
+                          <input type="radio" name="serviceType" />
+                          <img
+                            src="assets/images/services/s1.png"
+                            alt="Services"
+                          />
+                          <label>Web Developement</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="radioBox">
+                          <input type="radio" name="serviceType" />
+                          <img
+                            src="assets/images/services/s1.png"
+                            alt="Services"
+                          />
+                          <label>Web Designing</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="nextStep">next step</button>
+                  </fieldset>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="product"
+                  role="tabpanel"
+                  aria-labelledby="product-tab"
+                  tabindex="0"
+                >
+                  <fieldset id="step3">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label class="inputLabel">Details</label>
+                        <input
+                          class="inputField"
+                          required
+                          type="text"
+                          name="details"
+                          placeholder="Project Title"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <label class="inputLabel">Amount</label>
+                        <input
+                          class="inputField"
+                          type="text"
+                          name="amount"
+                          placeholder="$ 250"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="inputLabel">Details</label>
+                        <input
+                          class="inputField"
+                          type="date"
+                          name="details"
+                          placeholder="Project Title"
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="inputLabel">Details</label>
+                        <input
+                          class="inputField"
+                          type="date"
+                          name="details"
+                          placeholder="Project Title"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <label for="file" class="file">
+                          <input type="file" name="file" id="file" />
+                          <input type="radio" name="isFile" />
+                          <article>
+                            <h5 class="fileName">Add Documents</h5>
+                            <p>Select to whom you need to send this email</p>
+                          </article>
+                          <button>
+                            <i class="fa-solid fa-circle-plus"></i>Add
+                          </button>
+                        </label>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="inputLabel">send on</label>
+                        <textarea
+                          class="inputField"
+                          name="message"
+                          placeholder="Type to Search"
+                        ></textarea>
+                      </div>
+                      <div class="sendInstruction">
+                        <h4>Send Bill as:</h4>
+                        <input type="radio" name="bill" value="letter" />
+                        <label>Letter</label>
+                        <input type="radio" name="bill" value="Email" />
+                        <label>Email</label>
+                      </div>
+                    </div>
+                    <button class="nextStep">next step</button>
+                  </fieldset>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pay"
+                  role="tabpanel"
+                  aria-labelledby="pay-tab"
+                  tabindex="0"
+                >
+                  <article class="paymentText">
+                    <h3>Select Payment Method</h3>
+                    <p>
+                      Tation argumentum et usu, dicit viderer evertitur te has.
+                      Eu dictas concludaturque usu, facete detracto
+                    </p>
+                  </article>
+                  <div class="row" role="tablist">
+                    <div class="col-md-6">
+                      <button
+                        class="pMethod"
+                        id="paypal"
+                        data-bs-toggle="pill"
+                        data-bs-target="#paypal-tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="paypal-tab"
+                        aria-selected="true"
+                      >
+                        <img
+                          src="assets/images/paymentMethod/paypal.png"
+                          alt="PaymentMethod"
+                        />PayPal
+                      </button>
+                    </div>
+                    <div class="col-md-6">
+                      <button
+                        class="pMethod"
+                        id="amazon"
+                        data-bs-toggle="pill"
+                        data-bs-target="#amazon-tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="amazon-tab"
+                        aria-selected="false"
+                      >
+                        <img
+                          src="assets/images/paymentMethod/cash-on-delivery.png"
+                          alt="PaymentMethod"
+                        />Amazon Pay
+                      </button>
+                    </div>
+                    <div class="col-md-6">
+                      <button
+                        class="pMethod active"
+                        id="credit"
+                        data-bs-toggle="pill"
+                        data-bs-target="#credit-tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="credit-tab"
+                        aria-selected="false"
+                      >
+                        <img
+                          src="assets/images/paymentMethod/atm-card.png"
+                          alt="PaymentMethod"
+                        />Credit Card
+                      </button>
+                    </div>
+                    <div class="col-md-6">
+                      <button
+                        class="pMethod"
+                        id="payoneer"
+                        data-bs-toggle="pill"
+                        data-bs-target="#payoneer-tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="payoneer-tab"
+                        aria-selected="false"
+                      >
+                        <img
+                          src="assets/images/paymentMethod/payoneer.png"
+                          alt="PaymentMethod"
+                        />Payoneer
+                      </button>
+                    </div>
+                  </div>
+                  <fieldset class="tab-content mt-4" id="step4">
+                    <div
+                      class="tab-pane fade"
+                      id="paypal-tab"
+                      role="tabpanel"
+                      aria-labelledby="paypal"
+                      tabindex="0"
+                    >
+                      <div class="col-md-12">
+                        <label class="inputLabel">Email</label>
+                        <input type="email" name="paypal" class="inputField" />
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="amazon-tab"
+                      role="tabpanel"
+                      aria-labelledby="amazon"
+                      tabindex="0"
+                    >
+                      <div class="col-md-12">
+                        <label class="inputLabel">Email</label>
+                        <input type="email" name="amazon" class="inputField" />
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade show active"
+                      id="credit-tab"
+                      role="tabpanel"
+                      aria-labelledby="credit"
+                      tabindex="0"
+                    >
+                      <div class="row">
+                        <div class="tab-50 col-md-6">
+                          <div class="info-text">
+                            <i class="fa-solid fa-info"></i>We Accept
+                          </div>
+                          <div class="cc-type-list">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-discover"></i>
+                            <i class="fa-brands fa-cc-jcb"></i>
+                          </div>
+                        </div>
+                        <div class="tab-100 col-md-6">
+                          <div class="cc-number">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <input
+                              type="tel"
+                              id="cc-number"
+                              name="cc-number"
+                              placeholder="123 456 789 101"
+                            />
+                            <div class="cc-type">
+                              <i class="fa-regular fa-credit-card"></i>
+                              <i class="fa-brands fa-cc-visa"></i>
+                              <i class="fa-brands fa-cc-mastercard"></i>
+                              <i class="fa-brands fa-cc-discover"></i>
+                              <i class="fa-brands fa-cc-jcb"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-100 col-md-5 mb-3">
+                          <div class="exp-date">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <input
+                              type="tel"
+                              id="cc-exp"
+                              name="cc-exp"
+                              placeholder="Expiration MM/YY"
+                            />
+                          </div>
+                        </div>
+                        <div class="tab-100 col-md-3">
+                          <div class="exp-date cvv">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                              type="tel"
+                              id="cc-cvv"
+                              name="cc-cvv"
+                              placeholder="CVV"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="payoneer-tab"
+                      role="tabpanel"
+                      aria-labelledby="payoneer"
+                      tabindex="0"
+                    >
+                      <div class="col-md-12">
+                        <label class="inputLabel">Email</label>
+                        <input
+                          type="email"
+                          name="payoneer"
+                          class="inputField"
+                        />
+                      </div>
+                    </div>
+                    <button class="apply">Submit</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <h5 class="copyright"><span>1 </span>/ 5</h5>
+      </footer>
+    </main>
+
+    <div id="error"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

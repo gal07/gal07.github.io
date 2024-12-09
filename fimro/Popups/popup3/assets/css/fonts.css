@@ -1,0 +1,113 @@
+/* Gotham Black */
+@font-face {
+  font-family: "Gotham Black";
+  src: url("../Fonts/Gotham/Gotham-Black.otf") format("opentype");
+}
+
+/* Gotham Bold */
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../Fonts/Gotham/Gotham-Bold.otf") format("opentype");
+}
+
+/* Gotham Bold Italic */
+@font-face {
+  font-family: "Gotham Bold Italic";
+  src: url("../Fonts/Gotham/GothamBoldItalic.ttf") format("truetype");
+}
+
+/* Gotham Book */
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../Fonts/Gotham/GothamBook.ttf") format("truetype");
+}
+
+/* Gotham Book Italic */
+@font-face {
+  font-family: "Gotham Book Italic";
+  src: url("../Fonts/Gotham/Gotham-BookItalic.otf") format("opentype");
+}
+
+/* Gotham Book Italic */
+@font-face {
+  font-family: "Gotham Book Italic";
+  src: url("../Fonts/Gotham/GothamBookItalic.ttf") format("truetype");
+}
+
+/* Gotham Light */
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../Fonts/Gotham/Gotham-Light.otf") format("opentype");
+}
+
+/* Gotham Light */
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../Fonts/Gotham/GothamLight.ttf") format("truetype");
+}
+
+/* Gotham Light Italic */
+@font-face {
+  font-family: "Gotham Light Italic";
+  src: url("../Fonts/Gotham/GothamLightItalic.ttf") format("truetype");
+}
+
+/* Gotham Medium */
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../Fonts/Gotham/GothamMedium.ttf") format("truetype");
+}
+
+/* Gotham Medium */
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../Fonts/Gotham/GothamMedium_1.ttf") format("truetype");
+}
+
+/* Gotham Medium Italic */
+@font-face {
+  font-family: "Gotham Medium Italic";
+  src: url("../Fonts/Gotham/GothamMediumItalic.ttf") format("truetype");
+}
+
+/* Gotham Thin */
+@font-face {
+  font-family: "Gotham Thin";
+  src: url("../Fonts/Gotham/Gotham-Thin.otf") format("opentype");
+}
+
+/* Gotham Thin Italic */
+@font-face {
+  font-family: "Gotham Thin Italic";
+  src: url("../Fonts/Gotham/Gotham-ThinItalic.otf") format("opentype");
+}
+
+/* Gotham Ultra Italic */
+@font-face {
+  font-family: "Gotham Ultra Italic";
+  src: url("../Fonts/Gotham/Gotham-UltraItalic.otf") format("opentype");
+}
+
+/* Gotham XLight */
+@font-face {
+  font-family: "Gotham XLight";
+  src: url("../Fonts/Gotham/Gotham-XLight.otf") format("opentype");
+}
+
+/* Gotham XLight Italic */
+@font-face {
+  font-family: "Gotham XLight Italic";
+  src: url("../Fonts/Gotham/Gotham-XLightItalic.otf") format("opentype");
+}
+
+/* Proxima Nova Font */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../Fonts/ProximaNova/ProximaNovaFont.otf") format("opentype");
+}
+
+/* Proxima Nova Black Font */
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("../Fonts/ProximaNova/Metropolis-Black.otf") format("opentype");
+}

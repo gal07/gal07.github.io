@@ -1,0 +1,114 @@
+.revealEffect {
+  animation: reveal 0.7s forwards ease-in-out;
+}
+.revealEffect > *,
+.popUpAnimationIn .PopReveal > *,
+.candidate {
+  animation: fadeIn forwards 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-delay: 200ms;
+  opacity: 0;
+}
+.candidate {
+  animation-delay: 500ms;
+  animation-duration: 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes reveal {
+  0% {
+    clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 0%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+}
+.popUpAnimationIn {
+  animation: popUpAnimationIn 1s forwards cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@keyframes popUpAnimationIn {
+  0% {
+    clip-path: circle(0% at 50% 100%);
+  }
+  100% {
+    clip-path: circle(112% at 50% 100%);
+  }
+}
+.popUpAnimationOut {
+  animation: popUpAnimationOut 1s forwards cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@keyframes popUpAnimationOut {
+  100% {
+    clip-path: circle(0% at 50% 100%);
+  }
+  0% {
+    clip-path: circle(112% at 50% 100%);
+  }
+}
+
+.animate::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 100%;
+  z-index: 100;
+}
+.animate::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  z-index: 1000;
+}
+
+.animate::after {
+  animation: revealAfter 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+@keyframes revealAfter {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}
+.animate::before {
+  animation: revealBefore 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+  animation-delay: 0.2s;
+}
+@keyframes revealBefore {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}
+
+.thankyou .container > * {
+  animation: fadeDown 0.8s forwards ease-in-out;
+  opacity: 0;
+}
+@keyframes fadeDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

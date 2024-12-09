@@ -1,0 +1,795 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: border-box CSS
+02: tour-guide-profile CSS
+  2.1: page-title
+  2.2: section-title
+  2.3: profile-info
+  2.4: summary
+  2.5: profile-about
+03: custom-check-container CSS
+04: user-profile CSS
+05: user-personal CSS
+06: user-info CSS
+07: editImage Modal CSS
+08: profile-main CSS
+09: user-address CSS
+08: add-address CSS
+11: user-payment CSS
+12: add-card CSS
+13: change-password CSS
+14: forgot-password CSS
+15: forgot-password CSS
+16: user-language CSS
+17: msg-notifications CSS
+18: help-support CSS
+19: log Out Modal CSS
+20: dark-mode CSS
+
+==================================================*/
+
+
+/*===========================================================
+01: border-box CSS
+=============================================================*/
+.border-box {
+  padding: 20px;
+  border: 1px solid var(--additional2);
+  border-radius: 12px;
+}
+
+.border-box h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--additional1);
+}
+
+.border-box ul li:not(:last-child) {
+  border-bottom: 1px solid var(--additional2);
+}
+
+/*===========================================================
+02: tour-guide-profile CSS
+=============================================================*/
+/* 2.1: page-title */
+.guide-profile .page-title {
+  position: absolute;
+  background: transparent;
+}
+
+.guide-profile .page-title .back-btn {
+  background: rgba(18, 18, 18, 0.08);
+}
+
+/* 2.2: section-title */
+.guide-profile .title h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+/* 2.3: profile-info */
+.profile-info {
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+}
+
+.profile-info .image {
+  height: 100px;
+  width: 100px;
+}
+
+.profile-info h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-text);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-70);
+  margin-bottom: 16px;
+}
+
+.profile-info p span {
+  color: var(--primary-text);
+}
+
+.profile-info a {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 32px;
+  text-align: center;
+}
+
+.profile-info .call-btn {
+  background: var(--gray-30);
+  color: var(--primary-text);
+}
+
+.profile-info .msg-btn {
+  width: 100%;
+  color: white;
+  background: var(--primary);
+}
+
+/* 2.4: summary */
+.summary p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-60);
+  padding-bottom: 5px;
+}
+
+.summary h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.summary h5 span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-60);
+}
+
+.summary .divider {
+  height: 28px;
+  width: 1px;
+  background: var(--gray-40);
+}
+
+/* 2.5: profile-about */
+.profile-about p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--gray-70);
+}
+
+.profile-location .map {
+  width: 100%;
+  height: 156px;
+}
+
+.profile-location iframe {
+  width: 100%;
+  height: 156px;
+}
+
+/*===========================================================
+03: custom-check-container CSS
+=============================================================*/
+.custom-check-container {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  background: white;
+  color: var(--primary-text);
+}
+
+.custom-check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-check-container .checkmark {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--gray-30);
+}
+
+.custom-check-container input:checked~.checkmark {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.custom-check-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  background: url('../svg/check-white.svg') no-repeat center;
+  background-size: contain;
+}
+
+.custom-check-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/*===========================================================
+04: user-profile CSS
+=============================================================*/
+.user-profile {
+  padding: 24px 24px 70px 24px;
+}
+
+.user-profile-heading .image {
+  height: 56px;
+  width: 56px;
+}
+
+.user-profile-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-profile-heading p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-70);
+}
+
+/*===========================================================
+05: user-personal CSS
+=============================================================*/
+.user-personal h4 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.user-personal ul li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.user-personal ul li p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-personal ul li small {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-text);
+  opacity: 0.5;
+}
+
+/*===========================================================
+06: user-info CSS
+=============================================================*/
+.profile-image .image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.profile-image .image button {
+  height: 32px;
+  width: 32px;
+  background: var(--primary);
+  border: 3px solid white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.user-info .input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.user-info .dob,
+.user-info .input {
+  width: 100%;
+  border-radius: 24px;
+  height: 50px;
+  border: 1px solid var(--primary);
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+  background: transparent;
+}
+
+.user-info .input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.user-info textarea.input {
+  padding: 16px;
+  height: 132px;
+}
+
+.user-info .dob .input {
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.user-info .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.user-info .gender-container {
+  padding: 12px 16px 12px 56px;
+  color: var(--primary-text);
+  border: 1px solid var(--primary);
+  border-radius: 24px;
+}
+
+.user-info .checkmark {
+  top: 12px;
+  left: 16px;
+}
+
+/*===========================================================
+07: editImage Modal CSS
+=============================================================*/
+.editImageModal .modal-header {
+  padding: 32px 20px 20px 20px;
+}
+
+.editImageModal .modal-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.editImageModal .action-btn {
+  width: 100%;
+  padding: 18px 16px;
+  background: #F5F5F5;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.editImageModal .action-btn.delete {
+  color: var(--alert);
+}
+
+.editImageModal #choose-file {
+  opacity: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.editImageModal ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*===========================================================
+08: profile-main CSS
+=============================================================*/
+.profile-main {
+  padding-bottom: 116px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.profile-main .bottom-btn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+/*===========================================================
+09: user-address CSS
+=============================================================*/
+.user-address .plus-btn {
+  height: 48px;
+  width: 48px;
+}
+
+.user-address .address-container .text {
+  max-width: calc(100% - 40px);
+}
+
+.user-address .checkmark {
+  top: 0;
+  right: 0;
+}
+
+.user-address .address-container .address-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-address .address-container .address-card-phn {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+.user-address .change-add {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+/*===========================================================
+08: add-address CSS
+=============================================================*/
+.add-address label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.add-address .input-field {
+  border-radius: 24px;
+}
+
+.add-address textarea.input-field {
+  padding: 16px;
+  height: 132px;
+}
+
+.add-address select {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--gray-60) !important;
+}
+
+.add-address select option {
+  color: var(--primary-text);
+}
+
+.add-address .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  z-index: 10;
+}
+
+/*===========================================================
+11: user-payment CSS
+=============================================================*/
+.user-payment .page-title a {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #F2F2F2;
+}
+
+.user-payment .payment-container .icon {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #F2F2F2;
+}
+
+.user-payment .checkmark {
+  top: 16px;
+  right: 0;
+}
+
+.user-payment .payment-container .text {
+  border-bottom: 1px solid var(--additional2);
+}
+
+.user-payment .payment-container .payment-method-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.user-payment .payment-container .payment-method-card-num {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+12: add-card CSS
+=============================================================*/
+.add-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.add-card .input-field {
+  border-radius: 24px;
+}
+
+.add-card .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/*===========================================================
+13: change-password CSS
+=============================================================*/
+.change-password h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.change-password ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.change-password ul p {
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.change-password label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.change-password .eye-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+
+.change-password .input-psswd {
+  padding-right: 48px;
+  border-radius: 24px;
+}
+
+/*===========================================================
+14: forgot-password CSS
+=============================================================*/
+.forgot-password blockquote {
+  background: #F5F5F5;
+}
+
+.forgot-password blockquote p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+15: forgot-password CSS
+=============================================================*/
+.terms-policies h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.terms-policies p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+  opacity: 0.5;
+}
+
+/*===========================================================
+16: user-language CSS
+=============================================================*/
+
+.suggested ul li {
+  padding: 16px 0;
+}
+
+.suggested .language-container {
+  padding-left: 12px;
+}
+
+.suggested .language-container .checkmark {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+/*===========================================================
+17: msg-notifications CSS
+=============================================================*/
+.msg-notifications ul li {
+  padding: 24px 0;
+}
+
+.msg-notifications ul li:last-child {
+  padding-bottom: 0;
+}
+
+.msg-notifications ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+18: help-support CSS
+=============================================================*/
+.help-main .help-search .input-field{
+  padding: 0;
+}
+
+.faq .accordion-item {
+  border: 0;
+  border-bottom: 1px solid var(--gray-30);
+}
+
+.faq .accordion-button {
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.faq .accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: var(--primary-text);
+  background-color: white;
+  box-shadow: none;
+}
+
+.faq .accordion-body {
+  padding: 0;
+  padding-bottom: 24px;
+}
+
+.faq .accordion-body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional1);
+}
+
+.faq .accordion-button::after {
+  background-image: url('../svg/arrow-bottom.svg');
+  background-size: cover;
+}
+
+.faq .accordion-item:last-of-type .accordion-button.collapsed{
+  border-radius: 0;
+}
+
+/*===========================================================
+19: log Out Modal CSS
+=============================================================*/
+.logOutModal .close-btn {
+  height: 32px;
+  width: 32px;
+  background: var(--secondary);
+}
+
+.logOutModal .modal-header {
+  padding: 16px;
+  border: 0;
+}
+
+.logOutModal .modal-body h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.logOutModal .modal-body ul button {
+  width: 180px;
+  padding: 12px 0;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.logOutModal .modal-body .log-out {
+  background: transparent;
+  color: var(--alert);
+}
+
+/*===========================================================
+20: dark-mode CSS
+=============================================================*/
+.dark-mode .profile-info h3,
+.dark-mode .guide-profile .title h4,
+.dark-mode .user-profile-heading h3,
+.dark-mode .user-personal h4,
+.dark-mode .user-personal ul li p,
+.dark-mode .user-personal ul li small,
+.dark-mode .user-info .dob,
+.dark-mode .user-info .input,
+.dark-mode .editImageModal .modal-header h1,
+.dark-mode .user-address .address-container .address-card-title,
+.dark-mode .user-payment .payment-container .payment-method-card-title,
+.dark-mode .add-card label,
+.dark-mode .change-password h4,
+.dark-mode .forgot-password blockquote p,
+.dark-mode .terms-policies h3,
+.dark-mode .msg-notifications ul li p,
+.dark-mode .custom-check-container,
+.dark-mode .faq .accordion-button,
+.dark-mode .logOutModal .modal-body h4 {
+  color: white;
+}
+
+.dark-mode .setting-list img,
+.dark-mode .user-profile-heading .edit-info img,
+.dark-mode .editImageModal li:not(:last-child) .action-btn img,
+.dark-mode .add-address img,
+.dark-mode .user-payment .page-title a img,
+.dark-mode .logOutModal .close-btn img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .user-info .input::placeholder,
+.dark-mode .terms-policies p,
+.dark-mode .border-box h5,
+.dark-mode .faq .accordion-body p {
+  color: var(--gray-30);
+}
+
+.dark-mode .user-info .gender-container {
+  background: var(--gray-80);
+  color: white;
+  caret-color: white;
+}
+
+.dark-mode .logOutModal .close-btn,
+.dark-mode .editImageModal .action-btn,
+.dark-mode .forgot-password blockquote {
+  background: var(--gray-80);
+  color: white;
+}
+
+.dark-mode .editImageModal .action-btn.delete{
+  color: var(--alert);
+}
+
+.dark-mode .editImageModal .modal-header {
+  border-color: var(--gray-90);
+}
+
+.dark-mode .faq .accordion-item,
+.dark-mode .faq .accordion-button,
+.dark-mode .custom-check-container{
+  background: var(--gray-100);
+}
+
+.dark-mode .faq .accordion-button::after {
+  background-image: url(../svg/arrow-bottom-white.svg);
+}

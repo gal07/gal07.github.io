@@ -1,0 +1,171 @@
+@media  (min-width: 1600px)
+{
+    .container
+    {
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1440px)
+{
+    
+}
+@media (max-width: 1200px)
+{
+
+    .tab-100
+    {
+        width: 100%;
+    }
+    .tab-50
+    {
+        width: 50%;
+    }
+    .tab-33
+    {
+        width: 33.333333%;
+        margin-bottom: 15px;
+    }
+    main
+    {
+        padding: 45px 40px;
+    }
+    .authorPic
+    {
+        width: 100%;
+    }
+    .left article
+    {
+        width: 100%;
+    }
+    .left article h1
+    {
+        font-size: 45px;
+    }
+    .shapes
+    {
+        right: 0;
+    }
+    .chart
+    {
+        left: 0;
+    }
+    form
+    {
+        padding: 40px 60px;
+    }
+
+
+} 
+
+@media (max-width: 992px)
+{
+
+}
+
+@media (max-width: 768px)
+{
+
+    .tab-sm-100
+    {
+        width: 100%;
+    }
+    .tab-sm-50
+    {
+        width: 50%;
+    }
+    .left
+    {
+        order: 2;
+    }
+    .right
+    {
+        margin-right: 10%;
+        margin-top: 40px;
+    }
+
+    .authorPic
+    {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .order_c
+    {
+        order: 2;
+    }
+    .left
+    {
+        padding-top: 120px;
+    }
+
+
+}
+@media (max-width: 576px)
+{
+    .mob-100
+    {
+        width: 100%;
+    }
+    .mob-50
+    {
+        width: 50%;
+    }
+    main
+    {
+        padding: 20px;
+    }
+    .left
+    {
+        padding-top: 0;
+    }
+    .authorPic
+    {
+        width: 100%;
+    }
+    .right
+    {
+        margin-top: 40px;
+    }
+    .c-order
+    {
+        order: 2;
+    }
+
+}
+
+@media (max-width: 480px)
+{
+    .left
+    {
+        display: none;
+    }
+    form
+    {
+        padding: 20px;
+        border-radius: 0;
+    }
+    .right
+    {
+        margin-right: 0;
+    }
+    main
+    {
+        padding: 0;
+    }
+    .logo
+    {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

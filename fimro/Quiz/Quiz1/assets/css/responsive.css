@@ -1,0 +1,184 @@
+@media  (min-width: 1600px)
+{
+    .wrapper
+    {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .wrapper .main-heading
+    {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1440px)
+{
+    .main-heading
+    {
+        font-size: 40px;
+    }
+    .thankyou .wrapper
+    {
+        width: 90%;
+    }
+    .contact
+    {
+        height: auto;
+    }
+    .thankyou-inner
+    {
+        height: auto;
+    }
+    
+}
+@media (max-width: 1200px)
+{
+    .lap-50
+    {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .main-heading
+    {
+        font-size: 30px;
+    }
+    .radio-field label
+    {
+        font-size: 20px;
+    }
+    .thankyou-text
+    {
+        font-size: 50px;
+    }
+    .contact
+    {
+        height: auto;
+    }
+    .thankyou-inner
+    {
+        height: auto;
+    }
+
+} 
+
+@media (max-width: 992px)
+{
+    .main-heading
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .tab-50
+    {
+        width: 50%;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+    .radio-field label
+    {
+        font-size: 13px;
+    }
+    .radio-field label span
+    {
+        font-size: 17px;
+    }
+    .main-heading
+    {
+        font-size: 25px;
+    }
+    .steps-col::before
+    {
+        display: none;
+    }
+
+    .thankyou-text
+    {
+        font-size: 40px;
+    }
+    .contact
+    {
+        height: auto;
+    }
+    .thankyou-inner
+    {
+        height: auto;
+    }
+    .step-counter
+    {
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 576px)
+{
+    .orders
+    {
+        order: 2;
+    }
+    .step-inner
+    {
+        width: 100%;
+    }
+    .radio-field label
+    {
+        font-size: 10px;
+    }
+    .radio-field label span
+    {
+        margin-right: 15px;
+    }
+
+    .steps-col::before
+    {
+        display: none;
+    }
+    .main-heading
+    {
+        font-size: 20px;
+    }
+
+    .contact
+    {
+        height: auto;
+    }
+    .thankyou-inner
+    {
+        height: auto;
+    }
+    .msg
+    {
+        font-size: 16px;
+    }
+    .thankyou-text
+    {
+        font-size: 30px;
+    }
+    .radio-field-2 .radio-img img
+    {
+        width: 100%;
+    }
+
+}
+
+/* @media (max-width: 320px)
+{
+
+} */
+
+
+
+
+
+
+
+
+
+
+

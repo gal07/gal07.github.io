@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css"/>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+        <!-- Recoleta Alt Font -->
+        <link rel="stylesheet" href="assets/css/fonts.css"/>
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <!-- animation -->
+        <link rel="stylesheet" href="assets/css/animation.css"/>
+
+        <!-- responsive -->
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+    </head>
+
+    <body>
+        <main class="overflow-hidden animate">
+            <header>
+                <div class="logo">
+                    <img src="assets/images/icon.png" alt="Icon">
+                    Fimro.
+                </div>
+                <div class="contact">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <article class="contact_detail">
+                        <span>Give Us a call</span>
+                        <p>+92 123 456 7890</p>
+                    </article>
+                    <button class="trim-btn">Contact Us</button>
+                </div>
+            </header>
+
+            <section class="mainArea">
+                <div class="container">
+                    <form id="details" novalidate onsubmit="return false" class="show-section">
+
+                        <!-- step 1 -->
+                        <fieldset id="step1" class="step1-wrapper">
+
+                            <!-- form heading -->
+                            <h3 class="formHeading">See portfolio & List</h3>
+
+                            <!-- Question Heading -->
+                            <h2 class="question">How we Can Help You</h2>
+                            <div class="row">
+                                <div class="col-md-4 px-md-4 position-relative">
+
+                                    <!-- select single -->
+                                    <div class="trim-select next">
+                                        <input type="radio" name="selectService">
+                                        <img src="assets/images/selectService/wordpress.png" alt="service">
+                                        <label for="">WordPress</label>
+                                    </div>
+                                </div>
+
+                                <!-- select single -->
+                                <div class="col-md-4 px-md-4 position-relative">
+                                    <div class="trim-select">
+                                        <input type="radio" name="selectService">
+                                        <img src="assets/images/selectService/backend.png" alt="service">
+                                        <label for="">Backend</label>
+                                    </div>
+                                </div>
+
+                                <!-- select single -->
+                                <div class="col-md-4 px-md-4 position-relative">
+                                    <div class="trim-select prev">
+                                        <input type="radio" name="selectService">
+                                        <img src="assets/images/selectService/ux-design.png" alt="service">
+                                        <label for="">Design</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- step 2 -->
+                        <fieldset id="step2">
+
+                            <!-- form heading -->
+                            <h3 class="formHeading">See portfolio & List</h3>
+
+                            <!-- question Heading -->
+                            <h2 class="question">How we Can Help You</h2>
+
+                            <!-- radio buttons -->
+                            <div class="row  justify-content-center mb-5">
+                                <div class="select-service">
+                                    <input type="radio" name="service">
+                                    <label>Business websites</label>
+                                </div>
+                                <div class="select-service">
+                                    <input type="radio" name="service">
+                                    <label>Ecommerce websites</label>
+                                </div>
+                                <div class="select-service">
+                                    <input type="radio" name="service">
+                                    <label>Online Communities</label>
+                                </div>
+                                <div class="select-service">
+                                    <input type="radio" name="service" required>
+                                    <label>Consumer review websites</label>
+                                </div>
+                                <div class="select-service">
+                                    <input type="radio" name="service">
+                                    <label>Government websites</label>
+                                </div>
+                                <div class="select-service">
+                                    <input type="radio" name="service">
+                                    <label>Podcasting websites</label>
+                                </div>
+                            </div>
+
+                            <!-- Line HEading -->
+                            <h3 class="lineHeading">Write Custom Detail</h3>
+                            <textarea class="textmsg" name="message-1" required></textarea>
+
+                            <!-- Next Previous Button -->
+                            <div class="next-prev">
+                                <button id="step2btn" class="next">next step</button>
+                            </div>
+                        </fieldset>
+
+                        <!-- step 3 -->
+                        <fieldset id="step3" class="step3-wrapper">
+
+                            <!-- form heading -->
+                            <h3 class="formHeading">See portfolio & List</h3>
+
+                            <!-- question Heading -->
+                            <h2 class="question">Your Budget & When do you want us to start?</h2>
+
+
+                            <div class="RangeSlide border-bottom">
+                                <label>Your Approximate Budget<p><span class="move">6</span>k - 12k</p></label>
+                                <input type="range" name="Budget" min="1" max="12" value="6" step="0.5">
+                            </div>
+                            <div class="RangeSlide mt-5">
+                                <label>Estimated Timeline<p><span class="move">6</span> Week</p></label>
+                                <input type="range" name="Budget" min="1" max="10" value="6" step="1">
+                            </div>
+
+                            <!-- Next Previous Button -->
+                            <div class="next-prev">
+                                <button id="step3btn" class="next">next step</button>
+                            </div>
+                        </fieldset>
+                        
+                        <!-- step 4 -->
+                        <fieldset id="step4" class="step3-wrapper">
+
+                            <!-- form heading -->
+                            <h3 class="formHeading">See portfolio & List</h3>
+
+                            <!-- question Heading -->
+                            <h2 class="question">Do you Have Working  Design Files</h2>
+
+                            <div class="inputField">
+                                <input type="radio" name="fileavail">
+                                <label>Yes</label>
+                            </div>
+
+                            <div class="inputField">
+                                <input type="radio" name="fileavail" value="No, We Need Design">
+                                <label>No, We Need Design</label>
+                            </div>
+                            <span class="smallText">
+                                design link
+                            </span>
+                            <div class="inputField">
+                                <input type="url" name="link" placeholder="https ://" required>
+                            </div>
+
+                            <div class="uploadArea">
+                                <span class="smallText">or</span>
+                                <label for="file" class="uploadInner">
+                                    <input type="file" name="file" id="file" required>
+                                    <h3 class="fileName">Cloud</h3>
+                                    <span>Drag & Drop to Upload Files<br/>Browse Files</span>
+                                </label>
+                            </div>
+
+                            <!-- Next Previous Button -->
+                            <div class="next-prev">
+                                <button class="next" id="step4btn">next step</button>
+                            </div>
+                        </fieldset>
+
+                        <!-- step 5 -->
+                        <fieldset id="step5" class="step3-wrapper">
+
+                            <!-- form heading -->
+                            <h3 class="formHeading">See portfolio & List</h3>
+
+                            <!-- question Heading -->
+                            <h2 class="question">Do you Have Working  Design Files</h2>
+
+                            <span class="smallText">
+                                email address
+                            </span>
+
+                            <div class="inputField">
+                                <input type="text" name="email" placeholder="Type your company email address">
+                            </div>
+
+                            <span class="smallText mt-5">
+                                drop a message
+                            </span>
+
+                            <div class="inputField">
+                                <textarea name="message-2" placeholder="Project brief or any other infomation"></textarea>
+                            </div>
+
+                            <div class="agreement">
+                                <input type="checkbox" name="agreement">
+                                <label>I accept <a href="">Terms</a> & <a href="">Privacy</a></label>
+                            </div>
+
+
+                            <!-- Next Previous Button -->
+                            <div class="next-prev">
+                                <button id="sub" class="apply">Submit</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </section>
+
+
+            <!-- footer -->
+            <footer>
+
+                <!-- step number -->
+                <div class="stepnumber">
+                    <span id="currentStep">1</span> / 5
+                </div>
+
+                <!-- socail icons -->
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-skype"></i></a>
+                </div>
+            </footer>
+        </main>
+
+        <div id="error"></div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>

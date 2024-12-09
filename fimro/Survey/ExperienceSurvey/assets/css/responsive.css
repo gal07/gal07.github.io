@@ -1,0 +1,95 @@
+/*L-desktop*/
+
+@media (min-device-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+/*L-laptops*/
+@media (max-width: 1440px) {
+  aside {
+    padding: 40px 0 0 70px;
+  }
+  .asideHeading {
+    width: 100%;
+  }
+}
+
+/*laptops/tablets*/
+@media (max-width: 1200px) {
+  aside {
+    padding: 20px 0 0 30px;
+  }
+  .contactInfo li article p {
+    font-size: 15px;
+  }
+  .contactInfo li article h5 {
+    font-size: 18px;
+  }
+  .sideImg {
+    height: 250px;
+  }
+  .asideHeading {
+    font-size: 35px;
+  }
+  .rating .avgRating {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .radioField {
+    margin-bottom: 10px;
+  }
+  .listHeding {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .inputField {
+    padding: 20px 10px 25px 40px;
+  }
+  .inputField select + i {
+    top: 95px;
+    left: 190px;
+  }
+  .rating .ratingSingle {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+  }
+  .sideImg {
+    height: 200px;
+  }
+  .contactInfo li article p {
+    font-size: 12px;
+  }
+  .contactInfo li article h5 {
+    font-size: 15px;
+  }
+}
+
+/*tablets*/
+@media (max-width: 768px) {
+  .ratingMain {
+    padding-left: 0;
+    border: 0;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .rating .avgRating {
+    margin: 0 0 0 20px;
+  }
+  .order_c {
+    order: 2;
+  }
+}
+
+/*Smart phone*/
+@media (max-width: 576px) {
+  header {
+    padding: 25px 20px;
+  }
+  .file {
+    height: 250px;
+  }
+}

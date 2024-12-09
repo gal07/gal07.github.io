@@ -1,0 +1,26 @@
+.newspaper {
+  animation: newspaperA 1s forwards cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes newspaperA {
+  from {
+    opacity: 0;
+    transform: scale(0) rotate(720deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+.newspaperRev {
+  animation: newspaperARev 1s forwards cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes newspaperARev {
+  to {
+    opacity: 0;
+    transform: scale(0) rotate(720deg);
+  }
+  from {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}

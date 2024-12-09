@@ -1,0 +1,256 @@
+@media  (min-width: 1600px)
+{
+
+}
+
+@media (max-width: 1440px)
+{
+    .voteDate::before
+    {
+        width: 350px;
+        height: 350px;
+    }
+    .voteDate::after
+    {
+        width: 390px;
+        height: 390px;
+
+    }
+    .voteDate h1
+    {
+        font-size: 210px;
+    }
+    .voteDate p
+    {
+        font-size: 30px;
+    }
+    .voteDate article
+    {
+        left: 110px;
+        top: -30px;
+    }
+    .aboutCompaign
+    {
+        font-size: 35px;
+    }
+    .nomineeName h2
+    {
+        font-size: 90px;
+    }
+    .nomineeName p
+    {
+        font-size: 45px;
+    }
+    .nomineeName p .small
+    {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1200px)
+{
+    .voteDate::before
+    {
+        width: 260px;
+        height: 260px;
+    }
+    .voteDate::after
+    {
+        width: 300px;
+        height: 300px;
+
+    }
+    .voteDate h1
+    {
+        font-size: 160px;
+    }
+    .voteDate p
+    {
+        font-size: 20px;
+    }
+    .voteDate article
+    {
+        left: 80px;
+        top: 0;
+    }
+    .text-wrap
+    {
+        width: 75%;
+    }
+    .aboutCompaign
+    {
+        width: 90%;
+        font-size: 30px;
+    }
+    .nomineeName h2
+    {
+        height: 200px;
+        font-size: 75px;
+    }
+    .nomineeName p
+    {
+        height: 150px;
+        font-size: 35px;
+    }
+    .nomineeName p .small
+    {
+        font-size: 20px;
+    }
+
+
+    /* form */
+    .main-heading
+    {
+        font-size: 60px;
+    }
+    .TrimCampaign-form .wrapper
+    {
+        width: 65%;
+    }
+    .indicator
+    {
+        display: none;
+    }
+} 
+
+@media (max-width: 992px)
+{
+    .voteDate::before
+    {
+        width: 160px;
+        height: 160px;
+    }
+    .voteDate::after
+    {
+        width: 200px;
+        height: 200px;
+
+    }
+    .voteDate h1
+    {
+        font-size: 90px;
+    }
+    .voteDate p
+    {
+        font-size: 15px;
+        left: 7px;
+    }
+    .voteDate article
+    {
+        left: 70px;
+        top: 10px;
+    }
+    .text-wrap
+    {
+        width: 80%;
+    }
+    .aboutCompaign
+    {
+        font-size: 25px;
+    }
+    .nomineeName h2
+    {
+        height: 150px;
+        font-size: 60px;
+    }
+    .nomineeName p
+    {
+        top: -25px;
+        padding-top: 25px;
+        height: 120px;
+        font-size: 30px;
+    }
+
+    /* form */
+    .TrimCampaign-form .wrapper
+    {
+        width: 70%;
+    }
+
+
+}
+
+@media (max-width: 768px)
+{
+    .tab-100
+    {
+        width: 100%;
+    }
+    .tab-none
+    {
+        display: none;
+    }
+    .voteDate
+    {
+        left: 10%;
+    }
+
+}
+@media (max-width: 576px)
+{
+    .wrapper 
+    {
+        width: 90%;
+    }
+    .text-wrap
+    {
+        width: 60%;
+    }
+    .voteDate
+    {
+        left: 15%;
+    }
+    .thankyou h1, .social-icons
+    {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 480px)
+{
+    .sm-none
+    {
+        display: none;
+    }
+    .text-wrap
+    {
+        width: 100%;
+    }
+    .voteNow
+    {
+        width: 100%;
+    }
+
+    .TrimCampaign-form .wrapper
+    {
+        width: 90%;
+    }
+    .TrimCampaign-form #step1 .voteNow
+    {
+        left: 0;
+    }
+    .main-heading
+    {
+        font-size: 50px;
+    }
+    .thankyou h1, .social-icons
+    {
+        width: 90%;
+    }
+    .fieldWrap
+    {
+        left: 0;
+        transform:skew(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

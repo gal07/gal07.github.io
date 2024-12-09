@@ -1,0 +1,1556 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: General CSS
+  1.1: Variables
+  1.2: Common CSS
+02: custom scrollbar CSS
+03: button CSS
+04: padding CSS
+05: margin CSS
+06: font-size CSS
+07: font-weight CSS
+08: radius CSS
+09: gap CSS
+10: page-title CSS
+11: input-field CSS
+12: custom-pagination CSS
+13: modal CSS
+14: modal-bg CSS
+15: search CSS
+16: bottom-nav CSS
+17: place-card CSS
+18: guide CSS
+19: details-body CSS
+20: facilities CSS
+21: date Modal CSS
+22: filter Modal CSS
+23: toggle-switch CSS
+24: menu CSS
+25: main css 
+26: dark-mode CSS
+
+==================================================*/
+
+/*===========================================================
+01: General CSS
+=============================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* 1.1: Variables */
+:root {
+  --primary: #2196F3;
+  --secondary: #F6F8FE;
+  --primary-text: #111111;
+  --secondary-text: #78828A;
+  --sky: #3BA5FA;
+  --success: #00C566;
+  --alert: #E53935;
+  --warning: #FACC15;
+  --additional1: #6C6C6C;
+  --additional2: #E3E7EC;
+  --additional3: #F7F7F7;
+  --additional4: #E9EBED;
+  --additional5: #FF784B;
+  --gray-10: #FDFDFD;
+  --gray-20: #ECF1F6;
+  --gray-30: #E3E9ED;
+  --gray-40: #D1D8DD;
+  --gray-50: #BFC6CC;
+  --gray-60: #9CA4AB;
+  --gray-70: #78828A;
+  --gray-80: #66707A;
+  --gray-90: #434E58;
+  --gray-100: #171725;
+}
+
+/* 1.2: Common CSS */
+body {
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body.dark-mode {
+  background: var(--gray-100);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+a,
+p,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+textarea,
+select,
+input {
+  border: 0;
+  outline: none;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--primary);
+}
+
+::selection {
+  color: white;
+  background: var(--primary);
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+
+/*===========================================================
+02: custom scrollbar CSS
+=============================================================*/
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-moz-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--gray-bg);
+}
+
+.custom-scrollbar::-moz-scrollbar-track {
+  background-color: var(--gray-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+.custom-scrollbar::-moz-scrollbar-thumb {
+  background: var(--primary);
+}
+
+/* scrollbar hide */
+body::-webkit-scrollbar,
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  scrollbar-width: none;
+}
+
+body,
+.scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+/*===========================================================
+03: button CSS
+=============================================================*/
+.btn-primary {
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--primary);
+  width: 100%;
+  border-radius: 24px;
+}
+
+.btn-primary:disabled {
+  color: var(--gray-60);
+  background: var(--gray-20);
+}
+
+.btn-primary-outline {
+  width: 100%;
+  text-align: center;
+  padding: 16px 24px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 32px;
+}
+
+.btn-primary-outline:disabled {
+  border-color: var(--gray-60);
+}
+
+/*===========================================================
+04: padding CSS
+=============================================================*/
+.pt-04 {
+  padding-top: 4px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.py-36 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.pb-36 {
+  padding-bottom: 36px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+/*===========================================================
+05: margin CSS
+=============================================================*/
+.mb-04 {
+  margin-bottom: 4px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mx-24 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-04 {
+  margin-top: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+/*===========================================================
+06: font-size CSS
+=============================================================*/
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-38 {
+  font-size: 38px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+/*===========================================================
+07: font-weight CSS
+=============================================================*/
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+/*===========================================================
+08: radius CSS
+=============================================================*/
+.rounded-full {
+  border-radius: 50%;
+}
+
+.radius-4 {
+  border-radius: 4px;
+}
+
+.radius-6 {
+  border-radius: 6px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-12 {
+  border-radius: 12px;
+}
+
+.radius-14 {
+  border-radius: 14px;
+}
+
+.radius-16 {
+  border-radius: 16px;
+}
+
+.radius-18 {
+  border-radius: 18px;
+}
+
+.radius-20 {
+  border-radius: 20px;
+}
+
+.radius-22 {
+  border-radius: 22px;
+}
+
+.radius-24 {
+  border-radius: 24px;
+}
+
+.radius-26 {
+  border-radius: 26px;
+}
+
+.radius-28 {
+  border-radius: 28px;
+}
+
+.radius-30 {
+  border-radius: 30px;
+}
+
+/*===========================================================
+09: gap CSS
+=============================================================*/
+.gap-04 {
+  gap: 4px;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-14 {
+  gap: 14px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-18 {
+  gap: 18px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-22 {
+  gap: 22px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+/*===========================================================
+10: page-title CSS
+=============================================================*/
+.page-title {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 16px 24px 32px 24px;
+  border: 0;
+  align-items: center;
+  background: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.page-title .back-btn {
+  background: rgba(18, 18, 18, 0.08);
+  height: 48px;
+  width: 48px;
+}
+
+.page-title .main-title {
+  grid-column: span 4;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+11: input-field CSS
+=============================================================*/
+.input-field {
+  width: 100%;
+  height: 52px;
+  background: var(--secondary);
+  padding: 0 16px;
+  border-radius: 16px;
+  color: var(--primary-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-field::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-60);
+}
+
+/*===========================================================
+12: custom-pagination CSS
+=============================================================*/
+.custom-pagination .swiper-pagination-bullet {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background: var(--gray-40);
+  opacity: 1;
+  transition: all linear 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  background: var(--primary);
+}
+
+/*===========================================================
+13: modal CSS
+=============================================================*/
+.bottomModal .modal-dialog {
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.bottomModal .modal-content {
+  border-radius: 16px 16px 0 0;
+}
+
+.bottomModal .modal-body {
+  padding: 0 24px 45px 24px;
+}
+
+.bottomModal .modal-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 16px 24px 32px 24px;
+  border: 0;
+}
+
+.bottomModal .modal-header .modal-close {
+  background: rgba(18, 18, 18, 0.08);
+  height: 40px;
+  width: 40px;
+}
+
+.bottomModal .modal-header .modal-title {
+  grid-column: span 4;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+14: modal-bg CSS
+=============================================================*/
+.modal .modal-content {
+  border: 0;
+}
+
+.modalBg {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+}
+
+/*===========================================================
+15: search CSS
+=============================================================*/
+.search label,
+.search .form-inner,
+.search .message-search,
+.search .help-search {
+  background: var(--secondary);
+  padding: 0 16px;
+}
+
+.search .form-inner input,
+.search label input {
+  padding: 0;
+}
+
+.search .filter {
+  padding-left: 8px;
+  border-left: 1px solid var(--additional2);
+}
+
+/*===========================================================
+16: bottom-nav CSS
+=============================================================*/
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 40;
+  background: white;
+  padding: 0 24px;
+}
+
+/*===========================================================
+17: place-card CSS
+=============================================================*/
+.place-card .image span {
+  height: 28px;
+  width: 28px;
+  background: white;
+  position: absolute;
+  top: 13px;
+  right: 8px;
+}
+
+.place-card .content {
+  margin-top: 8px;
+}
+
+.place-card .content h4 {
+  font-size: 14px;
+  color: var(--primary-text);
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+.place-card .content .location {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.place-card .content .price {
+  margin-top: 8px;
+}
+
+.place-card .content .price h3 {
+  font-size: 14px;
+  color: var(--primary-text);
+  font-weight: 700;
+}
+
+.place-card .content .price p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.place-card .content .price p span {
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+18: guide CSS
+=============================================================*/
+.guide .all-cards {
+  overflow-x: auto;
+}
+
+.guide .item .image {
+  width: 88px;
+  height: auto;
+}
+
+.guide .item .image .guide-img {
+  width: 100%;
+  height: 88px;
+}
+
+.guide .item .rating {
+  padding: 5px 12px;
+  background: var(--primary-text);
+  border-radius: 50px;
+  margin: -15px auto 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.guide .item .rating span {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.guide .item .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.guide .item .content h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary-text);
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.guide .item .content .location {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-90);
+}
+
+/*===========================================================
+19: details-body CSS
+=============================================================*/
+
+.details-body .title {
+  margin-bottom: 16px;
+}
+
+.details-body .title h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.details-body .title button,
+.details-body .title a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/*===========================================================
+20: facilities CSS
+=============================================================*/
+.facilities .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.facilities .item .icon {
+  height: 56px;
+  width: 56px;
+  background: var(--secondary);
+  margin: auto;
+}
+
+.facilities .item p {
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+
+/*===========================================================
+21: date Modal CSS
+=============================================================*/
+
+.dateModal .modal-body .btns button {
+  line-height: 52px;
+  color: white;
+  background: var(--primary);
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dateModal .modal-body .btns .cancel-btn {
+  background: transparent;
+  color: var(--alert);
+}
+
+.dateModal .modal-header {
+  border: 0;
+}
+
+.dateModal .modal-header .modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+/*===========================================================
+22: filter Modal CSS
+=============================================================*/
+
+.filterModal .modal-body {
+  padding-bottom: 24px;
+}
+
+.filterModal .content-title {
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.filterModal .filter-range input {
+  width: 110px;
+  padding: 6px 0;
+  border-radius: 16px;
+  height: auto;
+  border: 1px solid var(--additional2);
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  outline: none;
+}
+
+.filterModal .filter-range .price-range {
+  margin-top: 16px;
+}
+
+.filterModal .filter-range .ui-slider-handle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  top: -7px;
+}
+
+.filterModal .filter-range .ui-widget.ui-widget-content {
+  border: none;
+  height: 2px;
+  background-color: var(--additional2);
+  position: relative;
+  border-radius: 22px;
+}
+
+.filterModal .filter-range .ui-slider-horizontal .ui-slider-range {
+  background: var(--primary);
+}
+
+.filterModal .star-rating,
+.filterModal .popular-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filterModal .star-rating .filter-label,
+.filterModal .popular-filters .filter-label {
+  padding: 7px 15px;
+  border: 1px solid var(--additional2);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-text);
+  border-radius: 24px;
+}
+
+.filterModal .star-rating .filter-label input,
+.filterModal .popular-filters .filter-label input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.filterModal .popular-filters .filter-label:has(input:checked) {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.filterModal .star-rating .filter-label:has(input:checked) {
+  border-color: var(--warning);
+}
+
+.filterModal .apply-filter-btn {
+  font-size: 14px;
+  padding: 12px 0;
+}
+
+.filterModal .clear-all-btn {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 0;
+  text-align: center;
+  color: var(--alert);
+}
+
+/*===========================================================
+23: toggle-switch CSS
+=============================================================*/
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-30);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked+.slider {
+  background-color: var(--primary);
+}
+
+.toggle-switch input:checked+.slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/*===========================================================
+24: menu CSS
+=============================================================*/
+/* menu css */
+.wrapper .menu {
+  background: var(--primary);
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  z-index: 110;
+}
+
+.wrapper .m-menu__checkbox {
+  display: none;
+}
+
+.wrapper label.m-menu__toggle {
+  cursor: pointer;
+}
+
+.wrapper .m-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 450px;
+  width: calc(100vw - 30px);
+  height: 100vh;
+  -moz-transform: translate3d(-450px, 0, 0);
+  -o-transform: translate3d(-450px, 0, 0);
+  -ms-transform: translate3d(-450px, 0, 0);
+  -webkit-transform: translate3d(-450px, 0, 0);
+  transform: translate3d(-450px, 0, 0);
+  -moz-transition: transform 0.35s;
+  -o-transition: transform 0.35s;
+  -webkit-transition: transform 0.35s;
+  transition: transform 0.35s;
+  z-index: 9999;
+  overflow: hidden;
+  background: white;
+}
+
+.wrapper .m-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper .m-menu.show {
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wrapper .m-menu__overlay {
+  background: rgba(103, 103, 103, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+
+.wrapper .m-menu__overlay.show {
+  display: block;
+}
+
+.wrapper .btn-grp .mode-change input {
+  opacity: 0;
+  position: absolute;
+}
+
+.wrapper .btn-grp .mode-change .sun {
+  display: none;
+}
+
+.wrapper .btn-grp .mode-change input:checked~.moon {
+  display: none;
+}
+
+.wrapper .btn-grp .mode-change input:checked~.sun {
+  display: block;
+}
+
+.wrapper .m-menu__header {
+  padding: 16px;
+  background: var(--primary);
+  position: relative;
+}
+
+.wrapper .m-menu__header .m-menu__close {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.wrapper ul .m-menu__header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.wrapper .m-menu__header .m-menu__toggle {
+  height: 36px;
+  width: 36px;
+}
+
+.wrapper .m-menu__header .m-menu__header-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  grid-column: span 10;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.wrapper .m-menu__header .menu-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wrapper .m-menu__header .menu-user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.wrapper .m-menu__header .menu-user a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.wrapper .m-menu__header .menu-user h3 {
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .m-menu .m-menu {
+  -moz-transform: translate3d(480px, 0, 0);
+  -o-transform: translate3d(480px, 0, 0);
+  -ms-transform: translate3d(480px, 0, 0);
+  -webkit-transform: translate3d(480px, 0, 0);
+  transform: translate3d(480px, 0, 0);
+}
+
+.wrapper .m-menu ul {
+  height: calc(100% - 85px);
+  overflow-y: auto;
+}
+
+.wrapper .m-menu ul .menu-title {
+  padding: 15px 15px 10px 15px;
+  font-size: 16px;
+  color: var(--primary-text);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.wrapper .m-menu ul::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper .m-menu ul li a,
+.wrapper .m-menu ul li .a-label__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  padding: 0 15px;
+  line-height: 47px;
+  text-decoration: none;
+  color: var(--grey70);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--primary-text);
+  font-weight: 500;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.wrapper .m-menu ul li .a-label__chevron .icon,
+.wrapper .m-menu ul li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: white;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--primary);
+}
+
+.wrapper .m-menu ul li .-invisible {
+  border-bottom: 0;
+}
+
+.wrapper .m-menu .m-menu label.m-menu__toggle {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.wrapper .m-menu .m-menu label.m-menu__toggle:after {
+  display: none;
+}
+
+.wrapper .m-menu__checkbox:checked~.m-menu__overlay {
+  display: block;
+}
+
+.wrapper .m-menu__checkbox:checked~.m-menu {
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/*===============================================
+25: main css 
+================================================*/
+/* appbar */
+.appbar {
+  text-align: center;
+  background: var(--primary);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.appbar button,
+.appbar a {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.appbar .back-page-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.appbar h1 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* content */
+
+.page-content {
+  padding: 45px 15px 65px 15px;
+}
+
+.page-content .pages-title {
+  padding: 15px 0 10px 0;
+}
+
+.page-content .pages-title h2 {
+  font-size: 16px;
+  color: var(--grey-40);
+  line-height: 28px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.page-content .page-list ul {
+  background: var(--secondary);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.page-content .page-list ul li {
+  padding: 6px 15px;
+  border-bottom: 1px solid var(--grey-10);
+}
+
+.page-content .page-list ul li:last-child {
+  border: 0;
+}
+
+.page-content .page-list ul li a {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--grey-70);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.page-content .page-list ul li a .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--primary);
+}
+
+
+/*===========================================================
+26: dark-mode CSS
+=============================================================*/
+.dark-mode .wrapper .m-menu{
+  background: var(--gray-100);
+}
+
+.dark-mode .page-content .page-list ul{
+  background: var(--gray-80);
+}
+
+.dark-mode .page-title,
+.dark-mode .bottom-nav,
+.dark-mode .modal-content {
+  background: var(--gray-100);
+}
+
+.dark-mode .wrapper .m-menu ul li a,
+.dark-mode .wrapper .m-menu ul li .a-label__chevron,
+.dark-mode .wrapper .m-menu ul .menu-title,
+.dark-mode .page-content .pages-title h2,
+.dark-mode .page-content .page-list ul li a,
+.dark-mode .page-title .main-title,
+.dark-mode .filterModal .content-title,
+.dark-mode .filterModal .star-rating .filter-label,
+.dark-mode .filterModal .popular-filters .filter-label,
+.dark-mode .dateModal .modal-header .modal-title,
+.dark-mode .bottomModal .modal-header .modal-title {
+  color: white;
+}
+
+.dark-mode .page-title .back-btn,
+.dark-mode .bottomModal .modal-header .modal-close {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .search img,
+.dark-mode .page-title .back-btn img,
+.dark-mode .bottomModal .modal-header .modal-close img,
+.dark-mode .wrapper .m-menu ul li a img,
+.dark-mode .wrapper .m-menu ul li .a-label__chevron img,
+.dark-mode .page-content .page-list ul li a img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .search label,
+.dark-mode .search .form-inner,
+.dark-mode .search .message-search,
+.dark-mode .search .help-search
+.dark-mode .search input {
+  background: var(--gray-80);
+  color: white;
+}
+
+.dark-mode .input-field {
+  background: var(--gray-80);
+  color: white;
+}
+
+.dark-mode .auth .social-btn {
+  color: white;
+  border-color: white;
+}
+
+.dark-mode .facilities .item .icon {
+  background: var(--gray-60);
+}

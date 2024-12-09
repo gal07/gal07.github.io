@@ -1,0 +1,95 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 35px 50px;
+  }
+  .ulBG {
+    left: -50px;
+  }
+  .popTxt h2 {
+    font-size: 40px;
+  }
+  .popTxt p {
+    font-size: 18px;
+  }
+  .popList li {
+    font-size: 18px;
+  }
+  .popList li i {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    padding: 35px 20px;
+  }
+  .popTxt h2 {
+    font-size: 30px;
+  }
+  .popTxt p {
+    font-size: 15px;
+  }
+  .popList {
+    padding: 20px 0;
+  }
+  .popList li,
+  .warning {
+    font-size: 15px;
+  }
+  .ulBG {
+    left: -20px;
+  }
+  aside img {
+    width: 100%;
+  }
+  .apply {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  aside img {
+    width: 50%;
+  }
+  .apply {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .close {
+    top: -10px;
+    right: -10px;
+  }
+  .popTxt h2 {
+    font-size: 20px;
+  }
+  .popTxt p {
+    font-size: 12px;
+  }
+  .popList {
+    width: 100%;
+  }
+  .popList li,
+  .warning {
+    font-size: 12px;
+  }
+  .popList {
+    padding: 10px 0;
+  }
+  .textField {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .textField input {
+    padding-right: 50px;
+  }
+}

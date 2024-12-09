@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../TAHOMA_Font/TAHOMA_0.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../TAHOMA_Font/TAHOMA_RG.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../TAHOMA_Font/TAHOMAB0.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../TAHOMA_Font/TAHOMABD.TTF") format("truetype");
+}

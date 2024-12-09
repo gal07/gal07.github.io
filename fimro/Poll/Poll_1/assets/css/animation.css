@@ -1,0 +1,40 @@
+.FadeReveal {
+  animation: showOp 0.8s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+  transform: translateY(-15px);
+}
+
+@keyframes showOp {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.delay-100ms {
+  animation-delay: 100ms;
+}
+.delay-200ms {
+  animation-delay: 200ms;
+}
+.delay-300ms {
+  animation-delay: 300ms;
+}
+
+.thankyouInner > * {
+  animation: fadeDown 0.8s forwards ease-in-out;
+  opacity: 0;
+}
+@keyframes fadeDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

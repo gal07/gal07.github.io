@@ -1,0 +1,25 @@
+.slideTop {
+  animation: slide forwards 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translatey(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.ball {
+  animation: reveal forwards 1s cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 0.5s;
+}
+@keyframes reveal {
+  from {
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    clip-path: circle(70.7% at 50% 50%);
+  }
+}

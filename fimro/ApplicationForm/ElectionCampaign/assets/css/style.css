@@ -1,0 +1,509 @@
+:root
+{
+    --primary-color: rgb(225, 4, 25);
+    --secondary-color: rgb(26, 67, 123);
+    --heading-color: rgb(20, 57, 113);
+    --heading-color-2: rgb(47,49,70);
+    --text-color: rgb(255,255,255);
+    --text-color-2: rgb(32,30,30);
+    --bg-color: rgb(255,255,255);
+    --field-color: rgb(245, 245, 245);
+    
+}
+
+body
+{
+    width: 100%;
+    height: auto;
+    font-family: 'Kenyan Coffee';
+    font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6, p
+{
+    margin-bottom: 0;
+}
+main
+{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+
+}
+.TrimCampaign-Home
+{
+    width: 100%;
+    height: 100%;
+}
+aside
+{
+    width: 100%;
+    height: 100%;
+}
+aside img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.voteDate
+{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+.voteDate::after
+{
+    content: "";
+    border-radius: 50%;
+    background-color: transparent;
+    width: 420px;
+    height: 420px;
+    border: solid 4px var(--bg-color);
+
+    position: absolute;
+    top: -50%;
+    left: 0;
+      
+}
+.voteDate::before
+{
+    content: "";
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    width: 380px;
+    height: 380px;
+
+    position: absolute;
+    top: calc(-50% + 20px);
+    left: 20px;
+}
+.voteDate article
+{
+    position: relative;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    top: -50px;
+    left: 120px;
+
+}
+.voteDate h1
+{
+    font-size: 250px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    line-height: 0.9;
+    font-weight: bold;
+}
+.voteDate p
+{
+    font-size: 39px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+.indicator
+{
+    position: absolute;
+    top: -45%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+
+
+
+.nomineeIntro
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.jpg);
+    background-size: 100% 100%;
+}
+.wrapper
+{
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    padding: 50px 0;
+}
+.text-wrap
+{
+    width: 65%;
+    margin-left: auto;
+    text-align: end;
+}
+.text-wrap *
+{
+    margin-left: auto;
+}
+.aboutCompaign
+{
+    font-size: 45px;
+    width: 80%;
+    margin-left: auto;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.nomineeName
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+.nomineeName h2
+{
+    font-size: 110px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: start;
+    width: max-content;
+    background-color: var(--primary-color);
+    height: 290px;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    line-height: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    padding-left: 100px;
+    position: relative;
+    z-index: 2;
+}
+.nomineeName span
+{
+    position: relative;
+}
+.nomineeName p
+{
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 190px;
+    font-size: 55px;
+    line-height: 1.2;
+    color: var(--text-color);
+    display: grid;
+    place-content: center;
+    padding-left: 70px;
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+
+    position: relative;
+    z-index: 1;
+    top: -50px;
+    padding-top: 50px;
+}
+.nomineeName p .small
+{
+    display: block;
+    font-size: 30px;
+}
+.voteNow
+{
+    font-size: 30px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    width: 240px;
+    height: 85px;
+    clip-path: polygon(5% 0, 100% 0, 92% 100%, 0 100%);
+    border: 0;
+    margin-left: auto;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.voteNow span
+{
+    position: relative;
+}
+.voteNow:hover
+{
+    color: var(--primary-color);
+}
+.voteNow::before
+{
+    content: "";
+    width: 0;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+.voteNow:hover::before
+{
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+
+
+.TrimCampaign-form .wrapper
+{
+    width: 50%;
+    margin: 0 auto;
+}
+.main-heading
+{
+    font-size: 80px;
+    color: var(--heading-color-2);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.main-heading span
+{
+    color: var(--primary-color);
+    display: block;
+}
+  
+
+/* form */
+form
+{
+    width: 100%;
+    height: auto;
+}
+.fieldWrap
+{
+    width: auto;
+    height: auto;
+    position: relative;
+    transform:skew(-8deg, 0deg);
+    left: -30px;
+}
+.inputField
+{
+    background-color: var(--field-color);
+    border: 0;
+    box-shadow: 0px 3px 95px 0px rgba(0, 0, 0, 0.17);
+    height: 85px;
+    width: 100%;
+    font-size: 24px;
+    color: rgb(122, 122, 122);
+    padding: 0 50px 0 60px;
+    margin-bottom: 35px;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+
+}
+
+.inputField:focus
+{
+    outline: none;
+    box-shadow: 0px 3px 95px 0px rgba(225, 4, 25, 0.17);
+}
+textarea.inputField
+{
+    height: 180px;
+    padding-top: 30px;
+}
+.TrimCampaign-form #step1 .voteNow
+{
+    position: relative;
+    left: -75px;
+}
+
+
+
+
+
+#step2
+{
+    text-align: center;
+}
+.TrimCampaign-vote
+{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding: 50px 0;
+    height: 100%;
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+}
+.voteNominee
+{
+    width: 100%;
+    height: 100%;
+
+}
+.radio-gap
+{
+    gap: 65px;
+}
+.radioField
+{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+.radioField .radioCircle
+{
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    width: 252px;
+    height: 252px;
+    position: relative;
+}
+.radioCircle input
+{
+    -webkit-appearance: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: inherit;
+    border: solid 9px transparent;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.radioCircle input:hover
+{
+    border-color: var(--primary-color);
+}
+.radioCircle input:before
+{
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    border: solid 10px var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 12px;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.radioCircle input:checked
+{
+    border-color: var(--primary-color);
+}
+.radioCircle input:checked::before
+{
+    opacity: 1;
+}
+.radioField .radioCircle img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    pointer-events: none;
+}
+.radioField label
+{
+    font-size: 40px;
+    color: var(--text-color-2);
+    text-align: center;
+    margin-top: 20px;
+    width: -webkit-fill-available;
+    margin: 0 auto;
+}
+.thankyou
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+
+}
+.nomineeThanks
+{
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.nomineeThanks img
+{
+    width: 100%;
+
+}
+.social-icons 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons a
+{
+    text-decoration: none;
+}
+.social-icons i
+{
+    font-size: 20px;
+    color: var(--text-color);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background-color: var(--text-color-2);
+    width: 50px;
+    height: 50px;
+    margin: 0 8px; 
+    transition: 0.5s;
+}
+.social-icons i:hover
+{
+    background-color: var(--primary-color);
+}
+.thankyou h1, .social-icons
+{
+    width: 58%;
+    margin: 0 auto;
+}
+.thankyou h1
+{
+    margin-bottom: 40px;
+}
+.voteNow img
+{
+    width: 50px;
+}
+.voteNow:hover img
+{
+    filter: brightness(0) saturate(100%) invert(13%) sepia(88%) saturate(5714%) hue-rotate(349deg) brightness(86%) contrast(106%);
+}
+
+#error
+{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css"/>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <!-- animation -->
+        <link rel="stylesheet" href="assets/css/animation.css"/>
+
+        <!-- responsive -->
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+    </head>
+
+    <body>
+
+        <main class="overflow-hidden">
+            <div class="row" id="form">
+                <div class="col-md-5 tab-none">
+
+                    <!-- sideArea -->
+                    <div class="sideArea">
+                        <div class="avatarImg">
+                            <img src="assets/images/avatar.png" alt="Avatar">
+                            <div class="imgShape"></div>
+                        </div>
+                        <img class="spring" src="assets/images/spring.png" alt="Spring">
+                        <div class="Join">
+                            <h4>
+                                <i class="fa-solid fa-paper-plane"></i>Join with Trim. & Get free access
+                            </h4>
+                            <div class="JoinBar">
+                                <div class="fill">
+                                    <div class="filled"></div>
+                                </div>
+                                75%
+                            </div>
+                        </div>
+
+                        <!-- slider -->
+                        <div id="clients" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="1500">
+                                    <img src="assets/images/clients/c1.png" alt="Client">
+                                    <img src="assets/images/clients/c2.png" alt="Client">
+                                    <img src="assets/images/clients/c3.png" alt="Client">
+                                    <img src="assets/images/clients/c4.png" alt="Client">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1500">
+                                    <img src="assets/images/clients/c5.png" alt="Client">
+                                    <img src="assets/images/clients/c6.png" alt="Client">
+                                    <img src="assets/images/clients/c7.png" alt="Client">
+                                    <img src="assets/images/clients/c8.png" alt="Client">
+
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1500">
+                                    <img src="assets/images/clients/c9.png" alt="Client">
+                                    <img src="assets/images/clients/c10.png" alt="Client">
+                                    <img src="assets/images/clients/c11.png" alt="Client">
+                                    <img src="assets/images/clients/c12.png" alt="Client">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 tab-100">
+
+                    <!-- form -->
+                    <form id="stepForm">
+                        <div class="wrapper">
+
+                            <!-- tag -->
+                            <h5 class="tag"><i class="fa-solid fa-circle-check"></i>Collaboration With Chat</h5>
+                            
+                            <!-- step1 -->
+                            <fieldset id="step1">
+
+                                <!-- step heading -->
+                                <h1 class="main-heading">What social platform  Did/do you feel the most  Creative on?</h1>
+
+                                <!-- step Options -->
+                                <div class="radioField">
+                                    <input type="radio" name="social" value="Tumblr">
+                                    <label>Tumblr</label>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="radioField">
+                                    <input type="radio" name="social" value="MySpace">
+                                    <label>MySpace</label>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="radioField">
+                                    <input type="radio" name="social" value="Instagram">
+                                    <label>Instagram</label>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="radioField">
+                                    <input type="radio" name="social" value="Pinterest">
+                                    <label>Pinterest</label>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+
+                                <!-- step button -->
+                                <button type="button" id="sub" class="voteNow"><span>Vote Now</span></button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- loading -->
+            <div class="loading d-none">
+                <img src="assets/images/loading.gif" alt="loading">
+            </div>
+
+
+            <!-- result div -->
+            <section class="pollResult d-none">
+                <article class="resultTxt">
+                    <span>right context</span>
+                    <h3>poll result</h3>
+                </article>
+
+                <!-- circles -->
+                <div class="d-flex justify-content-evenly gap-4 my-5 flex-wrap">
+                    <div class="resultSingle">
+
+                        <!-- svg result -->
+                        <svg class="circle">
+                            <defs>
+                                <clipPath id="fitImg">
+                                    <circle class="circle1" cx="50%" cy="50%" r="48%"/>
+                                </clipPath>
+                            </defs>
+                            <circle class="circle2" cx="50%" cy="50%" r="48%" />
+                            <image preserveAspectRatio="xMidYMid slice" width="100%" height="100%" href="assets/images/resultImg/r1.jpg" clip-path="url(#fitImg)"/>
+                        </svg>
+                        <span class="percentage">9%</span>
+
+                        <h3 class="resultHeading">Tumblr</h3>
+                    </div>
+                    <div class="resultSingle">
+                        <svg class="circle">
+                            <defs>
+                                <clipPath id="fitImg">
+                                    <circle class="circle1" cx="50%" cy="50%" r="48%"/>
+                                </clipPath>
+                            </defs>
+                            <circle class="circle2" cx="50%" cy="50%" r="48%" />
+                            <image preserveAspectRatio="xMidYMid slice" width="100%" height="100%" href="assets/images/resultImg/r2.jpg" clip-path="url(#fitImg)"/>
+                        </svg>
+                        <span class="percentage">5%</span>
+
+                        <h3 class="resultHeading">MySpace</h3>
+                    </div>
+                    <div class="resultSingle">
+                        <svg class="circle">
+                            <defs>
+                                <clipPath id="fitImg">
+                                    <circle class="circle1" cx="50%" cy="50%" r="48%"/>
+                                </clipPath>
+                            </defs>
+                            <circle class="circle2" cx="50%" cy="50%" r="48%" />
+                            <image preserveAspectRatio="xMidYMid slice" width="100%" height="100%" href="assets/images/resultImg/r3.jpg" clip-path="url(#fitImg)"/>
+                        </svg>
+                        <span class="percentage">41%</span>
+                        
+                        <h3 class="resultHeading">Instagram</h3>
+                    </div>
+                    <div class="resultSingle">
+                        <svg class="circle">
+                            <defs>
+                                <clipPath id="fitImg">
+                                    <circle class="circle1" cx="50%" cy="50%" r="48%"/>
+                                </clipPath>
+                            </defs>
+                            <circle class="circle2" cx="50%" cy="50%" r="48%"/>
+                            <image preserveAspectRatio="xMidYMid slice" width="100%" height="100%" href="assets/images/resultImg/r4.jpg" clip-path="url(#fitImg)"/>
+                        </svg>
+                        <span class="percentage">45%</span>
+
+                        <h3 class="resultHeading">Pinterest</h3>
+                    </div>
+                </div>
+
+                <a class="mx-auto" href="index.html"><button class="voteNow mt-5"><span>Undo Vote?</span></button></a>
+
+            </section>
+
+            <div id="error"></div>
+        </main>
+
+
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>

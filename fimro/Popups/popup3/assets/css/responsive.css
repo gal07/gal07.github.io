@@ -1,0 +1,126 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .discountHead {
+    font-size: 250px;
+  }
+  .discountHead .upto {
+    font-size: 18px;
+  }
+  .discountHead .prcnt span {
+    font-size: 40px;
+  }
+  .discountHead .prcnt {
+    font-size: 18px;
+    bottom: 30px;
+  }
+  .popInner {
+    padding: 40px 70px;
+  }
+  .mainHeading {
+    font-size: 100px;
+  }
+  .highlightHeading {
+    font-size: 100px;
+  }
+  .highlightHeading .highlightDiscount {
+    font-size: 35px;
+  }
+  .highlightHeading .highlighttext {
+    font-size: 25px;
+  }
+  .highlightHeading .highlightDiscount sub {
+    font-size: 20px;
+  }
+  .aboutFeature i {
+    font-size: 50px;
+  }
+  .aboutFeature p {
+    width: 40%;
+  }
+  .featureSingle h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .discountHead {
+    font-size: 180px;
+    bottom: 0;
+  }
+  .discountHead .upto {
+    font-size: 12px;
+  }
+  .discountHead .prcnt {
+    font-size: 12px;
+    bottom: 60px;
+  }
+  .discountHead .prcnt span {
+    font-size: 30px;
+  }
+  .popInner {
+    padding: 40px 30px;
+  }
+  .mainHeading,
+  .highlightHeading {
+    font-size: 70px;
+  }
+  .highlightHeading .highlightDiscount {
+    font-size: 20px;
+  }
+  .highlightHeading .highlighttext {
+    font-size: 20px;
+  }
+  .subscribe button {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+  .subscribe {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order_s {
+    order: 2;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .mainHeading,
+  .highlightHeading {
+    font-size: 50px;
+  }
+  .headingDiscountText {
+    margin-bottom: 5px;
+  }
+  .highlightHeading .highlighttext,
+  .highlightHeading .highlightDiscount,
+  .highlightHeading .highlightDiscount sub {
+    font-size: 12px;
+  }
+  .popInner {
+    padding: 40px 20px;
+  }
+  .close {
+    width: 45px;
+    top: -10px;
+    right: -10px;
+  }
+  .features > * {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .subscribe input {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .subscribe {
+    padding-left: 10px;
+  }
+}

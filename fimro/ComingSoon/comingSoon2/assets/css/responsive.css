@@ -1,0 +1,54 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .mainHeading {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  #countdown .timeSingle {
+    font-size: 12px;
+  }
+  #countdown .timeSingle .time {
+    font-size: 35px;
+  }
+  .mainHeading {
+    font-size: 50px;
+  }
+  .soonDesc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ball1 {
+    width: 35%;
+  }
+  .comingSoon {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  #countdown .timeSingle {
+    padding-right: 20px;
+  }
+  #countdown .timeSingle .time {
+    font-size: 25px;
+  }
+  #countdown .timeSingle {
+    font-size: 10px;
+  }
+  .ball1 {
+    width: 50%;
+  }
+}

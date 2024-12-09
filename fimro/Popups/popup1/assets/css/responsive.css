@@ -1,0 +1,52 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .popContent {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .popContent h1 {
+    font-size: 40px;
+  }
+  .popContent h1 span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .popContent {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .popInner {
+    padding: 50px 0;
+    min-height: auto;
+  }
+  .popContent {
+    width: 90%;
+  }
+
+  .subscribe button {
+    height: 60px;
+    font-size: 15px;
+  }
+  .warning {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+  .popContent h1 {
+    font-size: 30px;
+  }
+  .popContent h1 span {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,131 @@
+.about-employee > *
+{
+    animation: fade-down 1s forwards ease-in;
+}
+
+@keyframes fade-down
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.about-employee > p
+{
+    animation-delay: 200ms;
+}
+
+
+fieldset::after
+{
+    animation: FieldrevealAfter 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+@keyframes FieldrevealAfter {
+    from
+    {
+        height: 100%;
+    }
+    to
+    {
+        height: 0;
+    }
+}
+fieldset::before
+{
+    animation: FieldrevealBefore 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+    animation-delay: 0.2s;
+}
+@keyframes FieldrevealBefore {
+    from
+    {
+        height: 100%;
+    }
+    to
+    {
+        height: 0;
+    }
+}
+
+
+
+
+
+
+
+
+.Title::after
+{
+    animation: revealAfter 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+@keyframes revealAfter {
+    from
+    {
+        height: 100%;
+    }
+    to
+    {
+        height: 0;
+    }
+}
+.Title::before
+{
+    animation: revealBefore 0.8s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+    animation-delay: 0.2s;
+}
+@keyframes revealBefore {
+    from
+    {
+        height: 100%;
+    }
+    to
+    {
+        height: 0;
+    }
+}
+.Title span::after
+{
+    animation: revealSpan 0.4s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+    animation-delay: 0.5s;
+}
+@keyframes revealSpan {
+    from
+    {
+        width: 100%;
+    }
+    to
+    {
+        width: 0;
+    }
+}
+.Title span::before
+{
+    animation: revealSpanBefore 0.4s forwards cubic-bezier(0.6, 0.05, 0.4, 1);
+    animation-delay: 0.7s;
+}
+@keyframes revealSpanBefore
+{
+    from
+    {
+        width: 100%;
+    }
+    to
+    {
+        width: 0;
+    }
+}
+#error
+{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.invalid
+{
+    border-color: rgb(180, 38, 38);
+}

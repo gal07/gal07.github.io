@@ -1,0 +1,302 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+  .sliderHeading {
+    font-size: 60px;
+  }
+  .sliderDesc {
+    width: 90%;
+  }
+
+  /* tab */
+  .tab-wrap {
+    padding: 50px 55px;
+  }
+  .trim-form {
+    padding-right: 200px;
+  }
+  .file article p {
+    font-size: 10px;
+  }
+  .shape-X {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .slideContent {
+    width: 70%;
+  }
+  .sliderHeading {
+    font-size: 45px;
+  }
+  .sliderDesc {
+    font-size: 18px;
+  }
+  .slideList li {
+    font-size: 16px;
+  }
+
+  /* tab */
+  .formTab-button button {
+    font-size: 20px;
+  }
+  .tab-wrap {
+    padding: 20px 25px;
+  }
+  .trim-form {
+    padding-right: 100px;
+  }
+  .inputLabel {
+    font-size: 14px;
+  }
+  .inputField .radioLabel {
+    font-size: 12px;
+  }
+  .inputField {
+    height: 60px;
+  }
+  .lineText {
+    font-size: 12px;
+  }
+  .radioBox {
+    height: 200px;
+  }
+  .radioBox label {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .radioBox input::before {
+    left: 15px;
+    top: 10px;
+  }
+  .scroll {
+    padding-right: 25px;
+  }
+  .file {
+    padding: 0 25px;
+  }
+  .file article h5 {
+    font-size: 14px;
+  }
+  .file input[type="radio"] {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .pMethod {
+    font-size: 17px;
+    height: 70px;
+  }
+  .thankyouInner {
+    width: 65%;
+  }
+  .thankyouHeading {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-100 {
+    width: 100%;
+  }
+  .slideContent {
+    width: 80%;
+  }
+  main {
+    padding: 20px 60px 20px 60px;
+  }
+
+  .trim-form {
+    padding-right: 20px;
+  }
+  .tab-content #step1 {
+    padding: 0;
+  }
+  .radioBox label {
+    font-size: 12px;
+  }
+  .sendInstruction label {
+    margin-right: 30px;
+  }
+  .thankyouInner {
+    width: 100%;
+  }
+  .thankyouHeading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px 40px 20px 40px;
+  }
+  .slideContent {
+    margin-right: auto;
+    width: 55%;
+    text-align: center;
+  }
+  .tag {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sliderHeading {
+    font-size: 30px;
+  }
+  .sliderDesc {
+    font-size: 15px;
+    width: 100%;
+  }
+  .slideList li {
+    justify-content: center;
+  }
+
+  .slidefooter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .slidefooter > * {
+    margin-bottom: 20px;
+  }
+
+  .tab-content {
+    border-radius: 0;
+  }
+  .formTab-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: rgb(48, 48, 48);
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+  }
+  .formTab-button button {
+    margin-bottom: 0;
+  }
+  header {
+    margin-top: 60px;
+  }
+
+  .thankyouHeading {
+    font-size: 26px;
+  }
+}
+@media (max-width: 576px) {
+  header,
+  footer {
+    flex-wrap: wrap;
+  }
+  footer {
+    justify-content: center;
+  }
+  header > *,
+  footer > * {
+    margin-bottom: 20px;
+  }
+  .slideContent {
+    width: 70%;
+  }
+  .sliderHeading {
+    font-size: 25px;
+  }
+  .sliderDesc {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .slideList li {
+    font-size: 12px;
+  }
+  .slideList li i {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .slidefooter article h6,
+  .slidefooter article p {
+    font-size: 12px;
+  }
+  .communityImgs img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .formTab-button button {
+    font-size: 15px;
+  }
+  .formTab-button button::before,
+  .formTab-button button::after {
+    height: 5px;
+    bottom: 2.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px;
+  }
+  .slideContent {
+    width: 100%;
+  }
+  .sliderHeading {
+    font-size: 20px;
+  }
+  .communityImgs img:nth-child(2) {
+    left: -10px;
+  }
+  .communityImgs img:nth-child(3) {
+    left: -20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+  footer {
+    text-align: center;
+  }
+  .quickLinks li {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .slidePrev,
+  .slideNext {
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+  }
+  .communityNumbers {
+    margin-left: 0;
+  }
+  .slidePrev,
+  .slideNext {
+    top: 2%;
+    transform: translateY(-2%);
+  }
+  .file {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .file > * {
+    margin-bottom: 10px;
+  }
+  .formTab-button button {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .formTab-button button span {
+    display: none;
+  }
+  .paymentText h3 {
+    font-size: 20px;
+  }
+  .paymentText p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .exp-date input {
+    padding-left: 20px;
+  }
+}

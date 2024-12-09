@@ -1,0 +1,402 @@
+@media  (min-width: 1600px)
+{
+    .container
+    {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1440px)
+{
+    .next-prev
+    {
+        width: calc(100% - 50px);
+    }
+    .best-value
+    {
+        left: auto;
+        right: 0px;
+    }
+
+    .priceWrap
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .priceDiscount h1
+    {
+        font-size: 45px;
+    }
+    .desc
+    {
+        font-size: 16px;
+    }
+    .feature p
+    {
+        font-size: 12px;
+    }
+    .priceHead
+    {
+        height: 150px;
+    }
+
+    .priceHead h1
+    {
+        font-size: 50px;
+    }
+    .serviceType
+    {
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+    .shape-X
+    {
+        display: none;
+    }
+    
+}
+@media (max-width: 1200px)
+{
+    .carousel-item .slider-content
+    {
+        width: 90%;
+    }
+    .main-heading
+    {
+        font-size: 45px;
+    }
+    .slider-content p
+    {
+        width: 100%;
+        font-size: 14px;
+    }
+    .footerHeading
+    {
+        font-size: 20px;
+    }
+    .footerVideo span
+    {
+        font-size: 12px;
+    }
+    .lg-100
+    {
+        width: 100%;
+    }
+    .lg-50
+    {
+        width: 50%;
+    }
+    .order_c
+    {
+        order: 2;
+    }
+    .form-heading
+    {
+        font-size: 30px;
+    }
+    .cartWrap, form
+    {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .cartList li, #load
+    {
+        font-size: 14px;
+    }
+    .cartHeading
+    {
+        font-size: 17px;
+    }
+    .cartHeading-desc, .subheading, .invoiceInfo p
+    {
+        font-size: 12px;
+    }
+    .planAmount
+    {
+        font-size: 15px;
+    }
+    .invoiceInfo
+    {
+        padding: 15px;
+    }
+
+
+
+
+    .thankyouInner
+    {
+        width: 65%;
+    }
+    .thankyouHeading
+    {
+        font-size: 50px;
+    }
+} 
+
+@media (max-width: 992px)
+{
+
+    .wrapper
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .sponsers
+    {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .cartWrap, form
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .cartList li i, .cartList li
+    {
+        margin-right: 15px;
+    }
+    .cartHead h3
+    {
+        font-size: 18px;
+    }
+    .cartHead p
+    {
+        font-size: 25px;
+    }
+    .inputField input, .inputField select
+    {
+        padding-left: 15px;
+    }
+
+
+    .thankyouInner
+    {
+        width: 100%;
+    }
+    .thankyouHeading
+    {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .social-icons
+    {
+        margin-right: 20px;
+    }
+    .social-icons i
+    {
+        margin: 0 8px;
+    }
+    .call-details h5
+    {
+        font-size: 15px;
+    }
+    .main-heading
+    {
+        font-size: 35px;
+    }
+    .best-value
+    {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+    }
+    .next-prev
+    {
+        display: none;
+    }
+    .priceWrap
+    {
+        width: 90%;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+    .form-heading
+    {
+        width: 80%;
+    }
+    .cartWrap, form
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    form
+    {
+        margin-top: 50px;
+    }
+
+
+
+
+    .thankyouHeading
+    {
+        font-size: 26px;
+    }
+
+}
+@media (max-width: 576px)
+{
+    .wrapper
+    {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .slideType
+    {
+        gap: 10px;
+    }
+    .slideType button
+    {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    .sponsers
+    {
+        width: 80%;
+    }
+    .contact
+    {
+        justify-content: center;
+    }
+    .social-icons
+    {
+        margin-right: 0;
+        margin-left: 25px;
+        order: 2;
+        margin-top: 10px;
+    }
+    .agreement
+    {
+        flex-wrap: wrap;
+    }
+    .agreement p
+    {
+        font-size: 10px
+    }
+
+
+}
+
+@media (max-width: 480px)
+{
+    .wrapper
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header
+    {
+        flex-wrap: wrap;
+        padding: 20px !important;
+
+    }
+    .contact
+    {
+        justify-content: start;
+        margin-top: 20px;
+    }
+    .best-value
+    {
+        left: auto;
+        right: 0px;
+    }
+    .carousel-item .slider-content
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .best-value
+    {
+        width: 50px;
+        height: 50px;
+        font-size: 8px;
+    }
+    .highlight, .slider-content p
+    {
+        font-size: 10px;
+    }
+    .main-heading
+    {
+        font-size: 16px;
+    }
+    .slider-content p
+    {
+        margin-bottom: 15px;
+    }
+    .slideType
+    {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    .contact
+    {
+        display: none;
+    }
+    .trim-btn
+    {
+        width: 120px;
+        height: 50px;
+        font-size: 10px;
+    }
+    .slideType 
+    {
+        display: none;
+    }
+    .next-prev
+    {
+        display: flex;
+        height: min-content;
+        z-index: 100;
+        bottom: 20px;
+        top: auto;
+    }
+    .next-prev button
+    {
+        width: 56px;
+        height: 56px;
+        line-height: 53px;
+    }
+
+    .priceDiscount h1
+    {
+        font-size: 30px;
+    }
+    .priceContentInner
+    {
+        padding: 30px;
+    }
+    .cartWrap, form
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

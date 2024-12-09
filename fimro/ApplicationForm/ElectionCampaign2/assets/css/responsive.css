@@ -1,0 +1,375 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+  header {
+    max-width: 1730px;
+    margin-left: auto;
+  }
+  .thankyou .container {
+    max-width: 780px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .CandidateImg {
+    height: 550px;
+  }
+  .aboutCampaign {
+    padding: 30px 30px 30px 18px;
+  }
+  .campaignHeading {
+    font-size: 30px;
+  }
+  .campaignHeading .highlight {
+    font-size: 50px;
+  }
+  .catchLine {
+    font-size: 12px;
+  }
+  .campaignText h4 {
+    font-size: 18px;
+  }
+  .campaignText p {
+    font-size: 14px;
+  }
+  .candidateDetails {
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    transform: translateY(0);
+  }
+  .candidateDetails h2 {
+    font-size: 35px;
+  }
+  .candidateDetails p {
+    font-size: 14px;
+  }
+
+  /* vote */
+  header {
+    padding-left: 1.5rem;
+  }
+  .selectedCandidate {
+    height: 420px;
+  }
+
+  /* pop Up */
+  .PopUpCandidate {
+    padding: 50px;
+  }
+  .popCandidateName {
+    font-size: 40px;
+  }
+  .tagLine,
+  .popDesc h6,
+  .popDesc p {
+    font-size: 15px;
+  }
+  .popDesc {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .socialLinks h3 {
+    font-size: 18px;
+  }
+  .socialLinks img {
+    width: 32px;
+  }
+  .popBtn {
+    margin-top: 25px;
+  }
+
+  /* thankyou */
+  .thankyou .container {
+    max-width: 780px;
+  }
+}
+@media (max-width: 1200px) {
+  .candidate.pe-md-5 {
+    padding-right: 20px !important;
+  }
+  .candidate.ps-md-5 {
+    padding-left: 20px !important;
+  }
+  .CandidateImg {
+    height: 450px;
+  }
+  .candidateDetails {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+  .candidateDetails h2 {
+    font-size: 15px;
+  }
+  .candidateDetails i {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .candidateDetails p {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 30px;
+    margin-bottom: 20px !important;
+    padding-bottom: 0 !important;
+  }
+  .logo img {
+    width: 30px;
+  }
+  .campaignHeading {
+    font-size: 20px;
+  }
+  .campaignHeading .highlight {
+    font-size: 35px;
+  }
+  .catchLine {
+    height: 20px;
+    font-size: 10px;
+    padding-left: 5px;
+    width: 100%;
+  }
+  .aboutCampaign {
+    padding: 30px 10px;
+  }
+  .campaignText p {
+    font-size: 12px;
+  }
+  .voteNow {
+    padding: 0 25px;
+    font-size: 14px;
+    height: 45px;
+    margin-top: 20px;
+  }
+  .communityNumbers article h6,
+  .communityNumbers article p {
+    font-size: 12px;
+  }
+
+  /* vote */
+  nav {
+    width: 75%;
+  }
+  .selectedCandidate {
+    height: 250px;
+  }
+  .candidatename {
+    font-size: 20px;
+  }
+  .selectedCandidate span {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    font-size: 20px;
+  }
+
+  /* Pop Up Button */
+  .PopUpCandidate {
+    width: 80%;
+  }
+  .popCandidateName {
+    font-size: 35px;
+  }
+  .tagLine,
+  .popDesc h6,
+  .popDesc p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .candidate {
+    /* width: 60%; */
+  }
+  .container {
+    max-width: 900px;
+  }
+
+  .tab-lg-100 {
+    width: 100%;
+  }
+  .tab-lg-none {
+    display: none;
+  }
+  /* thankyou */
+  .thankyou::after {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .campaignHeading {
+    font-size: 15px;
+  }
+  .campaignHeading .highlight {
+    font-size: 30px;
+  }
+  .campaignText h4 {
+    font-size: 15px;
+  }
+  .campaignText p {
+    font-size: 10px;
+  }
+  .communityImgs img {
+    width: 30px;
+    height: 30px;
+  }
+  .communityImgs img:first-child {
+    left: 10px;
+  }
+  .communityImgs img:last-child {
+    left: -10px;
+  }
+  .catchLine {
+    margin-bottom: 15px;
+    font-size: 8px;
+  }
+  .candidate.pe-md-5 {
+    padding-right: 10px !important;
+  }
+  .candidate.ps-md-5 {
+    padding-left: 10px !important;
+  }
+  .candidateDetails {
+    width: 150px;
+    height: 150px;
+  }
+  .candidateDetails h2 {
+    font-size: 12px;
+  }
+  .candidateDetails p {
+    font-size: 10px;
+  }
+  .CandidateImg {
+    height: 350px;
+  }
+  .communityNumbers article h6,
+  .communityNumbers article p {
+    font-size: 10px;
+  }
+
+  /* vote */
+  .tab-50 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  nav {
+    width: 90%;
+    min-height: 50px;
+  }
+  .contact-info a {
+    font-size: 10px;
+  }
+  .contact-info i,
+  .socialIcons li {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  header .logo {
+    margin-bottom: 0 !important;
+  }
+  .selectedCandidate {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  /* pop up */
+
+  .popup {
+    display: block;
+    position: fixed;
+    top: 0px;
+    padding-top: 20px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .closePopup {
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .aboutCampaign {
+    width: 60%;
+    height: auto;
+  }
+  .catchLine {
+    width: 80%;
+  }
+  .candidate {
+    width: 35%;
+    display: none;
+  }
+  .campaignHeading .highlight {
+    display: block;
+  }
+
+  /* vote */
+  .selectedCandidate {
+    width: 80%;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  nav {
+    width: 100%;
+  }
+  .sectionHeading h4 {
+    font-size: 30px;
+  }
+
+  /* thankyou */
+  .thankyouText h2 {
+    font-size: 60px;
+  }
+  .thankyouText p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutCampaign {
+    width: 80%;
+  }
+  .sm-100 {
+    width: 100%;
+  }
+  .selectedCandidate {
+    width: 60%;
+  }
+  .contact-info {
+    margin-right: 10px;
+  }
+  nav {
+    padding: 15px 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav > * {
+    margin-bottom: 10px;
+  }
+  .socialIcons {
+    justify-content: center;
+  }
+
+  /* popup */
+  .PopUpCandidate {
+    width: 90%;
+    padding: 20px;
+  }
+  .closePopup {
+    top: 0;
+    right: 0;
+  }
+
+  /* thankyou */
+  /* thankyou */
+  .thankyouText h2 {
+    font-size: 40px;
+  }
+  .thankyouText p {
+    font-size: 12px;
+  }
+}

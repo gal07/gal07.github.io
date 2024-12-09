@@ -1,0 +1,106 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  .main-heading {
+    font-size: 35px;
+  }
+  .radioField label {
+    font-size: 20px;
+  }
+
+  .thanksDesc {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-heading {
+    width: 100%;
+  }
+  .step {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .thankyouHeading {
+    font-size: 60px;
+  }
+  .line {
+    font-size: 18px;
+  }
+  .thanksDesc {
+    font-size: 15px;
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 25px;
+  }
+  .radioField label {
+    font-size: 18px;
+  }
+  .radioField label span {
+    font-size: 15px;
+  }
+  .selected.radioField input:checked::before {
+    right: 20%;
+  }
+
+  .thankyouHeading {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 20px 0;
+  }
+  .Trim-vote {
+    width: 100%;
+    border-radius: 0;
+  }
+  header {
+    padding: 20px;
+  }
+  .main-heading {
+    font-size: 20px;
+  }
+  .radioField label {
+    font-size: 15px;
+  }
+  .radioField label span {
+    font-size: 12px;
+  }
+  .radioField {
+    padding: 0 20px 0 20px;
+  }
+  .step {
+    width: 90%;
+  }
+  .radioField input:checked:before {
+    right: 20px;
+  }
+  .thankyouInner {
+    width: 100%;
+  }
+  .thankyouHeading {
+    font-size: 30px;
+  }
+  .line {
+    font-size: 15px;
+  }
+  .thanksDesc {
+    font-size: 12px;
+  }
+  .socialBtn a {
+    font-size: 12px;
+  }
+  .socialBtn a i {
+    font-size: 15px;
+  }
+}

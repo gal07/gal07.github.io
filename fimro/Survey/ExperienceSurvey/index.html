@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="assets/css/animation.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- MAIN sTART -->
+    <main class="animate position-relative">
+      <!-- Header Section -->
+      <header class="mb-md-5">
+        <!-- Logo and Phone Info -->
+        <div class="logo">
+          <!-- Logo Image -->
+          <img src="assets/images/icon.png" alt="Icon" />Fimro.
+        </div>
+        <!-- Phone Information -->
+        <a href="#" class="phoneInfo">
+          <img src="assets/images/phone.png" alt="Phone" />
+          <!-- Phone Details -->
+          <article>
+            <h4>(987) 54 5875 8</h4>
+            <p>Have Any Question?</p>
+          </article>
+        </a>
+      </header>
+
+      <!-- Main Content Container -->
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-md-4 order_c">
+            <!-- Heading -->
+            <h2 class="asideHeading">Tell us, how was your stay?</h2>
+
+            <!-- Hotel Information -->
+            <aside>
+              <!-- Hotel Image -->
+              <img src="assets/images/aside.jpg" alt="aside" class="sideImg" />
+              <!-- Hotel Details -->
+              <h3 class="listHeding">Atlantic Paradise Inn & Suites</h3>
+              <!-- Contact Information -->
+              <ul class="contactInfo">
+                <li>
+                  <!-- Location Icon -->
+                  <img src="assets/images/l1.png" alt="Icon" />
+                  <!-- Location Details -->
+                  <article>
+                    <p>Myrtle Beach, South Caralina</p>
+                    <p>1401 S Ocean Blvd</p>
+                  </article>
+                </li>
+                <li>
+                  <!-- Phone Icon -->
+                  <img src="assets/images/l2.png" alt="Icon" />
+                  <!-- Phone Details -->
+                  <article>
+                    <h5>21 800 567.890.11</h5>
+                    <p>Mon-Fri 9am-6pm</p>
+                  </article>
+                </li>
+                <li>
+                  <!-- Email Icon -->
+                  <img src="assets/images/l3.png" alt="Icon" />
+                  <!-- Email Details -->
+                  <article>
+                    <h5>info@Email.com</h5>
+                    <p>online support</p>
+                  </article>
+                </li>
+              </ul>
+            </aside>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-8">
+            <!-- Review Form -->
+            <form id="rating" class="ratingMain" onsubmit="return false">
+              <div class="row">
+                <!-- Rating Input -->
+                <div class="col-md-12">
+                  <div class="inputField">
+                    <label class="labelHeading">
+                      How would you rate your experience?
+                    </label>
+                    <!-- Star Ratings -->
+                    <div class="rating">
+                      <div class="ratingSingle"></div>
+                      <div class="ratingSingle"></div>
+                      <div class="ratingSingle"></div>
+                      <div class="ratingSingle"></div>
+                      <div class="ratingSingle"></div>
+                      <span class="avgRating">Make the Rating!</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dropdown for Location -->
+                <div class="col-md-12">
+                  <div class="inputField">
+                    <label class="labelHeading"> When did you go? </label>
+                    <select name="place" required>
+                      <option value="">Select one</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="India">India</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <!-- Radio Buttons for Travel Type -->
+                <div class="col-md-12">
+                  <div class="inputField">
+                    <label class="labelHeading"> Who did you go with? </label>
+                    <div class="d-flex align-itmes-center flex-wrap">
+                      <div class="radioField">
+                        <input type="radio" name="type" />
+                        <label>Business</label>
+                      </div>
+                      <div class="radioField">
+                        <input type="radio" name="type" />
+                        <label>Couples</label>
+                      </div>
+                      <div class="radioField">
+                        <input type="radio" name="type" />
+                        <label>Family</label>
+                      </div>
+                      <div class="radioField">
+                        <input type="radio" name="type" />
+                        <label>Trip</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Review Textarea -->
+                <div class="col-md-12">
+                  <div class="inputField">
+                    <label class="labelHeading"> Write your review </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="The pillows are the fluffiest l've ever felt..."
+                    ></textarea>
+                  </div>
+                  <span class="maxChar">
+                    <span class="count">0</span>/<span class="tillcount"
+                      >200</span
+                    >
+                    min characters
+                  </span>
+                </div>
+
+                <!-- Review Title Input -->
+                <div class="col-md-12">
+                  <div class="inputField">
+                    <label class="labelHeading"> Title your review </label>
+                    <input
+                      type="text"
+                      id="review"
+                      name="review"
+                      placeholder="Give us the gist of your experience"
+                    />
+                  </div>
+                  <span class="maxChar">
+                    <span class="count">0</span>/<span class="tillcount"
+                      >120</span
+                    >
+                    max characters
+                  </span>
+                </div>
+
+                <!-- Photo Upload -->
+                <div class="col-md-12">
+                  <div class="inputField">
+                    <label class="labelHeading mb-0"> Add some photos </label>
+                    <span class="optional">Optional</span>
+                    <label for="file" class="file">
+                      <input type="file" name="file" id="file" />
+                      <i class="fa-solid fa-image"></i>
+                      <h3>Click to add photos</h3>
+                      <p>or drag and drop</p>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-md-12">
+                  <button id="sub" class="apply">Submit review</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="error"></div>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

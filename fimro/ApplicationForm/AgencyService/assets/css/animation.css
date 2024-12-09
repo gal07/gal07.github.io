@@ -1,0 +1,125 @@
+.pop
+{
+    animation: pop 0.3s linear forwards;
+
+}
+@keyframes pop {
+    25%
+    {
+        transform: scale(1.2);
+    }
+
+    100%
+    {
+        transform: scale(1.0);
+    }
+}
+.reveal
+{
+    animation: reveal 3s linear 1;
+}
+@keyframes reveal {
+    0%
+    {
+        opacity: 1;
+        display: block;
+    }
+    30%
+    {
+        opacity: 1;
+        display: block;
+    }
+    60%
+    {
+        opacity: 0.7;
+        display: block;
+    }
+    90%
+    {
+        opacity: 0.3;
+        display: block;
+    }
+    100%
+    {
+        opacity: 0;
+
+    }
+}
+
+
+.lightSpeedIn
+{
+    animation: lightSpeedIn 0.7s ease-in forwards;
+}
+.lightSpeedOut
+{
+    animation: lightSpeedOut 0.7s ease-out forwards;
+}
+
+
+
+@keyframes lightSpeedIn {
+    0% {
+       -webkit-transform: translateX(100%) skewX(-30deg);
+       opacity: 0;
+    }
+    60% {
+       -webkit-transform: translateX(-20%) skewX(30deg);
+       opacity: 1;
+    }
+    80% {
+       -webkit-transform: translateX(0%) skewX(-15deg);
+       opacity: 1;
+    }
+    100% {
+       -webkit-transform: translateX(0%) skewX(0deg);
+       opacity: 1;
+    }
+ }
+
+ @keyframes lightSpeedOut {
+    100% {
+       -webkit-transform: translateX(100%) skewX(-30deg);
+       opacity: 0;
+    }
+    80% {
+       -webkit-transform: translateX(-20%) skewX(30deg);
+       opacity: 1;
+    }
+    60% {
+       -webkit-transform: translateX(0%) skewX(-15deg);
+       opacity: 1;
+    }
+    0% {
+       -webkit-transform: translateX(0%) skewX(0deg);
+       opacity: 1;
+    }
+ }
+ .shapes
+ {
+    animation: slice-down 1s forwards ease-in-out;
+ }
+ @keyframes slice-down {
+    from
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+    }
+    to
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+ }
+ .chart img
+ {
+    animation: slice-left 1s forwards ease-in-out;
+ }
+ @keyframes slice-left {
+    from
+    {
+        clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+    }
+    to
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+ }

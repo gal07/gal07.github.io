@@ -1,0 +1,225 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: explore CSS
+02: all-place CSS
+03: search-result CSS
+04: recommended CSS
+05: selectLocation Modal CSS
+06: wishlist CSS
+07: dark-mode CSS
+==================================================*/
+
+/*===========================================================
+01: explore CSS
+=============================================================*/
+.explore {
+  padding: 16px 24px;
+  margin-bottom: 70px;
+}
+
+/*===========================================================
+02: all-place CSS
+=============================================================*/
+.all-place .tab-list {
+  overflow-x: auto;
+}
+
+.all-place .tab-list button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text);
+  border: 1px solid var(--additional2);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.all-place .tab-list .active button {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.recommended .grid,
+.all-place .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px;
+  column-gap: 16px;
+  margin-top: 24px;
+}
+
+/*===========================================================
+03: search-result CSS
+=============================================================*/
+.search-result {
+  padding: 0 16px 24px 16px;
+}
+
+.search-result .page-title {
+  padding: 24px 0 32px 0;
+}
+
+.search-result .search .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px;
+  column-gap: 16px;
+}
+
+.search-result .search .search-label {
+  grid-column: span 2;
+}
+
+/*===========================================================
+04: recommended CSS
+=============================================================*/
+.recommended .title {
+  padding-bottom: 16px;
+}
+
+.recommended .title h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-text);
+}
+
+.recommended .title a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/*===========================================================
+05: selectLocation Modal CSS
+=============================================================*/
+.selectLocationModal .modal-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 24px 16px;
+  border: 0;
+}
+
+.selectLocationModal .modal-header button {
+  height: 48px;
+  width: 48px;
+}
+
+.selectLocationModal .modal-header .modal-title {
+  grid-column: span 4;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.selectLocationModal .modal-body {
+  padding: 0 16px 24px 16px;
+}
+
+.selectLocationModal .modal-body .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.selectLocationModal .modal-body .grid label {
+  padding: 0 16px;
+  border: 1px solid var(--additional2);
+  grid-column: span 2;
+  overflow: hidden;
+}
+
+.selectLocationModal .modal-body .grid input {
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.selectLocationModal .modal-body .grid input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-70);
+}
+
+.selectLocationModal .modal-body .grid button {
+  line-height: 52px;
+  color: white;
+  background: var(--primary);
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.selectLocationModal .modal-body .loc-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.selectLocationModal .modal-body .loc-list li {
+  margin-top: 24px;
+}
+
+.selectLocationModal .modal-body .loc-list span {
+  height: 40px;
+  width: 40px;
+  background: var(--secondary);
+}
+
+.selectLocationModal .modal-body .loc-list h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.selectLocationModal .modal-body .loc-list p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-60);
+  padding-top: 4px;
+}
+
+/*===========================================================
+06: wishlist CSS
+=============================================================*/
+.wishlist {
+  padding-top: 0;
+}
+
+.wishlist .page-title {
+  display: block;
+}
+
+.wishlist .grid {
+  margin-top: 0;
+}
+
+/*===========================================================
+07: dark-mode CSS
+=============================================================*/
+.dark-mode .selectLocationModal .modal-body .loc-list h5,
+.dark-mode .selectLocationModal .modal-header .modal-title,
+.dark-mode .recommended .title h2,
+.dark-mode .place-card .content h4,
+.dark-mode .place-card .content .price h3,
+.dark-mode .all-place .tab-list button {
+  color: white;
+}
+
+.dark-mode .selectLocationModal .modal-header button img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(322deg) brightness(102%) contrast(102%);
+}
+
+.dark-mode .selectLocationModal .modal-body .grid input {
+  background: transparent;
+  color: white;
+}

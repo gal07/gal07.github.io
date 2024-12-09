@@ -1,0 +1,220 @@
+.fadedown {
+  animation: fadedown 0.5s linear forwards;
+}
+@keyframes fadedown {
+  0% {
+    transform: translateY(-100%) scale(0.5);
+  }
+  80% {
+    transform: translateY(0) scale(0.5);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.fadeup {
+  animation: fadeup 0.5s linear forwards;
+}
+@keyframes fadeup {
+  100% {
+    transform: translateY(-100%) scale(0.5);
+  }
+  80% {
+    transform: translateY(0) scale(0.5);
+  }
+
+  0% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.reveal {
+  animation: reveal 3s linear 1;
+}
+@keyframes reveal {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  60% {
+    opacity: 0.7;
+    display: block;
+  }
+  90% {
+    opacity: 0.3;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lightSpeedIn {
+  animation: lightSpeedIn 0.7s ease-in forwards;
+}
+.lightSpeedOut {
+  animation: lightSpeedOut 0.7s ease-out forwards;
+}
+
+@keyframes lightSpeedIn {
+  0% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedOut {
+  100% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+.revealfield {
+  animation: revealfield 0.5s linear forwards;
+}
+.delay-100ms {
+  animation-delay: 100ms;
+}
+.delay-200ms {
+  animation-delay: 200ms;
+}
+.delay-300ms {
+  animation-delay: 300ms !important;
+}
+.delay-400ms {
+  animation-delay: 400ms;
+}
+.delay-500ms {
+  animation-delay: 500ms;
+}
+
+.delay-600ms {
+  animation-delay: 600ms !important;
+}
+.delay-700ms {
+  animation-delay: 700ms;
+}
+.delay-1000ms {
+  animation-delay: 1000ms !important;
+}
+
+@keyframes revealfield {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.confirm.active::after {
+  transform-origin: left top;
+  animation: checkmark linear both 0.3s;
+}
+@keyframes checkmark {
+  0% {
+    height: 0px;
+    width: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 10px;
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    height: 10px;
+    width: 17px;
+    opacity: 1;
+  }
+}
+
+.next:hover i {
+  animation: left 0.4s forwards;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.prev:hover i {
+  animation: right 0.4s forwards;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.start-img {
+  animation: pop 0.5s linear forwards;
+}
+.start-btn {
+  animation: pop 0.3s linear forwards;
+  opacity: 0;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.start-text::before {
+  animation: slide-down 1s forwards 300ms;
+}
+@keyframes slide-down {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}

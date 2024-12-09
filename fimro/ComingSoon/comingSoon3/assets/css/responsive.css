@@ -1,0 +1,68 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 0;
+  }
+  #countdown {
+    width: 45%;
+  }
+  .comingSoon {
+    width: 70%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  #countdown .time {
+    font-size: 35px;
+  }
+  #countdown .timeSingle span {
+    font-size: 15px;
+  }
+  header button {
+    font-size: 14px;
+  }
+  .comingSoon h1 {
+    font-size: 120px;
+  }
+  .comingSoon h1 span {
+    font-size: 31px;
+  }
+}
+@media (max-width: 576px) {
+  #countdown {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #countdown .time {
+    font-size: 30px;
+  }
+  #countdown .timeSingle span {
+    font-size: 12px;
+  }
+  .comingSoon {
+    width: 100%;
+  }
+  .subscribe input {
+    width: 100%;
+  }
+  .comingSoon h1 {
+    font-size: 70px;
+  }
+  .comingSoon h1 span {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,248 @@
+@media  (min-width: 1600px)
+{
+
+}
+
+@media (max-width: 1440px)
+{
+    
+}
+@media (max-width: 1200px)
+{
+    .Title h1
+    {
+        font-size: 180px;
+    }
+    .Title span
+    {
+        font-size: 24px;
+    }
+    #trim-slider
+    {
+        width: 80%;
+    }
+    .about-employee h2
+    {
+        font-size: 45px;
+    }
+    .about-employee p
+    {
+        font-size: 18px;
+    }
+
+    .formHeading
+    {
+        font-size: 20px;
+    }
+    .inputLabel
+    {
+        font-size: 18px;
+    }
+    .radioHeading
+    {
+        font-size: 15px;
+    }
+    fieldset
+    {
+        width: 90%;
+        margin-left: 0;
+    }
+    .radiofield label
+    {
+        font-size: 12px;
+    }
+    .radiofield
+    {
+        width: 25%;
+    }
+    .nextPrev
+    {
+        width: 80%;
+    }
+    .numberSingle
+    {
+        width: 33px;
+        height: 33px;
+    }
+    .inputLabel
+    {
+        font-size: 15px;
+    }
+
+
+    .thankyoumsg
+    {
+        width: 70%;
+    }
+    .thankyoumsg h2
+    {
+        font-size: 35px;
+    }
+
+} 
+
+@media (max-width: 992px)
+{
+    .radiofield
+    {
+        width: 33%;
+    }
+    .nextPrev
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .tab-none
+    {
+        display: none;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+
+    .Title h1
+    {
+        font-size: 150px;
+    }
+    .Title span
+    {
+        font-size: 20px;
+    }
+    #trim-slider
+    {
+        width: 100%;
+    }
+    .trim-btn
+    {
+        width: 100%;
+    }
+    fieldset
+    {
+        margin: 0 auto;
+    }
+    main
+    {
+        padding: 30px;
+    }
+    .mainHead
+    {
+        margin-top: 0px;
+    }
+
+    .thankyoumsg h2
+    {
+        font-size: 25px;
+    }
+
+}
+@media (max-width: 576px)
+{
+    .Title h1
+    {
+        font-size: 120px;
+    }
+    .Title span
+    {
+        font-size: 16px;
+        top: 20px;
+    }
+    .trim-employee img
+    {
+        width: 100%;
+    }
+    .thankyou .thankyouuser
+    {
+        width: 100%;
+        top: -50px;
+    }
+    .thankyoumsg
+    {
+        width: 90%;
+        font-size: 20px;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .Title h1
+    {
+        font-size: 65px;
+    }
+    .Title span
+    {
+        top: 0px;
+    }
+    .about-employee h2
+    {
+        font-size: 30px;
+    }
+    .about-employee p
+    {
+        font-size: 12px;
+    }
+    .trim-btn .viewMore
+    {
+        padding: 0 30px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .trim-btn
+    {
+        height: 55px;
+    }
+    .sliderBtn button
+    {
+        width: 55px;
+        font-size: 15px;
+    }
+    main
+    {
+        padding: 15px;
+    }
+    .step-inner
+    {
+        border-radius: 0;
+    }
+    fieldset
+    {
+        padding: 15px 0;
+    }
+    .formHeading
+    {
+        font-size: 15px;
+    }
+    .radiofield
+    {
+        width: 50%;
+    }
+    .nextPrev button, .nextPrev .apply
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .numberSingle
+    {
+        width: 24px;
+        height: 24px;
+    }
+    .inputLabel
+    {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

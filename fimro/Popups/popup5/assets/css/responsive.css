@@ -1,0 +1,35 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .apply,
+  .socialIcon {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 20px 30px;
+  }
+  .popInner article h1 {
+    font-size: 30px;
+  }
+  .popInner article p {
+    font-size: 18px;
+  }
+}

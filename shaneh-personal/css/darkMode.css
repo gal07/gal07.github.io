@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body.dark{
+	background-color: #000;
+	color: #bbb;
+}
+body.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fff;
+}
+body.dark :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #fff;
+   opacity:  1;
+}
+body.dark ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #fff;
+   opacity:  1;
+}
+body.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff;
+}
+body.dark ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #fff;
+}
+
+body.dark ::placeholder { /* Most modern browsers support this now. */
+   color: #fff;
+}
+
+body.dark h3{
+	color: #fff;
+}
+body.dark .cd-headline{
+	color: #fff;
+}
+body.dark .shane_tm_button a{
+	background-color: transparent;
+}
+body.dark .shane_tm_button a:hover{
+	background-color: transparent;
+}
+body.dark .shane_tm_button a:hover span{
+	color: #fff;
+}
+body.dark .shane_tm_second_title span{
+	color: #fff;
+}
+body.dark .shane_tm_resume .experience_list ul li .first h3, 
+body.dark .shane_tm_resume .experience_list ul li .second h3{
+	color: #fff;
+}
+body.dark .shane_tm_testimonials ul li .svg{
+	color: rgba(255,255,255,.2);
+}
+body.dark .shane_tm_testimonials ul li .list_inner{
+	border: 1px solid rgba(255,255,255,.15);
+}
+body.dark .shane_tm_facts ul li .list_inner{
+	border: 1px solid rgba(255,255,255,.15);
+}
+body.dark .shane_tm_interests ul li .list_inner{
+	border: 1px solid rgba(255,255,255,.15);
+}
+body.dark .shane_tm_resume .experience_list ul li{
+	border-bottom: 1px solid rgba(255,255,255,.15);
+}
+body.dark .shane_tm_contact .short_info ul li .list_inner{
+	border: 1px solid rgba(255,255,255,.15);
+}
+body.dark .shane_tm_skills ul li .details > span{
+	color: #fff;
+}
+body.dark .shane_tm_works .portfolio_filter ul li a{
+	color: #fff;
+}
+body.dark .shane_tm_works .portfolio_list ul li .desc .in{
+	background-color: #000;
+}
+body.dark .shane_tm_news ul li .title a{
+	color: #fff;
+}
+body.dark .shane_tm_read_more a{
+	color: #fff;
+}
+body.dark .shane_tm_read_more a .arrow{
+	background-color: #fff;
+}
+body.dark .shane_tm_read_more a .arrow::after, 
+body.dark .shane_tm_read_more a .arrow::before{
+	background-color: #fff;
+}
+body.dark .shane_tm_contact .fields ul li input{
+	border: 1px solid rgba(255,255,255,.15);
+	color: #fff;
+}
+body.dark .shane_tm_contact .fields ul li input:focus{
+	border: 1px solid rgba(255,255,255,1);
+}
+body.dark .shane_tm_contact .fields .last textarea{
+	border: 1px solid rgba(255,255,255,.15);
+	color: #fff;
+}
+body.dark .shane_tm_contact .fields .last textarea:focus{
+	border: 1px solid rgba(255,255,255,1);
+}
+.shane_tm_single_blog_menu .dark{
+	display: block;
+}
+.shane_tm_single_blog_menu .light{
+	display: none;
+}
+body.dark .shane_tm_single_blog_menu .dark{
+	display: none;
+}
+body.dark .shane_tm_single_blog_menu .light{
+	display: block;
+}
+body.dark .shane_tm_single_blog_menu .menu ul li a{color: #fff;}
+body.dark .shane_tm_blog_single .texts blockquote{color: #fff;}
+body.dark .shane_tm_blog_single .share label{color: #fff;}
+body.dark .shane_tm_blog_single .share ul li a{color: #fff;}
+body.dark .shane_tm_footer{border-top: 1px solid rgba(255,255,255,.15);}
+body.dark .shane_tm_portfolio_single .main_details .title{color: #fff;}
+body.dark .shane_tm_portfolio_single .main_details .title{color: #fff;}
+body.dark .shane_tm_portfolio_single .main_details .right p{color: #bbb;}
+body.dark .shane_tm_portfolio_single .main_details .left .short li span a{color: #bbb;}
+body.dark .shane_tm_portfolio_single .main_details .left .social ul li a{color: #bbb;}
+body.dark .shane_tm_portfolio_single .extra_info h3{color: #fff;}
+body.dark .shane_tm_portfolio_single .pagination a{color: #fff;}
+body.dark .shane_tm_portfolio_single .pagination a:before{background-color: rgba(255,255,255,.15);}
+body.dark .shane_tm_sidebar{
+	background-color: #191919;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0);
+}
+body.dark .shane_tm_sidebar .inner .menu ul li a{
+	color: #fff;
+}
+body.dark .shane_tm_sidebar .inner .menu ul li:before{
+	background-color: rgba(255,255,255,.05);
+}
+body.dark .shane_tm_sidebar .inner .bottom ul li a{
+	color: #fff;
+}
+body.dark .shane_tm_sidebar .inner .logo .dark{display: none;}
+body.dark .shane_tm_sidebar .inner .logo .light{display: block;}

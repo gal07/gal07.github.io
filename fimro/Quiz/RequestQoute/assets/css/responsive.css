@@ -1,0 +1,250 @@
+@media  (min-width: 1600px)
+{
+    .step1-wrapper
+    {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .step3-wrapper
+    {
+        max-width: 755px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1440px)
+{
+    .step3-wrapper
+    {
+        max-width: 755px;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width: 1200px)
+{
+    .trim-select
+    {
+        height: 250px;
+    }
+    .trim-select label
+    {
+        font-size: 20px;
+    }
+    .trim-select img
+    {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .question
+    {
+        font-size: 35px;
+    }
+    .select-service
+    {
+        height: 70px;
+    }
+    .select-service label
+    {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .select-service input:checked~label
+    {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .select-service input:checked:before
+    {
+        left: 20px;
+    }
+    .thankyou .thankyouHeading
+    {
+        font-size: 50px;
+    }
+    .thankyou .thank-desc
+    {
+        font-size: 35px;
+        width: 60%;
+    }
+
+} 
+
+@media (max-width: 992px)
+{
+    main
+    {
+        padding: 30px 60px;
+    }
+    .trim-select
+    {
+        height: 200px;
+    }
+    .trim-select img
+    {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .select-service
+    {
+        height: 50px;
+    }
+    .select-service label
+    {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .select-service input:checked~label
+    {
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    .select-service input:checked:before
+    {
+        left: 10px;
+    }
+    .question
+    {
+        font-size: 30px;
+    }
+    .select-service input:before
+    {
+        font-size: 16px;
+    }
+
+    .thankyou .thankyouHeading
+    {
+        font-size: 45px;
+    }
+    .thankyou .thank-desc
+    {
+        font-size: 30px;
+        width: 80%;
+    }
+
+}
+@media (max-width: 576px)
+{
+    main
+    {
+        padding: 20px 40px;
+    }
+    .lineHeading
+    {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .select-service label
+    {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .select-service input:checked~label
+    {
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .select-service input:checked:before
+    {
+        left: 8px;
+        font-size: 12px;
+    }
+    .question
+    {
+        font-size: 25px;
+    }
+    .RangeSlide label
+    {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px)
+{   
+    main
+    {
+        padding: 20px 0;
+    }
+    header,footer
+    {
+        padding: 0 20px;
+    }
+    .contact_detail
+    {
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+    .contact_detail
+    {
+        font-size: 12px;
+    }
+    .contact_detail p
+    {
+        font-size: 14px;
+    }
+    .trim-btn
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .lineHeading
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .lineHeading::before, .lineHeading::after
+    {
+        margin: 0 10px;
+    }
+    .question
+    {
+        font-size: 20px;
+    }
+    .inputField label
+    {
+        font-size: 16px;
+    }
+    .inputField input[type=radio], .inputField input[type=text], .inputField input[type=url], .inputField textarea
+    {
+        margin-left: 25px;
+        font-size: 10px;
+    }
+    .inputField label
+    {
+        margin-left: 10px;
+    }
+    .social-icons i
+    {
+        margin-left: 10px;
+    }
+    .thankyou .thankyouHeading
+    {
+        font-size: 30px;
+    }
+    .thankyou .thank-desc
+    {
+        font-size: 15px;
+        width: 90%;
+    }
+    .thankyou .next-prev button
+    {
+        padding: 0 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

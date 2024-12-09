@@ -1,0 +1,146 @@
+@media  (min-width: 1600px)
+{
+
+}
+
+@media (max-width: 1440px)
+{
+    .Join
+    {
+        bottom: 20%;
+        padding: 9px 15px;
+    }
+    .Join h4
+    {
+        font-size: 10px;
+    }
+    .sideArea .spring
+    {
+        bottom: 20%;
+    }
+    .main-heading
+    {
+        font-size: 35px;
+    }
+    .wrapper, .avatarImg
+    {
+        width: 80%;
+    }
+}
+@media (max-width: 1200px)
+{
+    .main-heading
+    {
+        font-size: 25px;
+    }
+    .radioField
+    {
+        height: 75px;
+    }
+    .radioField button
+    {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+    .radioField label
+    {
+        font-size: 18px;
+    }
+    .carousel-item img
+    {
+        margin: 0 15px;
+        width: calc(24% - 30px);
+    }
+    .Join
+    {
+        width: 65%;
+        bottom:25%;
+    }
+    .sideArea .spring
+    {
+        display: none;
+    }
+    #clients
+    {
+        margin-top: 50px;
+    }
+
+} 
+
+@media (max-width: 992px)
+{
+    .Join
+    {
+        width: 70%;
+    }
+    .Join h4 i
+    {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .radioField
+    {
+        width: 90%;
+    }
+    .main-heading
+    {
+        font-size: 25px;
+    }
+    .radioField
+    {
+        height: 65px;
+    }
+    .radioField button
+    {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .radioField label
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .tab-100
+    {
+        width: 100%;
+    }
+    .tab-none
+    {
+        display: none;
+    }
+
+
+}
+@media (max-width: 576px)
+{
+
+}
+
+@media (max-width: 480px)
+{
+    .radioField
+    {
+        width: 100%;
+    }
+    .main-heading
+    {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

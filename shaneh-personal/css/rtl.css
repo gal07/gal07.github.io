@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body.rtl{
+	direction: rtl;
+}
+body.rtl .shane_tm_fixed_image{
+	left: auto;
+	right: 0px;
+}
+body.rtl .shane_tm_menu{
+	left: auto;
+	right: 20px;
+}
+body.rtl .shane_tm_section{
+	padding-left: 0px;
+	padding-right: 40%;
+}
+body.rtl .shane_tm_section{
+    transform: translate3d(-1%, 0, 0) !important;
+}
+body.rtl .shane_tm_section.active{
+	transform: translate3d(0, 0, 0) !important;
+}
+body.rtl .shane_tm_about .main_infos .left{
+	padding-right: 0px;
+	padding-left: 50px;
+}
+body.rtl .shane_tm_about .main_infos .right{
+	padding-right: 50px;
+	padding-left: 0px;
+}
+body.rtl .shane_tm_about .main_infos .right ul li{
+	float: right;
+}
+body.rtl .shane_tm_about .shane_tm_services ul li{
+	float: right;
+}
+body.rtl .shane_tm_testimonials ul li .details .name{
+	padding-left: 0px;
+	padding-right: 15px;
+}
+body.rtl .shane_tm_facts ul li{
+	float: right;
+}
+body.rtl .shane_tm_interests ul li{
+	float: right;
+}
+body.rtl .shane_tm_resume .experience_list ul li{
+	float: right;
+}
+body.rtl .shane_tm_resume .experience_list ul li .first,
+body.rtl .shane_tm_resume .experience_list ul li .second{
+	padding-left: 20px;
+	padding-right: 0px;
+}
+body.rtl .shane_tm_resume .experience_list ul li .third{
+	padding-left: 0px;
+	padding-right: 100px;
+}
+body.rtl .shane_tm_skills ul li{
+	float: right;
+}
+body.rtl .shane_tm_skills .left{
+	padding-left: 30px;
+	padding-right: 0px;
+}
+body.rtl .shane_tm_skills .right{
+	padding-left: 0px;
+	padding-right: 30px;
+}
+body.rtl .shane_tm_skills ul li .progress .bar{
+	left: auto;
+	right: 0px;
+}
+body.rtl .shane_tm_works .portfolio_filter ul li{
+	margin-right: 0px;
+	margin-left: 30px;
+}
+body.rtl .shane_tm_works .portfolio_filter ul li:last-child{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+body.rtl .shane_tm_works .portfolio_list ul li{
+	float: right;
+}
+body.rtl .shane_tm_news ul li{
+	float: right;
+}
+body.rtl .shane_tm_read_more a .arrow{
+	display: none;
+}
+body.rtl .shane_tm_contact .short_info ul li{
+	float: right;
+}
+body.rtl .shane_tm_contact .contact_inner .left{
+	padding-left: 15px;
+	padding-right: 0px;
+}
+body.rtl .shane_tm_contact .right{
+	padding-left: 0px;
+	padding-right: 15px;
+}
+body.rtl .shane_tm_contact .empty_notice{
+	text-align: right;
+}
+body.rtl .shane_tm_contact .contact_error{
+	text-align: right;
+}
+body.rtl .shane_tm_contact .returnmessage{
+	text-align: right;
+}
+body.rtl .shane_tm_leftside{
+	left: auto;
+	right: 0px;
+}
+body.rtl .shane_tm_extra_section{
+	padding-left: 0px;
+	padding-right: 400px;
+}
+body.rtl .shane_tm_menu_extra{
+	right: auto;
+	left: 100%;
+	margin-right: 0px;
+	margin-left: 10px;
+}
+body.rtl .shane_tm_extra_section{
+    transform: translate3d(-1%, 0, 0) !important;
+}
+body.rtl .shane_tm_extra_section.active{
+	transform: translate3d(0, 0, 0) !important;
+}
+
+/*---------------------------------------------------*/
+/*	SHANE MEDIA QUERIES (FOR SMALL DEVICES)
+/*---------------------------------------------------*/
+
+@media (max-width: 1400px) {
+	body.rtl .shane_tm_menu{right: 0px;}
+	body.rtl .shane_tm_section{padding-right: 90px;}
+}
+@media (max-width: 1040px) {
+	body.rtl .shane_tm_section{padding-right: 0px;}
+	body.rtl .shane_tm_menu ul li:last-child{margin-right: 20px;}
+	body.rtl .shane_tm_about .main_infos .left{padding-left: 0px;}
+	body.rtl .shane_tm_about .main_infos .right{padding-right: 0px;}
+	body.rtl .shane_tm_resume .experience_list ul li .first{padding-left: 0px;}
+	body.rtl .shane_tm_resume .experience_list ul li .second{padding-left: 0px;}
+	body.rtl .shane_tm_resume .experience_list ul li .third{padding-right: 0px;}
+}
+@media (max-width: 768px) {
+	body.rtl .shane_tm_skills .left{padding-left: 0px;}
+	body.rtl .shane_tm_skills .right{padding-right: 0px;}
+	body.rtl .shane_tm_contact .contact_inner .left{padding-left: 0px;}
+	body.rtl .shane_tm_contact .right{padding-right: 0px;}
+}

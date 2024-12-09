@@ -1,0 +1,58 @@
+/*================================================
+Template name: Travgo Travel Mobile App Template
+Version: 1.0.0
+Author: Website Stock       
+Author url: https://themeforest.net/user/website_stock/portfolio  
+
+[ Table of Contents ]
+
+01: notification CSS
+02: dark-mode CSS
+
+==================================================*/
+/*===========================================================
+01: notification CSS
+=============================================================*/
+.notification{
+  padding: 0 24px 32px 24px;
+}
+
+.notification h3{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.notification ul li:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.notification ul li .image{
+  height: 40px;
+  width: 40px;
+  background: var(--secondary);
+}
+
+.notification ul li p{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.notification ul li p span{
+  font-weight: 700;
+}
+
+.notification ul li small{
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+/*===========================================================
+02: dark-mode CSS
+=============================================================*/
+.dark-mode .notification h3,
+.dark-mode .notification ul li p{
+  color: white;
+}

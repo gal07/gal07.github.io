@@ -1,0 +1,22 @@
+.slideTop {
+  animation: slideTop 1.5s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes slideTop {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.comingSoon h1::before {
+  animation: 1s width-100 forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes width-100 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

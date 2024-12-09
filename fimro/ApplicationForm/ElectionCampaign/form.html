@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css"/>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+        <!-- kenyanCoffee Font -->
+        <link rel="stylesheet" href="assets/css/fonts.css"/>
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <!-- animation -->
+        <link rel="stylesheet" href="assets/css/animation.css"/>
+
+        <!-- responsive -->
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+    </head>
+
+    <body>
+        <main class="overflow-hidden">
+
+            <!-- form campaign -->
+            <section class="position-relative TrimCampaign-form animate">
+                <div class="row h-100 position-relative">
+                    <div class="col-md-4 tab-none">
+
+                        <!-- aside -->
+                        <aside>
+                            <img src="assets/images/nominee.jpg" alt="Nominee">
+                        </aside>
+                    </div>
+                    <div class="col-md-8 tab-100">
+                        <div class="nomineeIntro">
+                            <div class="wrapper">
+
+                                <!-- form -->
+                                <form id="details" novalidate>
+                                    <fieldset id="step1">
+                                        <h1 class="main-heading"><span class="highlight">Apply to Join the</span> Vote Survey</h1>
+                                        <div class="fieldWrap">
+                                            <input class="inputField" type="text" placeholder="Name" name="name" required>
+                                            <input class="inputField" type="text" placeholder="National ID" name="ID" required>
+                                            <textarea name="message"class="inputField" placeholder="Why me?" required></textarea>
+                                        </div>
+                                        <button type="button" id="step1btn" class="voteNow"><span>join now</span></button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- vote Section -->
+            <section class="position-relative TrimCampaign-vote d-none">
+                <div class="voteNominee">
+
+                    <!-- vote form -->
+                    <form novalidate>
+                        <fieldset id="step2">
+                            <h1 class="main-heading text-center"><span class="highlight d-inline">Vote For which</span> Services You Like</h1>
+                            <div class="d-flex justify-content-evenly flex-wrap radio-gap">
+                                <div class="radioField">
+                                    <div class="radioCircle">
+                                        <input type="radio" name="service">
+                                        <img src="assets/images/services/s1.jpg" alt="Services">
+                                    </div>
+                                    <label>Make Good<br/>Society</label>
+                                </div>
+                                <div class="radioField">
+                                    <div class="radioCircle">
+                                        <input type="radio" name="service">
+                                        <img src="assets/images/services/s2.jpg" alt="Services">
+                                    </div>
+                                    <label>Education<br/>Department</label>
+                                </div>
+                                <div class="radioField">
+                                    <div class="radioCircle">
+                                        <input type="radio" name="service">
+                                        <img src="assets/images/services/s3.jpg" alt="Services">
+                                    </div>
+                                    <label>School Technology<br/>Associates</label>
+                                </div>
+                                <div class="radioField">
+                                    <div class="radioCircle">
+                                        <input type="radio" name="service">
+                                        <img src="assets/images/services/s4.jpg" alt="Services">
+                                    </div>
+                                    <label>Hospital Management<br/>System</label>
+                                </div>
+                            </div>
+                            <button type="button" id="step2btn" class="mt-5 voteNow"><span>vote now</span></button>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div id="error"></div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="assets/js/jQuery/jquery-3.7.0.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>

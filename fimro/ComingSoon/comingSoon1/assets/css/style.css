@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primary-gradiant: linear-gradient(
+    90deg,
+    rgb(184, 150, 250) 0%,
+    rgb(116, 112, 249) 49%,
+    rgb(129, 165, 250) 83%,
+    rgb(142, 217, 251) 100%
+  );
+  --primary-color: rgb(84, 92, 249);
+  --text-color: rgb(40, 40, 40);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Poppins";
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+}
+
+/* background */
+#bgCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: auto;
+}
+.contactInfo {
+  display: flex;
+  align-items: start;
+  margin-right: 30px;
+}
+.contactInfo i {
+  font-size: 25px;
+  color: rgb(25, 45, 82);
+}
+.contactInfo article {
+  margin-left: 20px;
+}
+.address {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+.contactInfo article a {
+  display: block;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+.socialIcon {
+  background: var(--primary-gradiant);
+  height: 86px;
+  padding: 0 40px;
+  display: grid;
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+.socialIcon i {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  margin: 0 10px;
+}
+.comingSoonMain {
+  height: 100%;
+  width: 90%;
+  display: grid;
+  align-content: center;
+  padding: 40px 0;
+  margin-left: auto;
+  padding-bottom: 100px;
+}
+.SoonText {
+  width: max-content;
+}
+.mainHeading {
+  font-size: 100px;
+  background-color: var(--text-color);
+  background-image: url(../images/headingBG.svg);
+  background-repeat: no-repeat;
+  font-weight: 900;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-position: -50% center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainHeading .circle {
+  background-image: var(--primary-gradiant);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 100;
+}
+.soonDesc {
+  font-size: 20px;
+  font-family: "Ubuntu";
+  color: rgb(163, 163, 163);
+  font-weight: bold;
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  width: 66%;
+}
+.timeSingle {
+  font-size: 18px;
+  color: var(--text-color);
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+.timeSingle svg {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: calc(100%);
+  height: calc(100%);
+}
+.timeSingle .time {
+  width: 163px;
+  height: 163px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 6px 38px 0px rgba(102, 109, 122, 0.17);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  font-size: 100px;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  color: var(--text-color);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+.subscribe {
+  border-radius: 26px;
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  height: 58px;
+  margin-top: 20px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe input {
+  width: -webkit-fill-available;
+
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  padding-left: 60px;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe:focus-within {
+  outline: solid 2px var(--primary-color);
+}
+::placeholder {
+  font-size: 15px;
+  font-family: "Myriad Pro";
+  color: rgb(40, 40, 40);
+}
+.subscribe button {
+  padding: 0 55px;
+  border-radius: inherit;
+  background-color: var(--text-color);
+  font-family: "Ubuntu";
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+}

@@ -1,0 +1,57 @@
+.indicator::before,
+.indicator::after {
+  animation: pulse 2s infinite ease-in;
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.indicator::after {
+  animation-delay: 0.2s;
+}
+.leftMove {
+  animation: leftMove 1s forwards ease-in-out;
+}
+@keyframes leftMove {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: -850px 0px;
+  }
+}
+.rightMove {
+  animation: rightMove 1s forwards ease-in-out;
+}
+@keyframes rightMove {
+  from {
+    object-position: 0px 0px;
+  }
+  to {
+    object-position: 760px 0;
+  }
+}
+
+.FadeC {
+  animation: fadeIn forwards 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-delay: 200ms;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

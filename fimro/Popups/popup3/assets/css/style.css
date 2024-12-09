@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: rgb(243, 204, 0);
+  --secondary-color: rgb(142, 84, 0);
+  --higlight: rgb(23, 21, 21);
+  --text-color: rgb(0, 0, 0);
+  --text-color-2: rgb(255, 255, 255);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+body {
+  width: 100%;
+  font-family: "Abril Fatface";
+  height: auto;
+  position: relative;
+}
+main {
+  background-color: rgb(66, 62, 58);
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+}
+.wrapper {
+  padding: 30px 0;
+}
+aside {
+  width: 100%;
+  height: 780px;
+  background-image: url(../images/aside.jpg);
+  background-size: cover;
+  position: relative;
+}
+.date {
+  background-color: var(--secondary-color);
+  width: 92px;
+  height: 242px;
+  padding-bottom: 50px;
+  display: grid;
+  align-content: end;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  color: var(--text-color-2);
+}
+.date span {
+  font-weight: 300;
+  display: block;
+  margin-top: 5px;
+}
+.discountHead {
+  font-size: 350px;
+  color: var(--text-color-2);
+  font-weight: normal;
+  width: max-content;
+  margin: 0 auto;
+  height: 265px;
+  line-height: 265px;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+.discountHead .upto {
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.2;
+  top: 45%;
+  left: 13px;
+}
+.discountHead .prcnt {
+  font-size: 25px;
+  line-height: 15px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  bottom: -10px;
+  left: 45%;
+  transform: translateX(-100%);
+}
+.discountHead .prcnt span {
+  font-size: 60px;
+  text-align: end;
+}
+.discountHead .upto,
+.discountHead .prcnt {
+  position: absolute;
+}
+.popInner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color-2);
+  display: grid;
+  align-content: center;
+  margin: 0 auto;
+  padding: 40px 115px;
+  position: relative;
+}
+.mainHeading {
+  font-size: 130px;
+  color: var(--text-color-2);
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Proxima Nova Black";
+  background: rgb(255, 255, 255);
+  text-shadow: rgb(23, 21, 21) 6px 0px 0px,
+    rgb(23, 21, 21) 5.91686px 0.995377px 0px,
+    rgb(23, 21, 21) 5.66974px 1.96317px 0px,
+    rgb(23, 21, 21) 5.2655px 2.87655px 0px,
+    rgb(23, 21, 21) 4.71532px 3.71022px 0px,
+    rgb(23, 21, 21) 4.03447px 4.44106px 0px,
+    rgb(23, 21, 21) 3.24181px 5.04883px 0px,
+    rgb(23, 21, 21) 2.35931px 5.51667px 0px,
+    rgb(23, 21, 21) 1.41143px 5.83163px 0px,
+    rgb(23, 21, 21) 0.424423px 5.98497px 0px,
+    rgb(23, 21, 21) -0.574341px 5.97245px 0px,
+    rgb(23, 21, 21) -1.55719px 5.79441px 0px,
+    rgb(23, 21, 21) -2.49688px 5.45578px 0px,
+    rgb(23, 21, 21) -3.36738px 4.96596px 0px,
+    rgb(23, 21, 21) -4.14455px 4.33852px 0px,
+    rgb(23, 21, 21) -4.80686px 3.59083px 0px,
+    rgb(23, 21, 21) -5.33596px 2.74364px 0px,
+    rgb(23, 21, 21) -5.71718px 1.8204px 0px,
+    rgb(23, 21, 21) -5.93995px 0.84672px 0px,
+    rgb(23, 21, 21) -5.99811px -0.150428px 0px,
+    rgb(23, 21, 21) -5.89004px -1.14341px 0px,
+    rgb(23, 21, 21) -5.61874px -2.1047px 0px,
+    rgb(23, 21, 21) -5.19172px -3.00766px 0px,
+    rgb(23, 21, 21) -4.62082px -3.82727px 0px,
+    rgb(23, 21, 21) -3.92186px -4.54081px 0px,
+    rgb(23, 21, 21) -3.11421px -5.12852px 0px,
+    rgb(23, 21, 21) -2.22026px -5.57409px 0px,
+    rgb(23, 21, 21) -1.26477px -5.86518px 0px,
+    rgb(23, 21, 21) -0.274238px -5.99373px 0px,
+    rgb(23, 21, 21) 0.723898px -5.95617px 0px,
+    rgb(23, 21, 21) 1.70197px -5.75355px 0px,
+    rgb(23, 21, 21) 2.63288px -5.39147px 0px,
+    rgb(23, 21, 21) 3.49082px -4.87998px 0px,
+    rgb(23, 21, 21) 4.25202px -4.23324px 0px,
+    rgb(23, 21, 21) 4.89538px -3.46919px 0px,
+    rgb(23, 21, 21) 5.40307px -2.60899px 0px,
+    rgb(23, 21, 21) 5.76102px -1.67649px 0px,
+    rgb(23, 21, 21) 5.95932px -0.697531px 0px;
+}
+.highlightHeading {
+  background-color: var(--text-color);
+  padding: 0px 20px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: auto;
+  line-height: 0.94;
+  font-size: 145px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.headingDiscountText {
+  line-height: inherit;
+  margin-bottom: 10px;
+  width: max-content;
+}
+.highlightHeading span {
+  display: block;
+}
+.highlightHeading .highlightDiscount {
+  font-size: 50px;
+  color: var(--text-color-2);
+  text-align: end;
+  text-transform: none;
+}
+.highlightHeading .highlightDiscount sub {
+  font-size: 30px;
+  font-weight: normal;
+}
+.highlightHeading .highlighttext {
+  font-size: 38px;
+  color: var(--text-color-2);
+  text-transform: none;
+}
+.subscribe {
+  border-radius: 10px;
+  width: 100%;
+  height: 79px;
+  min-height: 79px;
+  box-shadow: 0px 3px 60px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--text-color-2);
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+.subscribe:focus-within {
+  box-shadow: 0px 3px 60px 0px rgba(243, 204, 0, 0.15);
+}
+.subscribe i {
+  color: rgb(168, 168, 168);
+  font-size: 25px;
+}
+.subscribe input {
+  padding-left: 15px;
+  width: -webkit-fill-available;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  padding-right: 30px;
+}
+.subscribe input:focus {
+  outline: none;
+}
+::placeholder {
+  font-size: 18px;
+  color: rgb(168, 168, 168);
+  font-family: "Roboto";
+  font-weight: normal;
+}
+.subscribe button {
+  padding: 0 35px;
+  height: 100%;
+  background-color: var(--primary-color);
+  font-size: 21px;
+  color: var(--text-color);
+  font-family: "Roboto";
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.features {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.features > * {
+  width: 45%;
+}
+.featureSingle h3 {
+  font-size: 22.5px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Gotham Bold";
+  background-color: rgb(240, 240, 240);
+  height: 52px;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+.featureSingle h3 span {
+  font-weight: normal;
+  font-family: "Gotham Book";
+}
+.aboutFeature {
+  display: flex;
+  align-items: center;
+}
+.aboutFeature i {
+  color: var(--text-color);
+  font-size: 70px;
+  margin-right: 20px;
+}
+.aboutFeature p {
+  font-size: 12px;
+  font-family: "Gotham Book";
+  color: var(--text-color);
+  width: 29%;
+}
+.close {
+  background-color: rgb(241, 241, 241);
+  width: 93px;
+  height: 49px;
+  border: 0;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 21px;
+  position: absolute;
+  top: -20px;
+  right: -40px;
+}
