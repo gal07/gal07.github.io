@@ -3,354 +3,521 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexusTech | Profil Perusahaan</title>
+    <title>Nexa Corp | Profil Perusahaan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #3b82f6;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --gray: #64748b;
-        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        :root {
+            --primary: #2a6df5;
+            --secondary: #0f1b3d;
+            --accent: #00d9a6;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray: #64748b;
+        }
+
         html {
             scroll-behavior: smooth;
         }
+
         body {
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
         }
+
         .container {
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
+
         /* Header & Navigation */
         header {
-            background-color: white;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             position: fixed;
-            width: 100%;
             top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
             z-index: 1000;
+            padding: 15px 0;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
         }
+
         .logo {
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--primary);
-            display: flex;
-            align-items: center;
+            text-decoration: none;
         }
+
         .logo span {
-            color: var(--secondary);
+            color: var(--accent);
         }
+
         .nav-links {
             display: flex;
             list-style: none;
         }
+
         .nav-links li {
-            margin-left: 30px;
+            margin-left: 2rem;
         }
+
         .nav-links a {
             text-decoration: none;
-            color: var(--dark);
+            color: var(--secondary);
             font-weight: 600;
             font-size: 1rem;
             transition: color 0.3s;
+            position: relative;
         }
+
         .nav-links a:hover {
             color: var(--primary);
         }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
         .menu-toggle {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
+            color: var(--primary);
         }
+
         /* Hero Section */
         .hero {
-            padding: 160px 0 100px;
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 180px 0 120px;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
+
         .hero h1 {
             font-size: 3.5rem;
-            margin-bottom: 20px;
-            color: var(--dark);
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
             line-height: 1.2;
         }
+
         .hero h1 span {
             color: var(--primary);
         }
+
         .hero p {
             font-size: 1.2rem;
             color: var(--gray);
             max-width: 700px;
-            margin: 0 auto 30px;
+            margin: 0 auto 2.5rem;
         }
-        .cta-button {
+
+        .btn {
             display: inline-block;
-            background-color: var(--primary);
+            background: var(--primary);
             color: white;
-            padding: 15px 30px;
+            padding: 14px 32px;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
+            font-weight: 600;
+            font-size: 1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+            border: 2px solid var(--primary);
         }
-        .cta-button:hover {
-            background-color: var(--secondary);
+
+        .btn:hover {
+            background: transparent;
+            color: var(--primary);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 10px 20px rgba(42, 109, 245, 0.2);
         }
-        /* Section Styling */
+
+        .btn-accent {
+            background: var(--accent);
+            border-color: var(--accent);
+            margin-left: 15px;
+        }
+
+        .btn-accent:hover {
+            color: var(--accent);
+        }
+
+        /* Section Styles */
         section {
             padding: 100px 0;
         }
+
         .section-title {
             text-align: center;
             margin-bottom: 60px;
         }
+
         .section-title h2 {
             font-size: 2.5rem;
-            color: var(--dark);
+            color: var(--secondary);
             margin-bottom: 15px;
         }
+
         .section-title p {
             color: var(--gray);
             max-width: 600px;
             margin: 0 auto;
-            font-size: 1.1rem;
         }
+
         /* About */
         .about-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 50px;
             align-items: center;
         }
+
         .about-text h3 {
             font-size: 2rem;
             margin-bottom: 20px;
             color: var(--secondary);
         }
+
         .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
         }
+
         .stat-item {
             text-align: center;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-        .stat-number {
+
+        .stat-item .number {
             font-size: 2.5rem;
             font-weight: 800;
             color: var(--primary);
             display: block;
         }
-        .stat-label {
+
+        .stat-item .label {
             color: var(--gray);
-            font-weight: 600;
+            font-size: 0.9rem;
         }
+
         /* Services */
-        #services {
+        .services {
             background-color: #f8fafc;
         }
+
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
+
         .service-card {
             background: white;
             padding: 40px 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
         }
+
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
+
         .service-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 25px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), #5a8df5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 1.8rem;
         }
+
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
-            color: var(--dark);
+            color: var(--secondary);
         }
-        /* Team */
-        .team-grid {
+
+        /* Portfolio */
+        .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        .team-member {
-            background: white;
+
+        .portfolio-item {
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .team-member:hover {
-            transform: translateY(-10px);
-        }
-        .member-img {
+            position: relative;
             height: 250px;
-            background-color: #e0f2fe;
-            background-size: cover;
-            background-position: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        .member-info {
-            padding: 25px;
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
         }
-        .member-info h4 {
-            font-size: 1.3rem;
-            margin-bottom: 5px;
-            color: var(--dark);
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
         }
-        .member-info p {
-            color: var(--gray);
-            font-style: italic;
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 27, 61, 0.85);
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
         }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
         /* Contact */
-        #contact {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        .contact {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1a2b5c 100%);
             color: white;
         }
-        #contact .section-title h2,
-        #contact .section-title p {
+
+        .contact .section-title h2,
+        .contact .section-title p {
             color: white;
         }
-        .contact-info {
+
+        .contact-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
         }
-        .contact-item {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-        .contact-icon {
-            font-size: 2.5rem;
+
+        .contact-info h3 {
+            font-size: 1.8rem;
             margin-bottom: 20px;
         }
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 50px 0 20px;
-            text-align: center;
+
+        .contact-details {
+            margin-top: 30px;
         }
-        .footer-content {
+
+        .contact-detail {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 800;
+            align-items: center;
             margin-bottom: 20px;
         }
-        .social-icons {
+
+        .contact-detail i {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
             display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: white;
+            margin-right: 15px;
             font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
             color: var(--accent);
         }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-form button {
+            background: var(--accent);
+            color: var(--secondary);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #00c295;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: var(--accent);
+        }
+
+        .footer-col p {
+            color: #b0b9d0;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #b0b9d0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
         .copyright {
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b0b9d0;
             font-size: 0.9rem;
         }
+
         /* Responsive */
         @media (max-width: 992px) {
             .hero h1 {
                 font-size: 2.8rem;
             }
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
+
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
+
             .nav-links {
                 position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                flex-direction: column;
-                background-color: white;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-                padding: 20px 0;
-            }
-            .nav-links.active {
+                top: 70px;
                 left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: transform 0.3s;
             }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+
             .nav-links li {
                 margin: 15px 0;
             }
-            .hero {
-                padding: 140px 0 80px;
-            }
+
             .hero h1 {
                 font-size: 2.3rem;
             }
-            section {
-                padding: 80px 0;
+
+            .hero p {
+                font-size: 1rem;
             }
-            .section-title h2 {
-                font-size: 2rem;
+
+            .btn {
+                display: block;
+                margin: 10px auto;
+                max-width: 250px;
             }
+
+            .btn-accent {
+                margin-left: 0;
+            }
+
             .stats {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                gap: 30px;
             }
         }
     </style>
@@ -360,7 +527,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo"><i class="fas fa-cube"></i> Nexus<span>Tech</span></div>
+                <a href="#" class="logo">Nexa<span>Corp</span></a>
                 <div class="menu-toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -368,7 +535,7 @@
                     <li><a href="#home">Beranda</a></li>
                     <li><a href="#about">Tentang</a></li>
                     <li><a href="#services">Layanan</a></li>
-                    <li><a href="#team">Tim</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
@@ -378,9 +545,10 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Membawa <span>Inovasi Digital</span> ke Tingkat Selanjutnya</h1>
-            <p>Kami adalah perusahaan teknologi terdepan yang berfokus pada pengembangan solusi digital inovatif untuk membantu bisnis tumbuh dan berkembang di era digital.</p>
-            <a href="#contact" class="cta-button">Hubungi Kami <i class="fas fa-arrow-right"></i></a>
+            <h1>Mengubah Ide Menjadi <span>Solusi Digital</span></h1>
+            <p>Kami adalah perusahaan inovatif yang berfokus pada teknologi terkini, menyediakan layanan pengembangan perangkat lunak, konsultasi IT, dan solusi digital untuk membantu bisnis Anda tumbuh di era digital.</p>
+            <a href="#services" class="btn">Jelajahi Layanan</a>
+            <a href="#contact" class="btn btn-accent">Hubungi Kami</a>
         </div>
     </section>
 
@@ -388,98 +556,100 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Tentang NexusTech</h2>
-                <p>Didirikan pada 2015, kami telah berkembang menjadi mitra teknologi terpercaya bagi lebih dari 500 klien di seluruh dunia.</p>
+                <h2>Tentang Perusahaan</h2>
+                <p>Kami telah beroperasi selama lebih dari 10 tahun, membantu ratusan klien dari berbagai industri mencapai tujuan bisnis mereka melalui teknologi.</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Misi Kami</h3>
-                    <p>Mengembangkan solusi teknologi yang tidak hanya memecahkan masalah, tetapi juga memberikan nilai tambah yang signifikan bagi klien dan masyarakat.</p>
-                    <p>Dengan tim ahli yang berdedikasi, kami berkomitmen untuk memberikan layanan terbaik dan inovasi terkini di bidang pengembangan perangkat lunak, konsultasi IT, dan transformasi digital.</p>
+                    <h3>Misi Kami: Memberdayakan Bisnis dengan Teknologi</h3>
+                    <p>Nexa Corp didirikan dengan visi untuk menjembatani kesenjangan antara kebutuhan bisnis dan solusi teknologi. Tim kami terdiri dari profesional berpengalaman yang terus mengikuti perkembangan teknologi terbaru.</p>
+                    <p>Kami percaya bahwa setiap bisnis memiliki potensi untuk berkembang pesat dengan dukungan solusi digital yang tepat, efisien, dan skalabel.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Proyek Selesai</span>
+                            <span class="number">150+</span>
+                            <span class="label">Proyek Selesai</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Klien Aktif</span>
+                            <span class="number">50+</span>
+                            <span class="label">Klien Bahagia</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Kepuasan Klien</span>
+                            <span class="number">10+</span>
+                            <span class="label">Tahun Pengalaman</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">24/7</span>
+                            <span class="label">Dukungan</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <div style="background-color: #e0f2fe; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 5rem;">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Team Meeting" style="width:100%; border-radius:15px;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Layanan Unggulan</h2>
-                <p>Kami menyediakan berbagai layanan teknologi untuk membantu bisnis Anda mencapai tujuan digital.</p>
+                <h2>Layanan Kami</h2>
+                <p>Kami menawarkan berbagai layanan IT yang komprehensif untuk memenuhi kebutuhan digital bisnis Anda.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3>Pengembangan Aplikasi</h3>
-                    <p>Membangun aplikasi web dan mobile yang scalable, aman, dan sesuai dengan kebutuhan bisnis Anda.</p>
+                    <h3>Pengembangan Web & App</h3>
+                    <p>Kami membangun website dan aplikasi mobile yang responsif, cepat, dan sesuai dengan kebutuhan spesifik bisnis Anda.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
                     <h3>Solusi Cloud</h3>
-                    <p>Layanan migrasi, manajemen, dan optimasi infrastruktur cloud untuk efisiensi dan keandalan.</p>
+                    <p>Layanan migrasi, manajemen, dan optimasi cloud untuk meningkatkan skalabilitas dan keamanan data bisnis Anda.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Kecerdasan Buatan</h3>
-                    <p>Implementasi AI dan machine learning untuk mengotomatisasi proses dan meningkatkan analisis data.</p>
+                    <h3>Konsultasi IT</h3>
+                    <p>Kami memberikan analisis dan rekomendasi strategis untuk memaksimalkan pemanfaatan teknologi dalam operasional bisnis.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team">
+    <!-- Portfolio Section -->
+    <section id="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Tim Profesional Kami</h2>
-                <p>Bertemu dengan para ahli yang membuat semuanya menjadi mungkin.</p>
+                <h2>Portfolio Terbaru</h2>
+                <p>Berikut adalah beberapa proyek yang telah kami selesaikan untuk klien dari berbagai sektor.</p>
             </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-img" style="background-color: #c7d2fe;"></div>
-                    <div class="member-info">
-                        <h4>Alexandra Wijaya</h4>
-                        <p>CEO & Pendiri</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="E-commerce Project">
+                    <div class="portfolio-overlay">
+                        <h4>Platform E-commerce</h4>
+                        <p>Pengembangan website toko online dengan sistem pembayaran terintegrasi.</p>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-img" style="background-color: #bbf7d0;"></div>
-                    <div class="member-info">
-                        <h4>Budi Santoso</h4>
-                        <p>CTO</p>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w-600&q=80" alt="Mobile App">
+                    <div class="portfolio-overlay">
+                        <h4>Aplikasi Layanan Fintech</h4>
+                        <p>Pengembangan aplikasi mobile untuk layanan keuangan digital.</p>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-img" style="background-color: #fecaca;"></div>
-                    <div class="member-info">
-                        <h4>Citra Dewi</h4>
-                        <p>Head of Development</p>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Dashboard Analytics">
+                    <div class="portfolio-overlay">
+                        <h4>Dashboard Analytics</h4>
+                        <p>Membangun dashboard analitik real-time untuk perusahaan logistik.</p>
                     </div>
                 </div>
             </div>
@@ -487,33 +657,48 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
                 <h2>Hubungi Kami</h2>
-                <p>Siap untuk memulai proyek Anda? Mari berbicara tentang bagaimana kami dapat membantu.</p>
+                <p>Siap untuk membawa bisnis Anda ke level berikutnya? Mari berbicara tentang proyek Anda.</p>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mari Bekerja Sama</h3>
+                    <p>Tim kami siap membantu Anda dalam setiap langkah menuju transformasi digital. Hubungi kami untuk konsultasi gratis.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Teknologi No. 123, Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>+62 21 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@nexacorp.com</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Lokasi</h3>
-                    <p>Jl. Sudirman No. 123<br>Jakarta Selatan, Indonesia</p>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Telepon</h3>
-                    <p>+62 21 1234 5678<br>+62 812 3456 7890</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>info@nexustech.co.id<br>support@nexustech.co.id</p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="email" placeholder="Alamat Email" required>
+                        <input type="text" placeholder="Subjek" required>
+                        <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -523,41 +708,64 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div style="flex: 1; min-width: 300px;">
-                    <div class="footer-logo">NexusTech</div>
-                    <p>Memimpin transformasi digital dengan inovasi dan keahlian.</p>
+                <div class="footer-col">
+                    <h3>Nexa Corp</h3>
+                    <p>Perusahaan teknologi inovatif yang berkomitmen untuk memberikan solusi digital terbaik untuk kemajuan bisnis Anda.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Tautan Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Layanan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Pengembangan Web</a></li>
+                        <li><a href="#">Aplikasi Mobile</a></li>
+                        <li><a href="#">Konsultasi IT</a></li>
+                        <li><a href="#">Solusi Cloud</a></li>
+                        <li><a href="#">Pemeliharaan Sistem</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2023 NexusTech. Hak Cipta Dilindungi.
+                <p>&copy; 2023 Nexa Corp. Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Toggle mobile menu
+        // Toggle Menu Mobile
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            menuToggle.querySelector('i').classList.toggle('fa-bars');
-            menuToggle.querySelector('i').classList.toggle('fa-times');
         });
 
-        // Close menu when clicking a link
+        // Tutup menu saat link diklik (untuk mobile)
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
-                menuToggle.querySelector('i').classList.add('fa-bars');
-                menuToggle.querySelector('i').classList.remove('fa-times');
             });
+        });
+
+        // Form submission sederhana
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah berhasil dikirim. Kami akan menghubungi Anda segera.');
+            this.reset();
         });
     </script>
 </body>
