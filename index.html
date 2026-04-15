@@ -4,255 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
+            flex: 1;
         }
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
             padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            background-color: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #667eea;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #764ba2;
-        }
-        main {
-            padding: 3rem 0;
-            min-height: 70vh;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 0;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid #334155;
             margin-bottom: 3rem;
         }
-        .hero h1 {
+        h1 {
             font-size: 3.5rem;
+            background: linear-gradient(90deg, #60a5fa, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             margin-bottom: 1rem;
-            color: #667eea;
         }
-        .hero p {
+        .subtitle {
             font-size: 1.2rem;
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-        }
-        .btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            color: #94a3b8;
+            max-width: 800px;
+            line-height: 1.6;
         }
         .content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-bottom: 4rem;
         }
         .card {
-            background-color: white;
-            border-radius: 10px;
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 15px;
             padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            border: 1px solid #475569;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
         }
         .card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
+            border-color: #60a5fa;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
         }
-        .card h3 {
-            font-size: 1.8rem;
+        .card h2 {
+            color: #60a5fa;
             margin-bottom: 1rem;
-            color: #667eea;
+            font-size: 1.8rem;
         }
         .card p {
-            color: #666;
-            margin-bottom: 1.5rem;
+            color: #cbd5e1;
+            line-height: 1.6;
         }
         footer {
-            background-color: #333;
-            color: white;
-            padding: 3rem 0;
+            margin-top: auto;
+            padding: 2rem 0;
+            border-top: 1px solid #334155;
             text-align: center;
         }
         .footer-content {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            gap: 2rem;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
         }
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #667eea;
+        .footer-text {
+            color: #94a3b8;
+            font-size: 1rem;
         }
-        .social-links {
+        .social-icons {
             display: flex;
             gap: 1.5rem;
         }
-        .social-links a {
-            color: white;
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(30, 41, 59, 0.9);
+            border: 1px solid #475569;
+            color: #60a5fa;
             font-size: 1.5rem;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
-        .social-links a:hover {
-            color: #667eea;
-        }
-        .copyright {
-            border-top: 1px solid #444;
-            padding-top: 2rem;
-            font-size: 0.9rem;
-            color: #aaa;
+        .social-icons a:hover {
+            background: #60a5fa;
+            color: #0f172a;
+            transform: scale(1.1);
+            border-color: #60a5fa;
         }
         @media (max-width: 768px) {
-            .hero h1 {
+            h1 {
                 font-size: 2.5rem;
             }
             .footer-content {
                 flex-direction: column;
-                gap: 2rem;
-            }
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
             }
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to My Creative Space</h1>
-            <p>Exploring ideas, building solutions, and sharing knowledge</p>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main class="container">
-        <section class="hero">
-            <h1>Innovation Starts Here</h1>
-            <p>This is a showcase of my work, thoughts, and experiments in technology, design, and development. Join me on this journey of creation and discovery.</p>
-            <a href="#projects" class="btn">Explore My Work</a>
-        </section>
-        <section class="content">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Building responsive, accessible, and performant websites and applications using modern technologies.</p>
-                <a href="#webdev" class="btn">Learn More</a>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Website</h1>
+            <p class="subtitle">This is a modern, responsive website built with HTML and CSS. It features a gradient design, interactive cards, and a footer with social media links.</p>
+        </header>
+        
+        <main>
+            <div class="content">
+                <div class="card">
+                    <h2>About This Project</h2>
+                    <p>This website demonstrates a clean design with a focus on user experience. The cards provide information in an organized manner, and the layout adapts to different screen sizes.</p>
+                </div>
+                <div class="card">
+                    <h2>Technologies Used</h2>
+                    <p>Built with pure HTML5 and CSS3, utilizing modern CSS features like Flexbox, Grid, and custom properties. Font Awesome icons are used for social media links.</p>
+                </div>
+                <div class="card">
+                    <h2>Future Enhancements</h2>
+                    <p>Potential additions include interactive JavaScript components, a dark/light mode toggle, and more dynamic content loading for an even richer user experience.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Creating intuitive and engaging user experiences with a focus on simplicity and functionality.</p>
-                <a href="#design" class="btn">See Designs</a>
-            </div>
-            <div class="card">
-                <h3>Open Source</h3>
-                <p>Contributing to and maintaining open source projects to collaborate with developers worldwide.</p>
-                <a href="#opensource" class="btn">View Projects</a>
-            </div>
-        </section>
-    </main>
+        </main>
+    </div>
+    
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">CreativeDev</div>
-                <div class="social-links">
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/gal07" target="_blank" aria-label="GitHub">
+                <p class="footer-text">© 2023 My Website. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://codepen.io" target="_blank" aria-label="CodePen">
-                        <i class="fab fa-codepen"></i>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
                     </a>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 CreativeDev. All rights reserved. | Designed with passion and code.</p>
-                <p>Find the source code on <a href="https://github.com/gal07" style="color: #667eea;">GitHub</a>.</p>
-            </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.btn');
-            buttons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    if (this.getAttribute('href').startsWith('#')) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href').substring(1);
-                        const targetElement = document.getElementById(targetId);
-                        if (targetElement) {
-                            window.scrollTo({
-                                top: targetElement.offsetTop - 80,
-                                behavior: 'smooth'
-                            });
-                        }
-                    }
-                });
-            });
-            console.log('Website loaded successfully!');
-        });
-    </script>
 </body>
 </html>
