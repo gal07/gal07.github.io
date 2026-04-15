@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -12,157 +12,247 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: #f1f5f9;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            flex: 1;
-        }
+
         header {
-            padding: 2rem 0;
-            border-bottom: 1px solid #334155;
-            margin-bottom: 3rem;
-        }
-        h1 {
-            font-size: 3.5rem;
-            background: linear-gradient(90deg, #60a5fa, #a855f7);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 1rem;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            max-width: 800px;
-            line-height: 1.6;
-        }
-        .content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-        .card {
-            background: rgba(30, 41, 59, 0.7);
-            border-radius: 15px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
             padding: 2rem;
-            border: 1px solid #475569;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #60a5fa;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
         }
-        .card h2 {
-            color: #60a5fa;
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #2575fc;
             margin-bottom: 1rem;
             font-size: 1.8rem;
         }
-        .card p {
-            color: #cbd5e1;
-            line-height: 1.6;
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        footer {
-            margin-top: auto;
-            padding: 2rem 0;
-            border-top: 1px solid #334155;
-            text-align: center;
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
-        .footer-content {
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #6a11cb;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #2575fc;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
             display: flex;
-            justify-content: center;
             align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+            gap: 10px;
         }
-        .footer-text {
-            color: #94a3b8;
+
+        .card p {
+            color: #666;
             font-size: 1rem;
         }
-        .social-icons {
+
+        .icon {
+            font-size: 1.4rem;
+        }
+
+        footer {
+            background: #222;
+            color: #eee;
+            padding: 2rem;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 1.5rem;
         }
-        .social-icons a {
+
+        .footer-text {
+            font-size: 1rem;
+            opacity: 0.8;
+            max-width: 600px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-link {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 50px;
             height: 50px;
+            background-color: #333;
             border-radius: 50%;
-            background: rgba(30, 41, 59, 0.9);
-            border: 1px solid #475569;
-            color: #60a5fa;
+            color: white;
             font-size: 1.5rem;
-            transition: all 0.3s ease;
             text-decoration: none;
+            transition: all 0.3s ease;
         }
-        .social-icons a:hover {
-            background: #60a5fa;
-            color: #0f172a;
+
+        .social-link.github:hover {
+            background-color: #333;
             transform: scale(1.1);
-            border-color: #60a5fa;
         }
+
+        .social-link.twitter:hover {
+            background-color: #000000;
+            transform: scale(1.1);
+        }
+
+        .copyright {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            border-top: 1px solid #444;
+            padding-top: 1rem;
+            width: 100%;
+        }
+
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+            }
+            .tagline {
+                font-size: 1rem;
+            }
+            main {
+                padding: 0 1rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
             }
             .footer-content {
-                flex-direction: column;
-                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+            .social-links {
+                gap: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Website</h1>
-            <p class="subtitle">This is a modern, responsive website built with HTML and CSS. It features a gradient design, interactive cards, and a footer with social media links.</p>
-        </header>
-        
-        <main>
-            <div class="content">
-                <div class="card">
-                    <h2>About This Project</h2>
-                    <p>This website demonstrates a clean design with a focus on user experience. The cards provide information in an organized manner, and the layout adapts to different screen sizes.</p>
-                </div>
-                <div class="card">
-                    <h2>Technologies Used</h2>
-                    <p>Built with pure HTML5 and CSS3, utilizing modern CSS features like Flexbox, Grid, and custom properties. Font Awesome icons are used for social media links.</p>
-                </div>
-                <div class="card">
-                    <h2>Future Enhancements</h2>
-                    <p>Potential additions include interactive JavaScript components, a dark/light mode toggle, and more dynamic content loading for an even richer user experience.</p>
-                </div>
+    <header>
+        <h1>Modern Web Platform</h1>
+        <p class="tagline">Building the future with clean code and innovative design</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to Our Development Hub</h2>
+            <p>This is a demonstration platform showcasing modern web development practices. We focus on responsive design, performance, and user experience. Explore the features below and connect with us on our social channels.</p>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <h3><span class="icon">🚀</span> High Performance</h3>
+                <p>Our solutions are optimized for speed and efficiency, ensuring seamless user experiences across all devices and network conditions.</p>
             </div>
-        </main>
-    </div>
-    
+            <div class="card">
+                <h3><span class="icon">📱</span> Fully Responsive</h3>
+                <p>Every component is designed to adapt perfectly to any screen size, from mobile phones to desktop monitors.</p>
+            </div>
+            <div class="card">
+                <h3><span class="icon">🔒</span> Secure & Reliable</h3>
+                <p>We implement the latest security protocols and best practices to protect your data and ensure system reliability.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">© 2023 My Website. All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="https://github.com" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
+        <div class="footer-content">
+            <p class="footer-text">This project is open source and community driven. Feel free to contribute, report issues, or suggest new features.</p>
+            
+            <div class="social-links">
+                <a href="https://github.com" class="social-link github" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com" class="social-link twitter" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Modern Web Platform. All rights reserved. | Demo for educational purposes.
             </div>
         </div>
     </footer>
+
+    <script>
+        // Simple interaction for cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.borderTopColor = `hsl(${Math.random() * 360}, 70%, 50%)`;
+            });
+        });
+
+        // Console greeting
+        console.log('Welcome to the Modern Web Platform! 🚀');
+    </script>
 </body>
 </html>
